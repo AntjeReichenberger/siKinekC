@@ -1,0 +1,87 @@
+
+#findkpWrapper {
+	position: relative;
+	display: block;
+	width: 1000px;
+	margin: 10px auto;
+	padding: 0px 0 35px;
+	text-align: left;
+	background-color:#fff;
+}
+
+#findkpContentWrapper {
+	position: relative;
+	display: block;
+	z-index: 1;
+	width: 950px; 
+	margin: 1px auto 0px auto;
+	margin-left:-10px;
+	padding-top: 0px;
+	padding-bottom:	1px;
+	padding-left:1px;
+	padding-right:1px;
+}
+
+
+ol.noListStyle,ul.noListStyle { list-style: none; }
+
+/*** Link Styles ***/
+a.blue:link, a.blue:visited { 
+	text-decoration: none; 
+	color: #058fd3;
+	border-bottom: 1px solid #058fd3; 
+}
+	
+a.blue:hover, a.blue:active, a.blue.active { 
+	color: #058fd3;
+	border-bottom: 1px solid #058fd3; 
+}
+
+a.greenlink {
+	color: #00AA00;	
+}
+
+.hiddenFindKp {
+	display: none;	
+}
+
+/*** Clearfix Styles ***/
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; 
+}
+
+.clearfix { 
+	display: inline-block; 
+}
+
+html[xmlns] .clearfix { 
+	display: block; 
+}
+
+* html .clearfix { 
+	height: 1%; 
+}
+
+.clear { 
+	clear:both; 
+}		
+
+select.selprovince, select.selradius{
+  font-family:Georgia,"Times New Roman",Times,serif;
+}
+
+.recaptchatable {
+line-height: 1em;
+border: 1px solid #DFDFDF!important;
+}
+.recaptchatable, #recaptcha_area tr, #recaptcha_area td, #recaptcha_area th {
+margin: 0!important;
+border: 0!important;
+border-collapse: collapse!important;
+vertical-align: middle!important;
+}

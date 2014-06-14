@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.CouponNotification" table="couponnotification">
+		<id name="Id" type="java.lang.Integer" column="Id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+	
+		<many-to-one name="coupon" class="org.webdev.kpoint.bl.pojo.Coupon"	column="couponId" lazy="false" />
+
+		<many-to-one name="user" class="org.webdev.kpoint.bl.pojo.User" column="userId" lazy="false" />	
+		
+		<property name="receivedDate" type="java.util.Calendar">
+			<column name="receivedDate"></column>
+		</property>				
+						
+	</class>
+</hibernate-mapping>

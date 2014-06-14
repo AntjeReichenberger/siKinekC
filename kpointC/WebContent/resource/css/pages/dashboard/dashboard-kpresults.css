@@ -1,0 +1,108 @@
+#saveKPBox {  
+	display:inline-block;
+	float:right;
+	line-height:42px;
+	margin-bottom:-20px;
+	text-align:right;
+}
+
+	#saveKPBox a#saveKP {
+		display:block;
+		width:180px;
+		height:51px;
+		cursor: pointer;
+		background: url(../../../images/whitebgsave.jpg) center right no-repeat;
+		border: none;
+		float: right; 
+	}					
+	
+	#saveKPBox a#saveKP:hover{
+		background: url(../../../images/whitebgsave_hover.jpg) center right no-repeat;
+	}
+	
+	#saveKPBox p {
+		font-size: 11px;
+		font-color: #777777;
+		font-weight: bold;
+		float: left;
+		width: 400px;
+		text-align: left;
+	}
+	
+#searchWrapper {
+	margin: 20px 0 0 0;
+}
+	
+#searchWrapper #mapContainer {
+	width: 581px;
+	height:500px;
+}
+
+#adbModule.searchresults {
+	padding: 0;	
+	width: 919px;
+}
+
+#findDepots {
+	margin-bottom: -15px;	
+}
+
+div#selected {
+	padding: 10px 0;	
+}
+
+div#moreselected {
+	padding: 10px 0 0;	
+}
+
+#startAddress {
+	padding-bottom: 10px; 
+	display: none;	
+}
+
+#startAddressBtn {
+	text-align: center;		
+	background: transparent url(../../../images/blue-circle-small.png) no-repeat scroll left center;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	padding-top: 9px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#startAddressTxt {	
+	height:18px;
+	padding:4px;
+	background:#FFFFFF url(../../../images/input_bg.jpg) repeat-x scroll left bottom;
+}
+
+span.adpKN {
+	color: #00AA00;
+}
+
+input#saveKPLink {
+	color: #00AA00;
+	line-height: 115%;
+	margin-top: -3px;
+}
+
+.ero-shadow {
+	top: 20px;
+}
+
+.ero-body {
+	text-align: left;
+	height: 116px;
+	top: 20px;
+}
+
+.directionsTitle {
+	display: none;
+}
+
+/*** Directions Map ***/
+a.directionLink {
+	display: none;
+}

@@ -1,0 +1,351 @@
+/*** General Styles ***/
+div[id*='marker_div_']{
+    -webkit-transform: translateZ(103px);
+}
+
+.addressSize{
+	font-size:12px;	
+}
+
+#hoursPricingLink {
+	margin-top:5px;
+}
+
+#hoursPricingLink a{
+	color:#058FD3;
+	border-bottom:1px solid #058FD3;
+}
+
+.noUnderline{
+	text-decoration: none !important;
+	border-bottom:0px !important;	
+}
+
+ul.multiple_columns li{
+    text-align: left;
+    float: left;
+    list-style: none;
+    height: 100px;
+    width: 175px;
+}
+    
+#list_wrapper{
+    width: 525px;
+    float:right;
+}
+
+table.defaultKinekPoint {
+	float: left;
+	width: 400px;
+	margin-bottom: 0px !important;
+	margin-left: 25px
+}
+
+	table.defaultKinekPoint td {
+		padding: 0px;
+	}
+	
+	table.defaultKinekPoint img{
+		margin-left: 3px;
+		width: 20px;
+		vertical-align: bottom;
+	}
+
+	table.defaultKinekPoint td.kinekPoint {
+		font-weight: bold;
+		padding-top: 5px;
+		padding-bottom: 3px;
+		
+	}
+
+	table.defaultKinekPoint .kinekNumberLabel {
+		font-weight: bold;
+		padding-top: 5px;
+		padding-bottom: 5px; 
+		width: 120px;
+		vertical-align: bottom;
+	}
+
+	.kinekNumberValue {
+		color: #058fd3;
+		font-weight: normal;
+	}
+	
+table.kinekPointAddress {
+	margin-left: 7px;
+	margin-top: 0px;	
+}
+		
+table.kinekPointAddress img{
+	margin-left: 3px;
+	width: 20px;
+	float:right;
+	vertical-align: bottom;	
+}
+		
+	
+table.topwrapper {
+	margin-top: 0px;
+}
+
+div#contentWrapper {
+	border-top: none;
+}
+
+	div#contentWrapper div#content {
+		padding-top: 0px;
+	}
+
+div.emailPreview {
+	border: dotted 1px #333333; 
+	padding-top: 10px; 
+}
+
+/*** Content Section ***/
+#adbModule {
+	border: none;
+	padding: 0px 15px;
+	margin: 0px;
+	width: 840px; 
+}
+
+	#adbModule p {
+		padding-left: 15px;
+	}
+	
+	#adbModule #pageTitle h1 {
+		font-size: 28px;
+	}
+	
+	#adbModule h4 {
+		padding-left: 15px;
+	}
+
+
+/*** Special Notice Section ***/
+#specialnotice {
+	width: 700px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	background: url(../../../images/checklist_bg.jpg) bottom left repeat-x #fffeeb; 
+}
+
+	#specialnotice h3 {
+		display: block;
+		background: url(../../../images/caution.gif) 0 0 no-repeat;
+		padding-left: 35px;
+		height: 30px;
+		color: #ff8c00;
+		font-weight: bold;
+	}
+	
+	#specialnotice ul {
+		margin-left: 30px;
+		font-size: 1.3em;
+		font-weight: bold;
+	}
+	
+		#specialnotice ul li {
+			margin-bottom: 8px;
+		}
+
+.defaultkpnotselected {
+	color: #777777;
+	font-family: "Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	text-align: center;
+}
+
+
+/*** Navigation Styles ***/
+ul#adpnav {
+	position: relative;
+	left: -160px;
+	top: -14px;
+	display: block;
+	width: 690px;
+	height: 49px;
+	margin: 5px 0 -1px 0;
+	z-index: 99; 
+	float: right;
+	border:0px solid blue; 
+}
+			
+	ul#adpnav li {
+		float: left;
+	}
+
+		ul#adpnav li a:link,
+		ul#adpnav li a:visited {
+			float: left;
+			display: block; 
+			padding: 0015px;
+			font-size: 13px;
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: 50px;
+			color: #939699;
+			border: none; 
+		}
+				
+		ul#adpnav li a:hover,
+		ul#adpnav li:hover a {
+			text-decoration: none;
+			color: #058fd3;
+		}
+
+		ul#adpnav li.active { 
+			background: url(../../../images/navItem_left_bg.jpg) center left no-repeat;
+		}
+	
+		ul#adpnav li.active a:link,
+		ul#adpnav li.active a:visited {
+			color: #058fd3; 
+			background: url(../../../images/navItem_right_bg.jpg) center right no-repeat; 
+			height:47px;
+		}
+
+
+#consumerKinekPointAddress table.superplain {
+	border: none;
+	padding: 0px;
+	margin-top: 1px;
+	margin-bottom: 5px;
+	margin-right: 25px;
+	color: #777;
+	width: 340px;
+}
+
+	#consumerKinekPointAddress table.superplain td.middle {
+		width: 245px;
+		font-family: arial;
+		font-size: 12px;
+		padding: 0px;
+		padding-left: 5px;
+		padding-bottom: 5px;
+	}
+
+	#consumerKinekPointAddress table.superplain td span.adpKN {
+		color: #00AA00;
+	}
+	
+	#consumerKinekPointAddress #findakinekpoint {
+		padding-left: 5px;
+	}
+	
+	#consumerKinekPointAddress a#findakinekpointlink {
+		color: #00AA00;
+		border: none;
+	}
+	
+	#consumerKinekPointAddress a#findakinekpoint:active,
+	#consumerKinekPointAddress a#findakinekpoint:hover {
+		text-decoration: underline;
+	}
+	
+/*** Paging Styles ***/
+#pagingcontrols{
+	text-align: right;
+}
+	#pagingcontrols .buttonLink {
+		color: #058fd3;
+		font-size: 12px;
+		font-weight: bold;
+		text-decoration: underline;
+		padding: 0px 5px 4px 5px;
+	}
+	
+	#pagingcontrols .buttonLink:hover {
+		color: #058fd3;
+		font-size: 12px;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 0px 5px 4px 5px;
+	}
+	
+	#pagingcontrols .nolink {
+		color: #CCCCCC;
+		font-size: 12px;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 0px 5px;
+	}
+	
+	#pagingcontrols .pageinfo {
+		color: #696969;
+		padding: 0px;
+	}
+	
+	ul.list { margin: 0 0 0 15px; }
+	
+	ul.list li { margin: 0 0 5px 0; }
+
+	ul.bulleted { list-style-type: square; }
+	
+	ul.disc	{ list-style-type:disc;	}
+	
+/*** NAV STYLES ***/
+#adb_nav {
+	float: left;
+	margin-top: 41px;
+}
+
+	#adb_nav table {
+		margin: 0px;
+	}
+
+	#adb_nav table tbody {
+		border: none;
+	}
+	
+	#adb_nav table tr {
+		background: none;
+	}
+
+	#adb_nav table td {
+		border: none;
+		padding: 0px 8px;
+	}
+	
+		#adb_nav table td.title {
+			font-weight: bold;
+			text-decoration: underline;
+			padding-left:15px;
+			padding-right:51px
+		}
+
+		#adb_nav table td table td {
+			border: none;
+			padding: 3px 8px;
+		}
+		
+	#adb_nav a {
+		color: #058FD3;
+		border: none;
+	}
+	
+	#adb_nav a:active,
+	#adb_nav a:hover {
+		text-decoration: underline;
+	}
+	
+div.horizontalSeperator {
+	clear: both;
+	margin: 0px -1px;
+	border-bottom: 1px solid #E3E3E3;
+	padding: 10px 0px;
+}
+
+.favoriteKP {
+		width: 16px;
+		height: 16px;
+		background:  url(../../icons/16-star_fill.png) top left no-repeat;
+	}
+	
+#descriptionHeader p{
+	padding-left:0px !important;	
+}
+	
+	

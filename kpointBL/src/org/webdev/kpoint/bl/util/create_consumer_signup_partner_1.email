@@ -1,0 +1,121 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>Welcome to Kinek!</title>
+   <style type="css/text">
+		body {
+		   background-color: #c1c1c1;
+		}
+		
+		table.bg1 {
+		   background-color: #c1c1c1;
+		}
+		
+		table.bg2 {
+		   background-color: #ffffff;
+		}
+		
+		a img {
+		   border: none;
+		}
+				
+		td.body {
+		   padding: 20px 20px 20px 20px !important;
+		   background-image: url('img_content_bg');
+		   background-repeat: repeat-y !important;
+		   background-position: bottom center !important;   
+		   background-color: #ffffff !important;
+		}		
+		
+		a {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #058fd3;
+		}
+		
+		td.header {
+		   margin: 0;
+		   padding: 20px 0px 0px 20px;
+		} 
+   </style>
+</head>
+<body>
+
+<font face="Lucida Sans Unicode, 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif !important">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="bg1">
+   <tr>
+      <td align="center">
+         
+         <table width="600" border="0" cellspacing="0" cellpadding="0" class="bg2">
+            <tr>
+               <td class="header" align="left">
+                  <img src="img_header_bg" alt="Welcome to Kinek" width="228" height="35" />
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" class="body">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                        <td valign="top" class="mainbar" align="left">
+							<p>Sample email for cigars</p>
+							<p><font size="2" color="#777777">Congratulations user_name!</font></p>						
+							<p><font size="2" color="#777777">
+								Your Kinek account is now active and you have chosen your first KinekPoint to receive
+								your online, catalogue, or phone orders at. You can even use your KinekPoint to receive
+								packages from friends and family!
+							</font></p>
+							
+							
+							<p><font size="2" color="#777777"><b>Here is your new KinekPoint Shipping Address:</b></font></p>
+							<p><font size="2" color="#777777">
+								   <b>
+								   	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user_name<br />
+									  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kp_address1, #kp_number<br />
+									  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kp_name<br />
+									  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kp_city, kp_state_Or_province<br />
+								      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kp_zip_Or_postalcode
+								   </b>
+								</font><br />
+							</p>
+													
+							
+							<p><font size="2"  color="#777777">You can log into your account <a href="login_link">here</a>. Your password is <b>attb_password</b></font>
+							</p>
+														
+							<p> <font size="2" color="#777777">
+								<div>Always be sure to include your Kinek# in the shipping address as this is how we identify 
+								     your package when it arrives. You can also change your KinekPoint any time you like.</div> 
+							</font></p>
+							
+							<p><font size="2"  color="#777777">
+									If you have any questions, check out our <a href="faq_link">FAQs</a> or give us a shout at <a href="mailto:KinekSupport@kinek.com">KinekSupport@kinek.com</a>!
+								</font>	
+							</p>	
+										
+							<p>
+								<font size="2" color="#777777"><b>attb_coupon_title</b></font><br/>
+								<font size="2" color="#777777">attb_coupon_image</font>
+							</p>										
+														
+							<p><font size="2"  color="#777777"><b>Happy Shopping,</font></b></p>
+														
+							<p><font size="2"  color="#777777"><b>The Kinek Team</b></font></p>
+							
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td valign="middle" align="left" class="footer"></td>
+            </tr>
+         </table>
+         
+      </td>
+   </tr>
+</table>
+</font>
+</body>
+</html>

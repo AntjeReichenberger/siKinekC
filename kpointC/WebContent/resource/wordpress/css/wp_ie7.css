@@ -1,0 +1,7 @@
+/*** IE7 Fixes & Styles ***/
+
+ul#maptabs {
+	top: 27px;
+	right: 0px;
+	z-index: 1200;
+}

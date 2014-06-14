@@ -1,0 +1,57 @@
+table.outerwrapper {
+	width: 750px;
+}
+
+	table.outerwrapper td.leftcol,
+	table.outerwrapper td.leftcol div {
+		width: 280px;
+	}
+	
+	table.outerwrapper td.rightcol {
+		width: 500px;
+	}
+	
+table.formwrapper {
+	width: 420px;
+	border: 1px solid #25a6e6;
+	padding: 0px;	
+	margin: 0px;
+	margin-top: -15px;
+	margin-left: 54px;
+}
+
+	table.formwrapper td.headertext {
+		font-weight: bold;
+		font-size: 1.2em;
+		color: #FFFFFF;
+		background: url(../../../images/table_th_bg.jpg) bottom left repeat-x #25a6e6;
+	}
+	
+	table.formwrapper tr.email td input {
+		width: 210px;
+	}
+	
+	table.formwrapper tr.message td textarea {
+		width: 210px;
+	}
+	
+table.buttonswrapper {
+	width: 420px;
+	border: 0px solid #25a6e6;
+	padding: 0px;
+	margin: 0px;
+	margin-left: 64px;
+}
+
+ol li.first {
+	margin-bottom: 8px;
+}
+
+.errorMessage{
+	width:454px;
+	margin-left:35px;
+}
+	
+#pageTitle {
+	padding-left: 23px;
+}

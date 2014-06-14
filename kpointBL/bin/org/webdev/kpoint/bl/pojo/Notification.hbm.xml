@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.Notification" table="notification">
+		<id name="Id" type="java.lang.Integer" column="Id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		
+		<many-to-one name="trigger" class="org.webdev.kpoint.bl.pojo.MessageTrigger" column="triggerID" lazy="false"/>
+		<many-to-one name="medium" class="org.webdev.kpoint.bl.pojo.MessageMedia" column="mediaID" lazy="false"/>
+	</class>
+</hibernate-mapping>

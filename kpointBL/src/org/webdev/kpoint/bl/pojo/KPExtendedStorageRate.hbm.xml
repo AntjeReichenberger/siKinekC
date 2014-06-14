@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.KPExtendedStorageRate" table="kpextendedstoragerate">
+		<composite-id>
+    		<key-property name="kinekPointId" type="java.lang.Integer"/>
+    		<key-many-to-one name="unifiedExtendedStorageRate" class="org.webdev.kpoint.bl.pojo.UnifiedExtendedStorageRate" column="extendedStorageRateId" lazy="false" />
+    		<key-property name="createdDate" type="java.util.Calendar" />
+  		</composite-id>	
+  		<property name="feeOverride" type="java.math.BigDecimal">
+			<column name="feeOverride" />
+		</property>
+	</class>
+</hibernate-mapping>

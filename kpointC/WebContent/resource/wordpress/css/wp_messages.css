@@ -1,0 +1,21 @@
+/*** Normal Messages ***/
+#message p {
+	margin: 5px 0; 
+}
+	
+/*** Growls ***/
+div.growl {
+	background-color:#058FD3;
+	border:1px solid #112485;
+	color:#FFFFFF;
+	font-size:14px;
+	opacity:0.8;
+	padding:15px 0;
+	position:absolute;
+	right:220px;
+	text-align:center;
+	top:180px;
+	width:180px;
+	display: none;
+	z-index: 999;
+}

@@ -1,0 +1,366 @@
+/*** General element styles ***/
+* { 
+	margin: 0;
+	padding: 0;
+}
+
+html, 
+body { 
+	height: 100%;
+}
+
+body { 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	position: relative; 
+	background: #c1c1c1; 
+}
+
+h1 { 
+	font-size: 18px; 
+	color: #242461; 
+	margin: 0 0 20px; 
+	font-weight: bold; 
+}
+
+h2 { 
+	font-size: 18px;
+	color: #242461; 
+	margin: 0 0 8px; 
+	font-weight: bold;  
+}
+
+h3 { 
+	font-size: 18px; 
+	color: #242461; 
+	margin: 0 0 8px; 
+	font-weight: bold;  
+}
+
+h4 { 
+	font-size: 14px; 
+	color: #242461; 
+	margin: 0 0 8px; 
+	font-weight: bold;  
+}
+
+ol { 
+	margin: 0 0 10px 18px; 
+}
+
+ul {
+	margin: 0 0 10px 16px; 
+}
+
+	ul li, ol li { 
+		padding: 0 0 8px; 
+	}
+	
+input, 
+select, 
+textarea, 
+button { 
+	font-family: Arial, Helvetica, sans-serif; 
+	color: #534741; 
+	font-size: 11px; 
+}
+
+a { 
+	color: #0f77b0; 
+	text-decoration: none; 
+	outline: none; 
+}
+
+	a:hover { 
+		text-decoration: underline; 
+	}
+	
+p { 
+	margin: 0 0 8px; 
+}
+
+	p.last { 
+		margin: 0 0 16px; 
+	}
+	
+img { 
+	border: none; 
+}
+
+button { 
+	cursor: pointer; 
+}
+
+fieldset { 
+	border: 0; 
+}
+
+.required { 
+	color: #F3161E; 
+}
+
+.left { 
+	float: left; 
+}
+
+.right { 
+	float: right; 
+}
+
+.hidden { 
+	display: none; 
+}
+
+.radio, 
+.checkbox { 
+	vertical-align: middle; 
+	margin: 0 2px 0 0; 
+}
+
+.last { 
+	margin: 0 0 24px !important; 
+}
+
+/*** Wrap ***/	
+#wrap { 
+	position: relative; 
+	overflow: hidden; 
+	width: 999px; 
+	height: 100%; 
+	height: auto !important; 
+	min-height: 100%; 
+	margin: 0 auto; 
+	font-size: 11px; 
+	color: #000000; 
+	zoom: 1;  
+}
+
+/*** Header ***/	
+#header-top { 
+	width: 999px; 
+	height: 20px; 
+	background: url('../../images/landing/bg-header-top.gif') top center no-repeat; 
+	font-size: 0;  
+}
+
+#header { 
+	position: relative; 
+	height: 74px; 
+	padding: 6px 23px 0; 
+	background: url('../../images/landing/bg-header.gif') top center repeat-y;  
+} 
+
+	#header .logo { 
+		position: absolute; 
+		width: 165px; 
+		height: 43px; 
+		top: 10px; 
+		left: 24px; 
+		background: url('../../images/logo_top.png'); 
+	}
+	
+		#header .logo a { 
+			display: block; 
+			width: 165px; 
+			height: 43px; 
+			text-indent: -1000em; 
+		}	
+
+	#header .notice { 
+		position: absolute; 
+		height: 53px; 
+		top: 10px; 
+		left: 520px; 
+		color: #242461; 
+		font-size: 12px;  
+	}
+			
+		#header .notice span { 
+			font-size: 14px; 
+		}	
+
+	#header .sign-up { 
+		position: absolute; 
+		top: 10px; 
+		right: 24px;  
+	}		
+	
+/*** Buttons ***/		
+a.button-sign-up-now { 
+	display: block; 
+	width: 159px; 
+	height: 39px; 
+	background: url('../../images/landing/button-sign-up-now.png') top left no-repeat; 
+	text-indent: -1000em; 
+	cursor: pointer; 
+}
+
+/*** Splash ***/	
+#splash { 
+	background: url('../../images/landing/bg-header.gif') top center repeat-y; 
+	padding: 0 3px 0 5px; 
+}
+
+	#splash .inner { 
+		overflow: hidden; 
+		zoom: 1; 
+		padding: 0 20px 50px 18px; 
+		background: url('../../images/landing/bg-splash-inner.gif') top center repeat-x #dfecf3; 
+	}
+	
+	/*** Left Column ***/		
+	#splash .inner .column-left { 
+		float: left; 
+		width: 227px; 
+		padding: 0 40px 0 0; 
+	}	
+
+		#splash .inner .column-left .menu-top { 
+			list-style: none; 
+			margin: 0 0 50px; 
+		}
+			
+			#splash .inner .column-left .menu-top ul { 
+				list-style: none; 
+				margin: 0; 
+			}
+				
+				#splash .inner .column-left .menu-top ul li { 
+					padding: 0 0 8px; 
+				}		
+			
+		#splash .inner .column-left .how-it-works h3 { 
+			color: #242461; 
+			margin: 0 0 16px; 
+		}						
+
+		#splash .inner .column-left .step { 
+			margin: 0 0 16px; 
+		}
+		
+			#splash .inner .column-left .step .description { 
+				overflow: hidden; 
+				zoom: 1; 
+			}
+			
+				#splash .inner .column-left .step .description .image { 
+					float: left; 
+				}
+				
+				#splash .inner .column-left .step .description .copy { 
+					float: right; 
+				}
+								
+				#splash .inner .column-left .step .step-1 .image { 
+					width: 46px; 
+					height: 53px; 
+					background: url('../../images/landing/icons/step-1.png') top center no-repeat; 
+				}
+								
+				#splash .inner .column-left .step .step-1 .copy { 
+					width: 165px; 
+				}
+				
+				#splash .inner .column-left .step .step-2 .image { 
+					width: 86px;  
+					height: 75px; 
+					background: url('../../images/landing/icons/step-2.png') top center no-repeat; 
+				}
+								
+				#splash .inner .column-left .step .step-2 .copy { 
+					width: 125px; 
+				}
+				
+				#splash .inner .column-left .step .step-3 .image { 
+					width: 77px; 
+					height: 78px; 
+					background: url('../../images/landing/icons/step-3.png') top center no-repeat; 
+				}		
+						
+				#splash .inner .column-left .step .step-3 .copy { 
+					width: 134px; 
+				}				
+
+		#splash .inner .column-left .grey-rounded { 
+			width: 217px; 
+			height: 27px; 
+			line-height: 27px; 
+			padding: 0 0 0 10px; 
+			margin: 0 0 8px; 
+			background: url('../../images/landing/bg-grey-rounded.png') top center no-repeat; 
+			color: #7a7a7a; 
+			font-size: 12px; 
+			font-weight: bold; 
+		}
+					
+			#splash .inner .column-left .grey-rounded span { 
+				margin: 0 12px 0 0; 
+				color: #242461; 
+			}			
+	
+	/*** Center Column ***/		
+	#splash .inner .column-center { 
+		float: left; 
+		width: 352px; 
+	}
+		
+		#splash .inner .column-center h1 { 
+			color: 
+		}
+			
+		#splash .inner .column-center h2 { 
+			color: #107bb3; 
+			font-style: italic; 
+			font-size: 22px; 
+		}
+					
+		#splash .inner .column-center ul, #splash .inner .column-center ol { 
+			margin: 0 0 10px 38px; 
+		} 		
+	
+	
+	/*** Right Column ***/		
+	#splash .inner .column-right { 
+		float: right; 
+		width: 290px; 
+	}
+			
+		#splash .inner .column-right a.button-demo-video { 
+			display: block; 
+			width: 104px; 
+			height: 4px; 
+			padding: 100px 0 0; 
+			background: url('../../images/landing/icons/demo-video.png') top center no-repeat; 
+			text-align: center; 
+			cursor: pointer; 
+		}
+			
+		#splash .inner .column-right div.demo-holder { 
+			margin: 0 0 32px 90px; 
+		}
+		 		
+		#splash .inner .column-right div.condensed { 
+			margin: 0 30px; 
+		} 		
+	
+	
+/*** Footer ***/	
+#footer { 
+	height: 41px; 
+	line-height: 36px; 
+	padding: 0 23px; 
+	background: url('../../images/landing/bg-footer.gif') top center no-repeat; 
+}
+
+	#footer span { 
+		margin: 0 38px 0 0; 
+	}
+	
+	#footer a { 
+		margin: 0 12px 0 0; 
+	}
+	
+/*** Misc ***/		
+ul.bulleted-blue { 
+	list-style-image: url('../../images/landing/bullet-blue.png'); 
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.UserTracking" table="user_tracking">			
+		<id name="id" type="java.lang.Integer" column="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		
+		<many-to-one name="tracking" class="org.webdev.kpoint.bl.pojo.Tracking" column="trackingId" lazy="false"/>
+    	<many-to-one name="user" class="org.webdev.kpoint.bl.pojo.User" column="userId" lazy="false" />
+  		
+		<property name="packageNickname" type="java.lang.String">
+			<column name="packageNickname" />
+		</property>
+
+		<property name="autoSelected" type="java.lang.Boolean">
+			<column name="autoSelected" />
+		</property>
+		
+		<property name="isActive" type="java.lang.Boolean">
+			<column name="isActive" />
+		</property>
+	</class>
+</hibernate-mapping>

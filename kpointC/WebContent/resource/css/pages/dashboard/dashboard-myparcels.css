@@ -1,0 +1,110 @@
+div#adbModule {
+	padding-top: 15px;
+}
+
+.ui-dialog span{
+	height: 18px !important;	
+}
+
+#dialog{
+	height:auto !important;
+	padding-top:10px;	
+}
+
+#ui-dialog-title-dialog{
+	float:center !important;	
+}
+
+.ui-dialog-buttonset {
+	width: 100%;
+	text-align: center;	
+}
+
+
+form.myparcels {
+	margin: 0px;
+	padding: 0px;
+}
+
+.searchTitle {
+	font-size: 16px;
+	color: #058FD3;
+	margin: 0px;
+	margin-bottom: 3px;
+	text-align: center;
+}
+
+#myparcels {
+	margin: 0px;
+}
+
+	#myparcels img {
+		width: 22px;
+		margin: -5px 0px;
+	}
+
+table.topwrapper {
+	width: 800px;
+}
+
+	table.topwrapper td.summary {
+		width: 450px;
+		padding-top: 20px;
+		vertical-align: top;
+	}
+	
+		table.topwrapper td.summary table td.received {
+			width: 185px;
+		}
+		
+		table.topwrapper td.summary table td.label,
+		table.topwrapper td.summary table td.value {
+			clear: both;
+			font-weight: bold;
+			font-size: 14px;
+			color: #AAAAAA;
+		}
+		
+		table.topwrapper td.summary table td.value {
+			color: #058fd3;
+		}
+
+	table.topwrapper td.form,
+	table.topwrapper td.form table {
+		width:350px;
+	}
+	
+		table.topwrapper td.form table td.drop {
+			width: 200px;
+			text-align: right;
+		}
+		
+			table.topwrapper td.form table td.drop select {
+				width: 200px;
+				margin-top: 10px;
+			}
+			
+		table.topwrapper td.form table td.submit {
+			text-align: left;
+		}
+		
+#infoLink {
+	background: url(../../../images/help_icon.png) white top left no-repeat;
+}
+		
+/*** Blanket ***/
+#blanket {
+	background-color: #111;
+	opacity: 0.60;
+	filter: alpha(opacity=60);
+	position: absolute;
+	z-index: 9001;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100% !important;
+}
+	
+#packageAlreadyPickedUp {
+	display: none;
+}

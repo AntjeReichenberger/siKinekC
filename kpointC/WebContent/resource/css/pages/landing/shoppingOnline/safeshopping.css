@@ -1,0 +1,153 @@
+body{
+		margin:0px;
+		padding:0px;																	
+		background-image:url('../../../../images/landing/shoppingOnline/safeshopping_bg.jpg');
+		background-repeat:no-repeat;
+		background-position:center top; 
+		background-color:#3477DA;	
+		text-algin:center;
+}
+#container{			
+		font-family: Arial, Helvetica, sans-serif;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		width:800px;
+		display:block;
+}
+			
+#container #header{					
+		margin-top:13px;
+		color:white;	
+}
+#container #header h1{
+		font-size: 43px;
+		font-weight:normal;
+		padding:0ps;
+		margin:0px;
+}
+#container #header h3{
+		font-size: 18px;
+		font-weight:normal;
+		width:470px;	
+		padding:0ps;
+		margin:15px;
+		margin-left:auto;
+		margin-right:auto;
+}
+			
+#container #maincontent{
+		color:white;
+}
+
+#container #maincontent #bubble{
+		width:420px;	
+		line-height:18px;	
+		margin-top:275px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+}			
+
+#container #maincontent #bubble #bubblemaintext{
+		font-size:15px;
+		font-weight:bold;
+}
+
+#container #maincontent #bubble #bubblefootertext{
+		margin-top:10px;
+		font-size:13px;
+		font-weight:normal;
+}
+			
+		
+			
+#container #maincontent #maincontentsearchboxtitle{
+		margin-top:55px;
+		font-weight:normal;
+		font-size:14px;
+}
+			
+#container #maincontent #maincontentsearchbox{
+		margin-top:10px;
+}			
+			
+#container #maincontent #kplogo{
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:20px;
+		width:200px;				
+}
+			
+#container #maincontent #kplogo A{
+		text-decoration:none;
+		border:none;
+		color:#ffffff;
+}
+			
+#container #maincontent #kplogo img{
+		vertical-align:middle;
+		border:none;
+}
+
+#container #maincontent #kplogo div{
+		font-size:13px;
+		display:inline;		
+		font-size:20px;	
+		vertical-align:middle;
+}
+			
+#container #footer{
+		font-size:10px;
+		margin-top:15px;
+		color:white;
+}
+			
+#container #footer .bullet{
+		margin:2px;				
+}
+			
+#container #footer a:link, a:visited, a:active{
+		color:white;
+		text-decoration: underline;				
+}
+			
+#container #footer A:hover {
+		text-decoration: none;
+}			
+			
+#container #maincontent #maincontentsearchbox #searchbtn{
+		background: transparent url('../../../../images/landing/shoppingOnline/safeshopping_searchbtn.jpg') no-repeat top;				
+		display:inline-block;
+		border:0px;
+		width:55px;
+		cursor:pointer;
+		padding:0px;
+		margin:0px;
+		height:30px;
+		vertical-align: top;
+		margin-left:-5px;
+}
+			
+#container #maincontent #maincontentsearchbox  #postalCode{
+		background: transparent url('../../../../images/landing/shoppingOnline/safeshopping_searchbox.jpg') no-repeat;
+		border:none;
+		width:157px;
+		height:24px;
+		padding:2px;		
+		padding-top:5px;
+		margin-left:5px;
+		text-align:center;
+		font-size:17px;
+}
+
+#container #maincontent #dropshadow{
+		margin-top:7px;
+}
+			
+#container #maincontent #message{
+		width:300px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:100;
+}			

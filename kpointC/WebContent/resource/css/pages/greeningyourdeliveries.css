@@ -1,0 +1,70 @@
+/*** General Styles ***/
+#content.green h1 { 
+	color: #138939; 
+}
+
+#content.green h3 { 
+	font-size: 20px; 
+	font-weight: bold;
+	color: #138939; 
+}
+	
+#content.green hr {
+	clear: both; 
+	margin: 50px 0;
+	color: #bfddad; 
+	background: #bfddad; 
+	border-color: #bfddad; 
+}	
+
+#content.green strong { 
+	color: #666; 
+}
+
+#content.green a:link,
+#content.green a:visited { 
+	color: #138939; 
+	border-color: #138939; 
+}
+
+#content.green .floatRight { 
+	margin: 0 0 30px 40px; 
+}
+
+#content.green .floatLeft { 
+	margin: 0 40px 30px 0; 
+}
+
+
+/*** Content Section Styles ***/
+#greeningdeliveries div.content { 
+	float: left; 
+	width: 580px;
+	margin: 0 45px 0 0; 
+}
+				
+				
+/*** Sidebar Styles ***/
+#greeningdeliveries div.sidebar { 
+	float: left; 
+	width: 240px;
+	color: #666; 
+}
+
+	#greeningdeliveries div.sidebar div.didyouknow { 
+		padding: 0 20px 20px 20px;
+		background: url(../../images/green/greeningcorporate_sidebar_bg.jpg) bottom left no-repeat; 
+	}	
+
+	#greeningdeliveries div.sidebar div.downloads { 
+		padding: 20px; 
+	}
+	
+		#greeningdeliveries div.sidebar div.downloads a:link,
+		#greeningdeliveries div.sidebar div.downloads a:visited { 
+			display: block;
+			padding: 0 0 0 35px; 
+			line-height: 33px; 
+			background: url(../../images/green/icon_downloads.jpg) center left no-repeat;
+			border: none; 
+		}

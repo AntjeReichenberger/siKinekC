@@ -1,0 +1,14 @@
+/************* IE8 FIXES & STYLES ***/
+
+ul#maptabs {
+	top: 27.5px;
+	right: 0px;
+	z-index: 1200;
+}
+
+#searchWrapper #legend span#default {
+	padding-top:11px;
+    padding-right:0; 
+	padding-left:50px; 	
+	padding-bottom:0px;
+}

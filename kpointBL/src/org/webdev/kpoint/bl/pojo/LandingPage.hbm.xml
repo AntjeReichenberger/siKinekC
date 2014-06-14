@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.LandingPage" table="landingpages">
+		<id name="landingPageId" type="java.lang.Integer" column="landingPageId" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		<property name="kpIdentifier" type="java.lang.String">
+			<column name="kpIdentifier" />
+		</property>
+		<property name="kpName" type="java.lang.String">
+			<column name="kpName" />
+		</property>
+		<property name="prefix" type="java.lang.String">
+			<column name="prefix" />
+		</property>	
+		<property name="location" type="java.lang.String">
+			<column name="location" />
+		</property>		
+		<property name="stateProvName" type="java.lang.String">
+			<column name="stateProvName" />
+		</property>	
+		<property name="nationality" type="java.lang.String">
+			<column name="nationality" />
+		</property>		
+		<property name="templateName" type="java.lang.String">
+			<column name="templateName" />
+		</property>			
+		<property name="metaTagKeyword" type="java.lang.String">
+			<column name="metaTagKeyword" />
+		</property>		
+	</class>
+	
+</hibernate-mapping>

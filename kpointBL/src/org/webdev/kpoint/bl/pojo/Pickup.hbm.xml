@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.Pickup" table="pickup">
+		<id name="pickupId" type="java.lang.Integer"
+			column="Id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+
+		<property name="userId" type="java.lang.Integer" column="createdByUserId"/>
+		
+		<property name="app" type="java.lang.String" column="createdByApplication"/>
+		
+		<property name="transactionId" type="java.lang.String" />
+		
+		<property name="pickupDate" type="java.util.Date" />
+		
+		<many-to-one name="kinekPoint" class="org.webdev.kpoint.bl.pojo.KinekPoint" column="kinekPointId" lazy="false"/>
+		
+		<many-to-one name="consumer" class="org.webdev.kpoint.bl.pojo.User" column="consumerId" lazy="false"/>
+		
+		<set name="packages" table="kppackage" cascade="all" lazy="false">
+           <key column="pickupId"/>
+           <one-to-many class="org.webdev.kpoint.bl.pojo.Package"/>
+	    </set>		
+	</class>
+</hibernate-mapping>

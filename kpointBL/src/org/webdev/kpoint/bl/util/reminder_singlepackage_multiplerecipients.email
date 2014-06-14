@@ -1,0 +1,30 @@
+<br/>
+<p><font size="3" color="#777777"><b>Dear attb_user_name</b>,</font></p>
+
+<p><font size="2" color="#777777">
+	We would like to remind you that on attb_delivery_date, attb_courier delivered your package from attb_shipped_from to 
+	the attb_depot_name KinekPoint located at attb_depot_address.  You now have attb_days_remaining days to pick 
+	up your package before it is deemed abandoned.
+</font></p>
+
+<p><font size="2" color="#777777">
+	Due to a labeling error the sole recipient for this delivery is undetermined.
+	If you ordered a package and had it shipped to the attb_depot_name KinekPoint, you may now pick up your package.
+</font></p>
+
+<p><font size="2" color="#777777">
+	Please be ready to provide your Kinek# along with a government issued photo ID. 
+	In the event there is further verification required you may be required to present 2 pieces of ID for security 
+	purposes and the KinekPoint will also require a proof of purchase be presented to verify you are the correct recipient.
+</font></p>
+
+<p><font size="2" color="#777777">Please note: if this email was sent to you in error or you have already picked up your package, please disregard this notice.</font></p>
+
+<p>
+	<font size="2" color="#777777"><b>attb_coupon_title</b></font><br/>
+	<font size="2" color="#777777">attb_coupon_image</font>
+</p>
+
+<p><font size="2" color="#777777">Sincerely,</font></p>
+
+<p><font size="2" color="#777777"><b>Kinek Staff</b></font></p>

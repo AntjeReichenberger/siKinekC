@@ -1,0 +1,200 @@
+/*** General Styles ***/
+body,html {
+	margin:0px;
+	padding:0px;
+	color:#fff;
+	font-family:arial,sans-serif;
+	text-align:center;
+	font-size:13px;
+	background-color:#62655a;
+	background-image:url('../../../images/landing/military/background.jpg');
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+	padding-top: 15px;
+}
+
+h2 {
+	font-size: 23px;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+}
+
+h3 {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+}
+
+br.clear {
+	clear: both;
+}
+
+#wrapper {
+	width: 1111px;
+	margin: 0px auto;
+	padding-top: 10px;
+}
+
+
+/*** Header ***/
+#header {
+	height:109px;
+	width:100%;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	background-image:url('../../../images/landing/military/titlebg.jpg');
+	background-repeat:repeat-x;
+	background-position:center top;
+}
+
+
+/*** Flash Section ***/
+#trio {
+	margin:0px 0px 0px 0px;
+	padding:0px;
+}
+	
+#trioAlternative {
+	margin:0px auto;
+	padding:0px;
+	height:227px;
+	width:628px;
+	background-image:url('../../../images/landing/military/trio.jpg');
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+
+
+/*** Bubble Section ***/
+#bubble {
+	width:545px;
+	height:199px;
+	margin:13px auto;
+	text-align:left;
+	padding-top:10px;
+	padding-left:50px;
+	color:#454b33;
+}
+
+*html #bubble {
+	padding-left: 30px;
+}
+
+
+	#bubble ul {
+		font-size: 13px;
+		font-weight: normal;
+		margin: 15px 0px 0px 0px;
+		padding: 0px;
+	}
+	
+	#bubble ul li {
+		margin: 0px;
+		padding: 0px;
+		margin-top: 1px;
+		margin-left: 19px;
+	}
+
+	#bubble a {
+		color: #454B33;
+		text-decoration: none;
+		display: block;
+		margin: 10px 50px 0 0;
+		text-align: center;
+	}
+	
+		#bubble a:hover {
+			text-decoration:underline;
+		}
+
+	#bubble .listintro {
+		font-size: 14px;
+		font-weight: bold;
+		display: block;
+		margin-top: 0px;
+		padding-left: 5px;
+	}
+
+	
+/*** Signup Section ***/
+#signup a {
+	clear:both;
+	display:block;
+	position:relative;
+	height:50px;
+	width:202px;
+	margin:0px auto;
+	top:-40px;
+	background-image:url('../../../images/landing/military/btn_signup.jpg');
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+
+*html #signup a {
+	top: -30px;
+}
+
+	#signup a:hover {
+		background-image:url('../../../images/landing/military/btn_signup_hover.jpg');
+	}
+	
+
+/*** Footer Section ***/
+#footer {
+	margin:0px auto;
+	font-size:12px;
+	font-weight:normal;
+	width:300px;
+	color:#000;
+}
+
+*html #footer {
+	margin-top: 10px;
+}
+
+#logo a {
+	clear:both;
+	display:block;
+	position:relative;
+	height:27px;
+	width:101px;
+	margin:0px auto;
+	background-image:url('../../../images/landing/military/logo.jpg');
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+
+#footlinks {
+	float: left;
+	margin-top: 0px;
+}
+
+#copyright {
+	float: left;
+}
+
+#footlinks a, 
+#footlinks a:link,
+#footlinks a:active, 
+#footlinks a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+#footlinks a:hover {
+	text-decoration: underline;
+}
+
+.linkdivider {
+	padding-left: 3px;
+	padding-right: 3px
+}

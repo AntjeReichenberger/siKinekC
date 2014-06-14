@@ -1,0 +1,22 @@
+/*** Download Box Styles ***/
+div.downloadBox {
+	clear: right;
+	width: 130px; 
+	margin: 0 0 30px 30px; 
+	text-align: left; 
+}
+				
+	div.downloadBox img { 
+		margin: 0 0 5px 0; 
+	}
+				
+	div.downloadBox p { 
+		margin: 0 0 10px 0; 
+	}
+				
+	div.downloadBox a:link,
+	div.downloadBox a:visited { 
+		font-size: 10px;
+		color: #058fd3;
+		border-color: #058fd3; 
+	}

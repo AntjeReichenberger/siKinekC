@@ -1,0 +1,38 @@
+div#prospects {
+	width: 210px;
+}
+
+input#notifyMe {
+	float: left;
+	margin-top: 10px;
+	margin-left: 0px;
+	width: auto;
+}
+
+input#createProspect {
+	width: 50px;
+}
+
+select {
+	width: 216px;
+}
+
+#notifyMeLabel {
+	margin-top: 5px;
+	width: 200px;
+}
+
+#returnLink {
+	float: right;
+	margin-right: 30px;
+	position: relative;
+	top: -30px;
+}
+
+#notifyMeDiv {
+	margin-top: 14px;
+}
+
+label {
+	width: 300px;
+}

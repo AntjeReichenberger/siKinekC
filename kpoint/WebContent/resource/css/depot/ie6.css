@@ -1,0 +1,39 @@
+/************* IE6 FIXES & STYLES ***/
+ul#nav li a:link,
+ul#nav li a:visited { line-height: 49px; }
+
+#content.wide { padding: 0; }
+
+#helpPanel #helpVideo { margin: 0 0 -3px 0; }
+
+form ol li.half,
+form ul li.half { width: 45.5%; }
+
+button { width: 190px; }
+
+	button span { margin: 0; }
+
+#sidebar #checklist div.content ol li { padding: 0 0 0 5px; }
+
+#interface ul#steps li { margin: 0 0 -5px 0; }
+
+ul#nav li { 
+	float: left; 
+	margin: 0 0 -5px 0; }
+	
+ul.sf-menu li li a .sf-sub-indicator { 
+	right: 12px;
+	top: 6px; }
+	
+	
+#searchWrapper #results ul#list li a span {
+	background: url(../../icons/marker_inactive_ie6.png) top left no-repeat; }
+								
+#searchWrapper #results ul#list li a:hover span { 
+	background-image: url(../../icons/marker_active_ie6.png); }
+
+#searchWrapper #legend span#default { 
+	background: url(../../icons/marker_inactive_ie6.png) top left no-repeat; }
+	
+#searchWrapper #legend span#home { 
+	background: url(../../icons/marker_home_ie6.png) top left no-repeat; }	

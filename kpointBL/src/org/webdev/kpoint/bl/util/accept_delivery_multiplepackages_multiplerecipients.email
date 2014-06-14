@@ -1,0 +1,52 @@
+<!-- START OF full width Table -->
+<table width="630" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+	<tr>
+	  <td height="50" colspan="2" align="left" valign="middle" bgcolor=
+	  "#FCFCFC" style="font-family: Helvetica, Arial, sans-serif; color: #313035; font-size: 22px; letter-spacing: -1px;">
+		Delivered!
+	  </td>
+	</tr>
+	<tr>
+	  <td width="630" align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px; color: #757887; line-height: 18px;">
+		Hi attb_name,<br /><br />
+		attb_numberofparcels of your packages were delivered to the attb_depot_name
+		located at attb_depot_address. Your packages
+		can be picked up at the customer service desk. A summary is shown below:<br /><br />
+		
+		<table border="0" width="100%" cellpadding="2" style="border-collapse:collapse;">
+			<tr>
+				<td width="150px" align=\"center\" style="border:1px solid #777777;">
+				<b>Shipped From</b></td>
+				<td align=\"center\" style="border:1px solid #777777;">
+				<b>Courier</b></td>
+			</tr>
+			attb_cells_stores_and_courier
+		</table><br/>
+		
+		Due to a labelling error the sole recipient for this delivery is undetermined. If you ordered a package and had it shipped 
+		to the attb_depot_name KinekPoint, you may now pick up your package.<br /><br />
+		 
+		Please be ready to provide your Kinek# along with a government issued photo ID. In the event there is further verification required you may be required to present 2 pieces of 
+		ID for security purposes and the KinekPoint will also require a proof of purchase be presented to verify you are the correct recipient.<br />
+		<br />
+		
+		<b>If this email was sent to you in error please disregard.</b><br /><br />
+		attb_coupon
+		
+		Have pricing, direction, or hours of operation questions? Just log into
+		your account and click on "Pricing and Hours" for this KinekPoint to
+		view those details.<br />
+		<br />
+		Thanks for using Kinek!<br />
+		<br />
+		If you have any questions, check out our FAQs or give us a shout at
+		<a href="mailto:support@kinek.zendesk.com" style="color:#2d78d2;">support@kinek.zendesk.com</a>!
+	  </td>
+	</tr>
+	<tr>
+	  <td style="font-family: Helvetica, sans-serif; font-size: 13px; color: #373737; line-height: 16px;"></td>
+	</tr>
+  </tbody>
+</table>
+<!-- END OF full width Table -->

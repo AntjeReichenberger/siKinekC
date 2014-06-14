@@ -1,0 +1,97 @@
+/*** Normal Messages ***/
+div#message, 
+p#message {
+	text-align: left;
+	margin: 0 16px 20px 16px;
+	padding: 15px 20px 15px 45px;
+	font-size: 11px; 
+}
+	
+	#message.success {
+		color: #537917;
+		background: url(../../icons/icon_success.png) center no-repeat #e0f6bd;
+		background-position: 15px 50%; /* x-pos y-pos */		
+		border: 1px solid #aad468; 
+	}
+		
+	#message.warning { 
+		color: #c67109;
+		background: url(../../icons/icon_warning.png) center no-repeat #fff6bf;
+		background-position: 15px 50%; /* x-pos y-pos */		
+		border: 1px solid #e0a72d; 
+	}
+		
+	#message.error { 
+		color: #c2462c;
+		background: url(../../icons/icon_error.png) center no-repeat #ffe1d9;
+		background-position: 15px 50%; /* x-pos y-pos */		
+		border: 1px solid #f98268; 
+	}
+		
+	#message.completeProfileError { 
+		color: #c2462c;
+		background: url(../../icons/icon_cancel.png) center no-repeat #ffe1d9;
+		background-position: 15px 50%; /* x-pos y-pos */		
+		border: 1px solid #f98268; 
+	}
+
+	#message p {
+		margin: 5px 0; 
+	}
+
+
+/*** Browser Compatibility Messages ***/
+div#browsercompatibility,
+p#browsercompatibility {
+	text-align: left;
+	margin: 0 16px 20px 16px;
+	padding: 15px 20px 15px 45px;
+	font-size: 11px; 
+}
+
+	#browsercompatibility.warning { 
+		color: #c67109;
+		background: url(../../icons/icon_warning.png) center no-repeat #fff6bf;
+		background-position: 15px 50%; /* x-pos y-pos */		
+		border: 1px solid #e0a72d; 
+	}
+
+	#browsercompatibility p { 
+		margin: 5px 0; 
+	}
+	
+/*** Growls ***/
+div.growl {
+	background-color:#058FD3;
+	border:1px solid #112485;
+	color:#FFFFFF;
+	font-size:14px;
+	height:40px;
+	opacity:0.8;
+	padding:15px 0;
+	position:absolute;
+	right:220px;
+	text-align:center;
+	top:180px;
+	width:180px;
+	display: none;
+	z-index: 999;
+}
+
+/*** Growls ***/
+div.largeGrowl {
+	background-color:#058FD3;
+	border:1px solid #112485;
+	color:#FFFFFF;
+	font-size:14px;
+	height:120px;
+	opacity:0.8;
+	padding:15px 0;
+	position:absolute;
+	right:220px;
+	text-align:center;
+	top:180px;
+	width:180px;
+	display: none;
+	z-index: 999;
+}

@@ -1,0 +1,195 @@
+/************* FORMS STYLESHEET ***/
+form { 
+	font-size: 11px; }
+
+#content form { clear: both; }
+		
+	fieldset { border: none; }
+	
+	
+	/*** LIST STYLES ***/
+	form ol, 
+	form ul { }
+	
+	form ol.half,
+	form ul.half {
+		float: left; 
+		width: 46%; 
+		vertical-align: top; }
+	
+		form ol li, 
+		form ul li {	
+			float: left;
+			width: 96%; 
+			padding: 1% 2%;
+			vertical-align: top; }
+			
+		form ol li.rightalign, 
+		form ul li.rightalign {
+			float: right; 
+			text-align: right; }			
+			
+		form ol li.focused,
+		form ul li.focused { background: #fefce9; }	
+		
+		form ol li.error,
+		form ul li.error { background: #feeceb; }
+		
+		form ol li.half,
+		form ul li.half { width: 46%; }
+		
+	
+	/*** GENERIC STYLES ***/	
+	.formContent { 
+		display: block;
+		margin: 0 16px 0 16px; }	
+		
+		
+	/*** FORM ELEMENT STYLES ***/
+	label {
+		display: block;
+		height: 5px;
+		font-size: 12px;
+		color: #555; }
+	
+	small.validation { 
+		display: block;
+		margin: 8px 0 0 8px; 
+		color: #fff; }
+	
+	form ol li.rightalign a:link, 
+	form ol li.rightalign a:visited,
+	form ul li.rightalign a:link,
+	form ul li.rightalign a:visited { 
+		float: right;
+		margin: 8px 0 0 0;
+		padding: 0; }
+	
+	form ol li.rightalign button,
+	form ul li.rightalign button { display: inline-block; }
+	
+	form ol li.focused small.validation,
+	form ul li.focused small.validation { color: #be8535; }
+	
+	form ol li.error small.validation,
+	form ul li.error small.validation { color: #aa3434; }
+	
+	form td.focused small.validation,
+	form td.focused small.validation { color: #be8535; }
+	
+	form td.error small.validation,
+	form td.error small.validation { color: #be8535; }
+	
+	form ol li.error label,
+	form ul li.error label { color: #aa3434; }
+	
+	form li input, form td input,
+	form li select, form td select,
+	form li textarea, form td textarea {
+		width: 98%;
+		padding: 5px;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		color: #666;
+		background: url(../../images/input_bg.jpg) bottom left repeat-x #fff;
+		border-top: 1px solid #7d7d7d;
+		border-right: 1px solid #c4c4c4;
+		border-bottom: 1px solid #dedede;
+		border-left: 1px solid #c4c4c4; }
+	
+
+	
+	ol.half li.half input,
+	ul.half li.half input { width: 92%; }
+	
+	/*** INPUT STYLES ***/
+	input.checkbox { 
+		width: auto;
+		margin: 0 0 0 10px;
+		padding: 0;
+		background-image: none;
+		background: transparent;
+		border: none; }
+	
+	input.first { margin: 0; }		
+	
+	/*** SELECT STYLES ***/
+	form li select { 
+		width: 99%; 
+		padding: 4px 5px; }	
+		
+	form li select.date { 
+		width: auto; 
+		margin: 0 5px 0 0; }	
+		
+		select option { padding: 0 10px 0 0; }
+	
+	
+	/*** TEXTAREA STYLES ***/
+	form li textarea { width: 98.5%; }	
+	
+	form li #license {
+		overflow-y: visible;
+		overflow-x: hidden;
+		display: inline-block;
+		width: 97%;
+		height: 300px;
+		padding: 10px;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		color: #666;
+		background: url(../../images/input_bg.jpg) bottom left repeat-x #fff;
+		border-top: 1px solid #7d7d7d;
+		border-right: 1px solid #c4c4c4;
+		border-bottom: 1px solid #dedede;
+		border-left: 1px solid #c4c4c4; }
+	
+	
+	/*** BUTTON STYLES ***/
+	button { margin: 0 0 0 10px; }
+	
+	input.button { 
+		display: inline-block;
+		width: 200px;
+		height: 42px;
+		margin: 0 0 0 10px;
+		padding: 0 0 3px 0;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 42px;
+		color: #fff;
+		cursor: pointer;
+		background: url(../../images/button_enabled.jpg) center left no-repeat;
+		border: none; 
+		vertical-align: middle;}
+	
+	input.buttonLink {
+		display: inline-block;
+		width: auto;
+		margin: 0;
+		padding: 0;
+		line-height: 42px;
+		text-align: right;
+		text-decoration: underline;
+		cursor: pointer; 
+		cursor: hand; /* hack to show pointer in both IE & FF */
+		border: none;
+		background: none; 
+		vertical-align: middle;}
+	
+	input.buttonLink:hover {
+		color:#058fd3; }
+		
+	input.buttonDisabled { 
+		display: inline-block;
+		width: 200px;
+		height: 42px;
+		padding: 0 0 3px 0;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 42px;
+		color: #fff;
+		cursor: default;
+		background: url(../../images/button_disabled.jpg) center left no-repeat;
+		border: none; }
+		

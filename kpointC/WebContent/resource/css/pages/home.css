@@ -1,0 +1,331 @@
+/*** Search Styles ***/
+#homeSearchWrapper {
+	position: relative;
+	display: block;
+	z-index: 1;
+	width: 1000px; 
+	margin: 0 auto 0px auto;
+	padding: 0; 
+	text-align:center;
+}
+
+	#homeSearchWrapper p { 
+		margin: 0 0 8px 0;
+		color: #777; 
+	}
+		
+	#homeSearchWrapper.signedin {
+		top:0px;
+	}
+		
+	#homeSearchWrapper #homeSearch { 
+		position: relative;
+		display: block;
+		width: 980px;
+		height: 348px;
+		margin: -2px auto 0px auto;
+		padding:0px;
+		text-align:left;
+		background: url(../../images/bigbluebox.jpg) no-repeat;
+	}
+	
+	#homeSearchWrapper #affiliate {
+		clear: both;
+		margin-top: 10px;
+		margin-left: 10px;
+		width: 980px;
+		height: 66px;
+		padding-top: 15px;
+		background: #fefefe url(../../images/home-logos.png) left top no-repeat;
+	}
+	
+		#homeSearchWrapper #affiliate a {
+			border: none;
+			margin-left: 22px;
+			margin-right: 22px;
+		}
+
+	#homeSearchWrapper #videoWrapper {
+		position: absolute;
+		float:right;
+		top: 27px;				
+		right:66px;
+		text-align: center; 
+	}
+				
+		#homeSearchWrapper #videoWrapper a:link,
+		#homeSearchWrapper #videoWrapper a:visited { 
+			display: block;
+			margin: 14px 0 0 0;
+			font-size: 15px;
+			font-weight: bold;
+			text-decoration: none; 
+			color: #fff;
+			border: none; 
+		}
+				
+
+/*** Top Content Styles ***/
+#homeSearchWrapper #homeSearch #homeSearchContent { 
+	position: relative;
+	top: 0px;
+	left:0px;
+	width: 980px; 
+	display:block;
+	z-index:897;
+	padding-top:41px;
+}
+				
+body.signedin #homeSearchWrapper #homeSearch #homeSearchContent {
+	padding-top:40px;
+}
+	
+	#homeSearchWrapper #homeSearch #kbox {
+		float: left;
+		position: relative;
+		top: 35px;
+		left: 80px;
+	}
+	
+		#homeSearchWrapper #homeSearch #kbox a {
+			width: 271px;
+			height: 242px;
+			display: block;
+			text-decoration: none;
+			border: none;
+			background: url(../../images/wikVideoSnap2.jpg) 0px 0px no-repeat;
+		}
+		
+			#homeSearchWrapper #homeSearch #kbox a:hover {
+				background: url(../../images/wikVideoSnap2_hover.jpg) 0px 0px no-repeat;
+			}
+
+	#homeSearchWrapper #homeSearch #kmessage {
+		display: block;
+		width: 530px;
+		height: 200px;
+		position: relative;
+		top: 10px;
+		left: 222px;
+		float: left;
+		font-family: arial;
+		color: #fff;
+	}
+	
+		#homeSearchWrapper #homeSearch #kmessage a {
+			margin-top: 23px;
+			display: block;
+			width: 202px;
+			height: 50px;
+			background: url(../../images/blueboxsignup.jpg) center right no-repeat;
+		}
+		
+			#homeSearchWrapper #homeSearch #kmessage a:hover {
+				background: url(../../images/blueboxsignup_hover.jpg) center right no-repeat;
+			}
+	
+		#homeSearchWrapper #homeSearch #kmessage .line1 {
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		
+			#homeSearchWrapper #homeSearch #kmessage .line1 strong {
+				color: #fff;
+				font-weight: normal;
+			}
+		
+		#homeSearchWrapper #homeSearch #kmessage .line2 {
+			font-size: 38px;
+			margin-bottom: 10px;
+		}
+
+		#homeSearchWrapper #homeSearch #kmessage .line3 {
+			font-size: 14px;
+			width: 420px;
+		}
+		
+			#homeSearchWrapper #homeSearch #kmessage .line3 strong {
+				color: #fff;
+			}		
+			
+	#homeSearchWrapper #homeSearch h1 { 
+		margin: 0 0 5px 0;
+		font-size: 24px;
+		color: #fff; 
+	}
+				
+		#homeSearchWrapper #homeSearch h1 em { 
+			color: #fff; 
+		}
+				
+	#homeSearchWrapper #homeSearch p { 
+		font-size: 15px; 
+		color: #fff; 
+	}	
+	
+		#homeSearchWrapper #homeSearch p#hotLocations { 
+			margin: 3px 0 0 10px;
+			font-size: 12px; 
+			color: #fff; 
+		}
+			
+			#homeSearchWrapper #homeSearch p#hotLocations strong { 
+				color: #fff; 
+			}
+			
+			#homeSearchWrapper #homeSearch p#hotLocations a:link,
+			#homeSearchWrapper #homeSearch p#hotLocations a:visited {
+				margin: 0 3px;
+				padding: 7px 5px;
+				text-decoration: none;
+				color: #fff;
+				background: url(../../images/hotLocations_bg.jpg) center left repeat-x;
+				border: none; 
+			}
+			
+	#homeSearchWrapper #homeSearch form { 
+		margin: 20px 0 0 0;
+		z-index:899;
+	}
+			
+		#homeSearchWrapper #homeSearch form ol li { 
+			padding: 0; 
+		}
+			
+			#homeSearchWrapper #homeSearch form ol li.focused { 
+				background: none; 
+			}
+			
+			#homeSearchWrapper #homeSearch form ol li input { 
+				position:relative;
+				float: left;
+				width: 300px;
+				margin: 0 10px 0 0;
+				padding: 1px;
+				font-size: 12px; 
+				height:35px;
+				z-index:900;
+			}
+					
+				#homeSearchWrapper #homeSearch form ol li input#submit { 
+					float: left;
+					width: 28px; 
+					height: 26px;
+					font-size: 0px;
+					line-height: 0px;
+					text-indent: -9999px;
+					cursor: pointer; 
+					margin-top:0px;
+					background: url(../../images/homeSearch_button.jpg) no-repeat;
+					border: none; 
+				}
+				
+				
+/*** Bottom Content Styles ***/
+#homeBoxes {
+	width:980px;
+	height: 260px;
+	margin: 0px auto 0px auto;
+	padding:0px;
+	text-align:left;
+	background: url(../../images/bigwhitefader.jpg) bottom left no-repeat; 
+}
+
+	#homeBoxes #tweetandetail {
+		float:left;
+		display: block;
+		width: 371px;
+		height: 260px;
+		margin:0px;
+		padding:0px;
+		padding-top:25px;
+	}
+		
+		#homeBoxes #tweetandetail #followUs {
+			text-align: center;
+			position: relative;
+			top: 30px;
+		}
+		
+			#homeBoxes #tweetandetail #followUs a.twitterfollow {
+				border: none;
+				position: relative;
+				top: -5px;
+			}
+			
+		#homeBoxes #tweetandetail #solutionProvider {
+			text-align: center;
+			position: relative;
+			top: 80px;
+			margin-right: -14px; /* align to right of twitter logo */
+		}
+			
+			#homeBoxes #tweetandetail #solutionProvider a {
+				text-decoration: none;
+				border:none;
+			}
+
+	#homeBoxes #shiptoborder {
+		float: left;
+		display: block;
+		width: 320px;
+		height: 260px;
+		margin:0px;
+		padding:0px;
+		padding-top:25px;
+		padding-left:0px;
+		background: url(../../images/canada_us_package.png) 20px 20px no-repeat;
+	}
+		
+		#homeBoxes #shiptoborder p {
+			font-size: 14px;
+			color: #666; 
+			padding-left:110px;
+			padding-top:7px;
+			width:160px;
+		}
+		
+		#homeBoxes #shiptoborder a {
+			clear:both;
+			float:left;
+			color: #0099cc; 
+			font-size: 13px;	
+			border: none; 
+		}	
+		
+		#homeBoxes #shiptoborder a:hover { 
+			text-decoration: underline; 
+		}
+
+	#homeBoxes #becomeakinekpoint {	
+		float: left;
+		display: block;
+		width: 285px;
+		height: 260px;
+		margin:0px;
+		padding:0px;
+		padding-top:25px;
+		padding-left:0px;
+		color: #666;
+		background: url(../../images/basket.jpg) 20px 25px no-repeat;
+	}
+				
+		#homeBoxes #becomeakinekpoint p{
+			font-size: 14px;
+			color: #666; 
+			padding-left:110px;
+			padding-top:7px;
+			width:160px;
+		}
+		
+		#homeBoxes #becomeakinekpoint a {
+			clear:both;
+			float:left;
+			color: #0099cc; 
+			font-size: 13px;	
+			border: none; 
+		}	
+		
+		#homeBoxes #becomeakinekpoint a:hover { 
+			text-decoration: underline; 
+		}

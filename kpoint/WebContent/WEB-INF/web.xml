@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-app_2_3.xsd">
+	
+	<filter>
+		<filter-name>StripesFilter</filter-name>
+		<filter-class>net.sourceforge.stripes.controller.StripesFilter</filter-class>
+		<init-param>
+			<param-name>ActionResolver.Packages</param-name>
+			<param-value>org.webdev.kpoint.action</param-value>
+		</init-param>
+		<init-param>
+			<param-name>Extension.Packages</param-name>
+			<param-value>
+        		org.webdev.kpoint.extensions, org.stripesbook.reload.extensions, net.sourceforge.stripes.integration.spring
+      		</param-value>
+		</init-param>
+		<init-param>
+			<param-name>Interceptor.Classes</param-name>
+				<param-value>
+	                org.webdev.kpoint.interceptor.SecurityInterceptor,
+	                org.webdev.kpoint.interceptor.XssInterceptor,
+	                org.webdev.kpoint.interceptor.LoggingInterceptor
+				</param-value>
+		</init-param>
+ 		<init-param>
+			<param-name>TypeConverterFactory.Class</param-name>
+			<param-value>org.webdev.kpoint.converter.CustomTypeConverterFactory</param-value>
+		</init-param>
+		<init-param>
+			<param-name>ExceptionHandler.Class</param-name>
+			<param-value>org.webdev.kpoint.exception.KinekExceptionHandler</param-value>
+		</init-param>
+	</filter>
+
+	<servlet>
+		<servlet-name>DispatcherServlet</servlet-name>
+		<servlet-class>net.sourceforge.stripes.controller.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ConfigurationReader</servlet-name>
+		<servlet-class>org.webdev.kpoint.util.ConfigurationReader</servlet-class>
+		<init-param>
+			<param-name>path</param-name>
+			<param-value>../</param-value>
+		</init-param>
+		 <init-param>
+            <param-name>logback_filename</param-name>
+            <param-value>logback.kpoint.xml</param-value>
+        </init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+  	<servlet>
+    	<servlet-name>Jersey REST Service</servlet-name>
+    	<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    	<init-param>
+      		<param-name>com.sun.jersey.config.property.packages</param-name>
+      		<param-value>org.webdev.kpoint.rest</param-value>
+    	</init-param>
+    	<load-on-startup>1</load-on-startup>
+  	</servlet>
+  	
+  	<servlet-mapping>
+    	<servlet-name>Jersey REST Service</servlet-name>
+    	<url-pattern>/api/*</url-pattern>
+  	</servlet-mapping>
+  
+
+	<servlet>
+		<description>This is a listener for receiving payment notifications from Paypal.</description>
+		<display-name>IPNListener</display-name>
+		<servlet-name>IPNListener</servlet-name>
+		<servlet-class>org.webdev.kpoint.listener.IPNListener</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>IPNListener</servlet-name>
+		<url-pattern>/IPNListener</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description>This is a servlet that acts as manager for all daemons</description>
+		<display-name>DaemonManager</display-name>
+		<servlet-name>DaemonManager</servlet-name>
+		<servlet-class>org.webdev.kpoint.daemons.DaemonManager</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>CouponImageUploader</display-name>
+		<servlet-name>CouponImageUploader</servlet-name>
+		<servlet-class>
+		org.webdev.kpoint.util.CouponImageUploader</servlet-class>
+	</servlet>
+
+	<filter-mapping>
+		<filter-name>StripesFilter</filter-name>
+		<servlet-name>DispatcherServlet</servlet-name>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DispatcherServlet</servlet-name>
+		<url-pattern>*.action</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CouponImageUploader</servlet-name>
+		<url-pattern>/CouponImageUploader</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<session-config>
+		<session-timeout>60</session-timeout>
+	</session-config>
+</web-app>

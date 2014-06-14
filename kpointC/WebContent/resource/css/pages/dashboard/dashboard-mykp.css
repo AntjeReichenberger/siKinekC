@@ -1,0 +1,191 @@
+a#findakinekpoint {
+	color: #00AA00;
+}
+
+table th.pageTitle {
+	font-size: 28px;
+}
+
+table .highlight tr {
+	background: inherit !important;
+}
+
+table .highlight td {
+	background: inherit !important;
+}
+
+table#hours.highlight {
+	margin-left: 5px;
+}
+	
+	table#hours.highlight tbody {
+		background: #BEDAF1;
+	}
+		
+		table#hours.highlight tbody td {
+			padding-left: 2px;
+			background: #BEDAF1;
+		}
+	
+		table#hours.highlight tbody td.left{
+			background: url(../../../images/mykp-hours-top-left.png) white top left no-repeat !important;
+		}
+	
+		table#hours.highlight tbody td.right{
+			background: url(../../../images/mykp-hours-top-right.png) white top right no-repeat !important;
+		}
+	
+		table#hours.highlight tfoot td.left{
+			height: 12px;
+			background: url(../../../images/mykp-size-bottom-left.png) bottom left no-repeat !important;
+		}
+	
+		table#hours.highlight tfoot td.right{
+			height: 12px;
+			background: url(../../../images/mykp-size-bottom-right.png) bottom right no-repeat !important;
+		}
+
+table#pricing {
+	margin-bottom: 0px !important;
+}
+
+	table#pricing tfoot td {
+			height: 12px;
+	}
+
+table#pricing.highlightPricing {
+	
+}
+
+	table#pricing.highlightPricing thead tr th {
+		background: url(../../../images/mykp-pricing-top.png) white left no-repeat !important;
+	}
+	
+		table#pricing.highlightPricing tbody td.pricingleft {
+			background: #BEDAF1;
+		}
+	
+		table#pricing.highlightPricing tbody td.pricingright {
+			background: url(../../../images/mykp-pricing-middle.png) white -201px top repeat-y !important;
+		}
+	
+		table#pricing.highlightPricing tfoot td.pricingleft {
+			background: url(../../../images/mykp-size-bottom-left.png) left bottom no-repeat !important;
+		}
+	
+		table#pricing.highlightPricing tfoot td.pricingright {
+			background: url(../../../images/mykp-size-bottom-right.png) -25px bottom no-repeat !important;
+		}
+		
+table#pricing.highlightPricingAndAdditional {
+	
+}
+
+	table#pricing.highlightPricingAndAdditional thead tr th {
+		background: url(../../../images/mykp-pricing-top.png) white top left no-repeat !important;
+	}
+	
+		table#pricing.highlightPricingAndAdditional tbody td.pricingleft {
+			background: #BEDAF1;
+		}
+	
+		table#pricing.highlightPricingAndAdditional tbody td.pricingright {
+			background: url(../../../images/mykp-pricing-middle.png) white -201px top repeat-y !important;
+		}
+	
+		table#pricing.highlightPricingAndAdditional tfoot td.pricingleft {
+			height: 12px;
+			background: #BEDAF1;
+		}
+	
+		table#pricing.highlightPricingAndAdditional tfoot td.pricingright {
+			height: 12px;
+			background: url(../../../images/mykp-pricing-bottom.png) -186px bottom no-repeat !important;
+		}
+		
+div#detail-bottom.highlightPricingAndAdditional {
+	
+}
+		
+	div#detail-bottom.highlightPricingAndAdditional table th {
+		background: url(../../../images/mykp-add-top-pricing.png) white right no-repeat !important;
+	}
+	
+	div#detail-bottom.highlightPricingAndAdditional table td {
+		background: #BEDAF1;
+	}
+	
+	div#detail-bottom.highlightPricingAndAdditional table tfoot td {
+		padding: 0px;
+		height: 12px;
+		background: url(../../../images/mykp-add-bottom.png) white bottom left no-repeat !important;
+	}
+
+table#pricing.highlightSize {
+	
+}
+
+		table#pricing.highlightSize tbody td.sizeleft{
+			padding-left: 5px;
+			background: url(../../../images/mykp-hours-top-left.png) left top no-repeat !important;
+		}
+	
+		table#pricing.highlightSize tbody td.sizeright{
+			background: url(../../../images/mykp-hours-top-right.png) right top no-repeat !important;
+		}
+	
+		table#pricing.highlightSize tfoot td.sizeleft{
+			height: 12px;
+			background: url(../../../images/mykp-size-bottom-left.png) left bottom no-repeat !important;
+		}
+	
+		table#pricing.highlightSize tfoot td.sizeright{
+			height: 12px;
+			background: url(../../../images/mykp-size-bottom-right.png) right bottom no-repeat !important;
+		}
+
+table#pricing.highlightSizeAndAdditional {
+	
+}
+
+		table#pricing.highlightSizeAndAdditional tbody td.sizeleft {
+			padding-left: 5px;
+			background: url(../../../images/mykp-hours-top-left.png) left top no-repeat !important;
+		}
+	
+		table#pricing.highlightSizeAndAdditional tbody td.sizeright {
+			background: url(../../../images/mykp-hours-top-right.png) right top no-repeat !important;
+		}
+	
+		table#pricing.highlightSizeAndAdditional tfoot td.pricingright {
+			height: 12px;
+			background: url(../../../images/mykp-size-bottom.png) right bottom no-repeat !important;
+		}
+	
+		table#pricing.highlightSizeAndAdditional tfoot td.sizeleft {
+			height: 12px;
+			background: #BEDAF1;
+		}
+	
+		table#pricing.highlightSizeAndAdditional tfoot td.sizeright {
+			height: 12px;
+			background: #BEDAF1;
+		}
+		
+div#detail-bottom.highlightSizeAndAdditional {
+	
+}
+		
+	div#detail-bottom.highlightSizeAndAdditional table th {
+		background: url(../../../images/mykp-add-top-size.png) white left no-repeat !important;
+	}
+	
+	div#detail-bottom.highlightSizeAndAdditional table td {
+		background: #BEDAF1;
+	}
+	
+	div#detail-bottom.highlightSizeAndAdditional table tfoot td {
+		padding: 0px;
+		height: 12px;
+		background: url(../../../images/mykp-add-bottom.png) white left no-repeat !important;
+	}

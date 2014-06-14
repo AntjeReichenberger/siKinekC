@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.Organization" table="organization">
+		<id name="organizationId" type="java.lang.Integer"
+			column="organizationId" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<property name="description" type="java.lang.String">
+			<column name="description" />
+		</property>		
+		<property name="createdDate" type="java.util.Date">
+			<column name="createdDate"></column>
+		</property>
+								
+	</class>
+</hibernate-mapping>

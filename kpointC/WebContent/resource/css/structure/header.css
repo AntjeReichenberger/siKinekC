@@ -1,0 +1,174 @@
+/*** Header Styles ***/
+#header {
+	position: relative;
+	display: block;
+	padding: 0;
+	width: 924px;
+	height: 97px;
+	margin: 0 auto 0 auto;
+	padding: 0px 0px 0 0px; 
+	overflow-x: visible; 
+}
+
+body.home #header {
+	width: 980px;	
+}
+		
+/*** Logo Styles ***/
+#header a#logo {
+	z-index:100;
+	display: inline;
+	padding: 0; 
+	border: none; 
+	float: left;
+	margin-bottom: 20px;
+	position:relative;
+	top:0px; 
+	left:0px;
+}		
+
+body.home #header a#logo {
+	left:0px;
+}
+
+#header span#logo {
+	z-index:100;
+	display: inline;
+	padding: 0; 
+	border: none; 
+	float: left;
+	margin-bottom: 20px;
+	position:relative;
+	top:0px; 
+	left:0px;
+}		
+
+body.home #header span#logo {
+	left:0px;
+}
+/*** Top Navigation Styles ***/
+#header #topnav {
+	float:right;
+	color: #0099cc;
+	position:relative;
+	z-index:100; 
+}
+		
+	#header #topnav a, 
+	#header #topnav a:link, 
+	#header #topnav a:visited { 
+		font-size: 13px;
+		color: #0099cc; 
+		text-decoration:none;
+		border:none;
+	}
+	
+	#header #topnav a.last {
+		margin-right: 0px;
+	}
+	
+	#header #topnav a:hover{
+		text-decoration:underline;
+	}
+	
+	#header #topnav .welcome {
+		color: #777;
+		font-size: 13px;
+		margin-right: 8px;
+	}
+		
+		#header #topnav #links {
+			float: right;
+		}
+		
+#header #tellyourfriends {
+	float: right;
+	clear: both;
+}
+	
+	#header #tellyourfriends a {
+		border: none;
+	}
+
+/*** Main Navigation Styles ***/
+#header ul#nav {
+	position: relative;
+	font-family:arial;
+	font-size: 19px;	
+	display: block;
+	height: 39px;
+	width: 650px;
+	margin: 0px;
+	float: left;
+	left:-228px;
+	top: 21px;
+}
+
+body.home #header ul#nav {
+	top: 17px;	
+	left: -222px;
+}
+
+	#header ul.loggedin {
+		left: 0px !important;
+		top: -15px !important;
+	}
+
+	body.home #header ul.loggedin {
+		left: 6px !important;
+		top: -20px !important;
+	}
+
+	#header ul#nav li {
+		float: left;
+		margin: 0;
+		background: url(../../images/navItem_left_bg.jpg) center left no-repeat;
+	}
+	
+	#header ul#nav li a:link,
+	#header ul#nav li a:visited {
+		float: left;
+		display: block; 
+		padding: 16px 14px 8px;
+		line-height: 48px;
+		border: none;
+		color: #0099cc; 
+		background: url(../../images/navItem_right_bg.jpg) center right no-repeat; 
+		height:47px;
+	}
+			
+	#header ul#nav li a:hover {
+		color: #0099cc;
+		background: url(../../images/navItem_right_bg_hover.jpg) center right no-repeat;
+		height:47px;
+	}
+	
+	#header ul#nav li.hover  {
+		display: block;
+		background: url(../../images/navItem_left_bg_hover.jpg) center left no-repeat;
+		overflow-x: visible;
+	}
+	
+	#header ul#nav li.active { 
+		background: url(../../images/navItem_left_bg_active.jpg) center left no-repeat;
+		background-color: white;
+	}
+		
+	#header ul#nav li.active a:link,
+	#header ul#nav li.active a:visited {
+		color: #FFF; 
+		background: url(../../images/navItem_right_bg_active.jpg) center right no-repeat;
+	}
+
+div#bottomBar {
+	background: url(../../images/nav_bottom_grad.jpg) repeat-x #058FD3;
+	border-left: 1px solid #E3E3E3;
+	border-right: 1px solid #E3E3E3;
+	top: 9px;
+	height: 7px;
+	position: relative;
+}
+
+body.home div#bottomBar {
+	display: none;
+}

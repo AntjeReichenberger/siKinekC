@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.Coupon" table="coupon">
+		<id name="couponId" type="java.lang.Integer" column="couponId" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+
+		<property name="title" type="java.lang.String">
+			<column name="title" />
+		</property>
+
+		<property name="description" type="java.lang.String">
+			<column name="description" />
+		</property>
+
+		<property name="expiryDate" type="java.util.Calendar">
+			<column name="expiryDate" />
+		</property>
+
+		<property name="distributionStartDate" type="java.util.Calendar">
+			<column name="distributionStartDate" />
+		</property>
+
+		<property name="distributionEndDate" type="java.util.Calendar">
+			<column name="distributionEndDate" />
+		</property>
+
+		<property name="alwaysShowCoupon" type="java.lang.Boolean">
+			<column name="alwaysShowCoupon" />
+		</property>
+		
+		<property name="imageUrl" type="java.lang.String">
+			<column name="imageUrl" />
+		</property>
+		
+		<many-to-one name="region" class="org.webdev.kpoint.bl.pojo.Region"	column="regionId" lazy="false" />
+
+		<many-to-one name="organization" class="org.webdev.kpoint.bl.pojo.Organization" column="organizationId" lazy="false" />
+
+		<many-to-one name="kinekPoint" class="org.webdev.kpoint.bl.pojo.KinekPoint" column="kinekpointId" lazy="false" />
+				
+		<set name="messageTriggers" table="coupon_emails" lazy="false">
+			<key column="couponId"></key>
+			<many-to-many column="messageTriggerId" class="org.webdev.kpoint.bl.pojo.MessageTrigger"></many-to-many>
+		</set>				
+						
+	</class>
+</hibernate-mapping>

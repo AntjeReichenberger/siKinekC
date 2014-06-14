@@ -1,0 +1,21 @@
+body,html {
+	background-color:#d11242;
+	background-image:url('../../../images/landing/urban/background_pharmasave.jpg');
+}
+
+#logo a {	
+	background-image:url('../../../images/landing/urban/logo_pharmasave.jpg');
+}
+
+#signup a {
+	background-image:url('../../../images/landing/urban/btn_signup_pharmasave.jpg');
+}
+	
+#signup a:hover {
+	background-image:url('../../../images/landing/urban/btn_signup_pharmasave_hover.jpg');
+}
+	
+	
+#trioAlternative{
+	background-image:url('../../../images/landing/urban/trio_pharmasave.jpg');
+}

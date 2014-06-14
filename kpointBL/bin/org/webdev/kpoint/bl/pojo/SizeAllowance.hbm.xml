@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.SizeAllowance" table="DepotSizeAllowance">
+		<id name="sizeAllowanceId" type="java.lang.Integer"
+			column="sizeAllowanceId" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		
+		<property name="friendlyName" type="java.lang.String">
+			<column name="consumerName" />
+		</property>
+		
+		
+	</class>
+</hibernate-mapping>

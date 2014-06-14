@@ -1,0 +1,166 @@
+.bold {
+    color: #342826 !important; 
+}
+
+
+.ui-corner-all{
+	border-radius:0px !important;
+	-webkit-border-radius:0px !important;
+}
+
+#returnKPsBox{
+	padding-top:20px;
+	float:right;
+}
+
+#myKinekPoints_wrapper{
+    width: 750px;
+}
+
+#myKinekPoints_wrapper li{
+    border-style:solid;
+	border-width:2px;
+	margin-right:2px;
+	margin-bottom:2px;
+	padding-top:2px;
+	padding-left:4px;
+}
+
+#myKinekPointsList li{
+        text-align: left;
+        float: left;
+        list-style: none;
+        height: 125px;
+        width: 175px;
+    }
+
+table.left{
+	width:350px;	
+}
+
+
+#detailTable thead tr th, #detailTable tbody tr td{
+	background-color:#F6F6F6;
+}
+
+#tabs table{
+	margin:0px;	
+}
+
+.ui-corner-all{
+	-moz-border-radius:0;
+}
+
+.ui-corner-top{
+	-moz-border-radius:0;
+}
+
+.ui-corner-bottom{
+	-moz-border-radius:0;
+}
+
+.ui-tabs .ui-tabs-panel {
+    background: none repeat scroll 0 0 #F6F6F6;    
+    display: block;
+    padding: 1em 1.4em;
+    border-left:1px solid  #E3E3E3;
+    border-right:1px solid  #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.ui-widget-header {
+	background:none repeat scroll 0 0 #FFF;
+	border:none;
+	border-bottom: 1px solid #E3E3E3;
+}
+
+.ui-widget-content{
+	border: none;
+}
+
+.ui-state-active a, .ui-state-default a{
+	border:1px solid #E3E3E3;	    
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+    border-bottom-width: 0;
+    padding-bottom: 2px;
+}
+.ui-tabs .ui-tabs-nav li {
+    border-bottom-width: 0 !important;
+    float: left;
+    margin: 0 0.30em -1px 0;
+    padding: 0;
+    position: relative;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active {
+    background: none repeat scroll 0 0 #F6F6F6 !important;
+    border: 1px solid #E3E3E3;    
+    font-weight: bold;
+    outline: medium none;
+    
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #058FD3 !important;
+    outline: medium none;
+    text-decoration: none;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default {
+    background: none repeat scroll 0 0  #E3E3E3;
+    border: 1px solid #E3E3E3;    
+    font-weight: bold;
+    outline: medium none;
+    
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+    color: #444444;
+    outline: medium none;
+    text-decoration: none;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+    cursor: text;
+    border:none;
+}
+
+
+li.ui-state-default  {
+    border-bottom-width: 0 !important;
+    float: left;
+    margin: 0 0.30em -2.3px 0;
+    padding: 0;
+    position: relative;
+}
+
+/*)
+.marker {
+			width: 31px;
+			height: 26px;
+			margin-top: -15px;
+			color: #fff;
+			text-align: center;
+			font-size: 10px;
+			font-weight: bold;
+			padding: 3px 0 0 0;
+			background:  url(../../icons/mapmarker_wide_grey.png) top left no-repeat;
+		}
+	*/
+	
+		
+#directions { 
+	float: left; 
+	width: 240px;
+	height: 400px;
+	margin: 0 10px 0 0; 	
+	overflow: auto;
+}		
+
+#direction_map { 
+		width: 586px; 
+		height: 400px; 
+		margin-left:250px;
+	}

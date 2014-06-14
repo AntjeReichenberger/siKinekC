@@ -1,0 +1,107 @@
+p.how {
+	clear: both;
+	font-size: 15px;
+}
+
+#howwrapper, 
+#howwrapper th, 
+#howwrapper tbody,
+#howwrapper tbody tr, 
+#howwrapper tbody td {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	background: #fff;
+}
+
+	/*** How Box Styles ***/
+	#howwrapper #howbox {
+		display:block;
+		background: url(../../images/how_arrow.jpg);
+		background-repeat:no-repeat;
+		background-position:416px 115px;
+		width:450px;
+		margin-bottom:20px;
+	}
+
+		#howwrapper #howbox p {
+			margin: 0px;
+			padding: 0px;
+		}
+
+			#howwrapper #howbox p.stepnumber {
+				font-weight: bold;
+				font-size: 18px;
+				color: #666666;
+				padding-top: 5px;
+			}
+			
+			#howwrapper #howbox p.stepinstructions {
+				color: #666666;
+				padding-top: 8px;
+			}
+			
+		#howwrapper #howbox #howboxtop {
+			background: url(../../images/how_boxtop.jpg);
+			background-repeat:no-repeat;
+			background-position:12px 0px;
+			width:432px;
+			height:8px;
+			display:block;
+		}	
+			
+		#howwrapper #howbox #howboxcontent {
+			display:block;
+			background: url(../../images/how_boxmiddle.jpg);
+			background-repeat:repeat-y;
+			background-position:12px 0px;
+			padding-bottom:10px;
+		}
+	
+			#howwrapper #howbox #howboxcontent p {
+				margin-left: 35px;
+				width: 370px;
+			}
+			
+			#howwrapper #howbox #howboxcontent #howpoint1{	
+				background: url(../../images/how_icon_1.jpg);
+				background-repeat:no-repeat;
+				background-position:0 0;
+				height:80px;
+			}
+			
+			#howwrapper #howbox #howboxcontent #howpoint2{	
+				background: url(../../images/how_icon_2.jpg);
+				background-repeat:no-repeat;
+				background-position:0 0;
+				height:70px;
+			}
+			
+			#howwrapper #howbox #howboxcontent #howpoint3{	
+				background: url(../../images/how_icon_3.jpg);
+				background-repeat:no-repeat;
+				background-position:0 0;
+			}
+	
+		#howwrapper #howbox #howboxbottom{	
+			background: url(../../images/how_boxbottom.jpg);
+			background-repeat:no-repeat;
+			background-position:12px 0px;
+			width:432px;
+			height:8px;
+			display:block;
+		}
+	
+	#howwrapper #howvideo {
+		display:block;
+		margin: 0px auto 30px auto;
+	}
+	
+		#howwrapper #howvideo a {
+			width: 425px;
+			height: 344px;
+			display: block;
+			text-decoration: none;
+			border: none;
+			background: url(../../images/howPageWikVideoSnap2.jpg) 0px 0px no-repeat;
+		}

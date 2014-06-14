@@ -1,0 +1,38 @@
+#viewTrackingListFrm{
+	width:470px;
+}
+
+#trackingDetails{
+	display:none;
+}
+
+#receiveEmailTrackingStatusChkBox{
+	align:left;
+}
+
+.ui-icon {
+	display: inline-block;
+	float: right;
+	cursor:pointer;
+}
+
+.ui-icon-close {
+	margin-bottom:8px;
+	float:none !important;
+	vertical-align:middle;	
+}
+
+.ui-icon-check {
+	margin-left:3px;
+	margin-bottom:8px;
+	float:none !important;
+	vertical-align:middle;	
+}
+
+.saveNickname{
+	width:auto;	
+}
+
+.nicknameContainer{
+	float:left;	
+}

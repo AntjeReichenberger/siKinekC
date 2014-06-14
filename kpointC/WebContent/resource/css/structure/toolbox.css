@@ -1,0 +1,50 @@
+/*** Toolbox Styles ***/	
+#toolBox {
+	width: 100%;
+	height: 107px;
+	margin: 0 auto;
+	padding: 0; 
+}
+
+
+/*** Signup Styles ***/
+#toolBox #signupBox {
+	float: right; 
+	display: block;
+	position: relative;
+	bottom: 10px;
+	font-size: 11px;
+	z-index: 1200;
+}
+					
+	#toolBox #signupBox a#signup {
+		display:block;
+		width:162px;
+		height:48px;
+		cursor: pointer;
+		background: url(../../images/whitebgsignup.jpg) center right no-repeat;
+		border: none; 
+	}					
+					
+		#toolBox #signupBox a#signup:hover{
+			background: url(../../images/whitebgsignup_hover.jpg) center right no-repeat;
+		}
+
+/*** Kinek Number Styles ***/
+#toolBox a#kinekNumber,
+#toolBox span#kinekNumber,
+#toolBox #kinekNumber {
+	float: right;
+	display: block;
+	width: 246px;
+	height: 50px;
+	padding: 0 0 0 15px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 50px;
+	color: #fff;
+	background: url(../../images/tag_bg.jpg) no-repeat;
+	border: none; 
+	position: relative;
+	bottom: 10px;
+}	

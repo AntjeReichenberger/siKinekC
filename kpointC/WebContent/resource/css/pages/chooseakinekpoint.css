@@ -1,0 +1,170 @@
+img#profileprogress {
+	margin-right:auto;
+	margin-left:auto;
+	display:block;
+}
+	
+table a {
+	color: #058FD3 !important;
+	border: none !important;
+	text-decoration: underline !important;
+}
+	
+#findDeliveryLocation {
+	display: none;	
+}
+
+#basicSearch {
+	display: none;
+	padding-top: 50px;
+}
+
+	#basicSearch #back {
+		display: none;
+	}
+
+		#basicSearch #back a#backLink {
+			margin-right: 5px;
+		}
+
+	#basicSearch #backToProfile {
+		display: none;
+	}
+
+		#basicSearch #back a#backToProfileLink {
+			margin-right: 5px;
+		}
+	
+#canadianSearch {
+	display: none;
+	padding-top: 106px;
+}
+
+	#canadianSearch #leftForm {
+		border: none;
+		text-align: right;
+	}
+	
+		#canadianSearch #leftForm a#backToProfileLink {
+			font-size: 11px;
+			font-weight: normal;
+			margin-right: 3px;
+		}
+	
+	#canadianSearch #rightForm {
+		text-align: left;
+		border: none;
+	}
+	
+	#canadianSearch #typeOfKP {
+			font-size: 18px;
+			font-weight: bold;
+			text-decoration: underline;
+		text-align: center;
+	}
+	
+	#canadianSearch #canadianBackToProfile {
+		float: right;
+		margin-top: 25px;
+	}
+	
+	#canadianSearch #usBorderSearch {
+		float: right;
+		margin-top: 14px;
+		margin-left: 3px;
+	}
+	
+	#canadianSearch #localKinekPoint {
+		margin-top: 14px;
+	}
+	
+	#canadianSearch #orWrapper {
+		padding-top: 18px;
+	}
+	
+table#borderSearch {
+	margin-top: 53px;
+}
+
+	#borderSearch #borderSubmit {
+		padding-right: 42px;
+		text-align: right;
+	}
+	
+#saveKPBox {  
+	display:inline-block;
+	float:right;
+	line-height:42px;
+	margin-bottom:-20px;
+	text-align:right;
+}
+
+	#saveKPBox a#saveKP {
+		display:block;
+		width:180px;
+		height:51px;
+		cursor: pointer;
+		background: url(../../../images/whitebgsave.jpg) center right no-repeat;
+		border: none;
+		float: right; 
+	}					
+	
+	#saveKPBox a#saveKP:hover{
+		background: url(../../../images/whitebgsave_hover.jpg) center right no-repeat;
+	}
+	
+	#saveKPBox p {
+		font-size: 11px;
+		font-color: #777777;
+		font-weight: bold;
+		float: left;
+		width: 400px;
+		text-align: left;
+	}
+	
+form#findDepots {
+	padding-top: 50px;
+}
+	
+div#selected {
+	padding: 10px 0px;
+}
+	
+div#moreselected {
+	padding: 0px;
+}
+	
+#searchWrapper {
+	margin: 0px;
+	padding-right:0px;
+	margin-right:-1px;
+}
+
+input#saveKPLink {
+	color: #00AA00;
+	line-height: 115%;
+	margin-top: -3px;
+}
+
+#startAddress {
+	padding-bottom: 10px; 
+	display: none;	
+}
+
+#startAddressBtn {
+	text-align: center;		
+	background: transparent url(../../images/blue-circle-small.png) no-repeat scroll left center;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	padding-top: 9px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#startAddressTxt {	
+	height:18px;
+	padding:4px;
+	background:#FFFFFF url(../../../images/input_bg.jpg) repeat-x scroll left bottom;
+}

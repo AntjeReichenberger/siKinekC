@@ -1,0 +1,21 @@
+ <!-- START OF full width Table -->
+<table width="630" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+	<tr>
+	  <td height="50" colspan="2" align="left" valign="middle" bgcolor=
+	  "#FCFCFC" style="font-family: Helvetica, Arial, sans-serif; color: #313035; font-size: 22px; letter-spacing: -1px;">
+		Hi attb_firstName,
+	  </td>
+	</tr>
+	<tr>
+	  <td width="630" align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px; color: #757887; line-height: 18px;">
+		Unfortunately we were unable to provide tracking information based on the email you sent to us. Please double-check that there is a tracking number included and try sending it again. If we still cannot detect it, you can always add it from within your Kinek account <a href="attb_consumerurl">here</a>.<br/><br/>
+		If you have any questions, check out our FAQs or give us a shout at <a href="mailto:support@kinek.zendesk.com" style="color:#2d78d2;">support@kinek.zendesk.com</a>!
+	  </td>
+	</tr>
+	<tr>
+	  <td style="font-family: Helvetica, sans-serif; font-size: 13px; color: #373737; line-height: 16px;"></td>
+	</tr>
+  </tbody>
+</table>
+<!-- END OF full width Table -->

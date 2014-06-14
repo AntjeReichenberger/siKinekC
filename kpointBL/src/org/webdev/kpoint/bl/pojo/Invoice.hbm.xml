@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.Invoice" table="invoice">
+		<id name="invoiceNumber" type="java.lang.String" column="invoiceNumber">
+		</id>
+		
+		<many-to-one name="depot" class="org.webdev.kpoint.bl.pojo.KinekPoint"
+			column="depotId" lazy="false" />
+		
+		<property name="startDate" type="java.util.Date">
+			<column name="startDate" />
+		</property>	
+		
+		<property name="endDate" type="java.util.Date">
+			<column name="endDate" />
+		</property>	
+		
+		<property name="amountDue" type="java.math.BigDecimal">
+			<column name="amountDue" />
+		</property>		
+
+		<property name="currency" type="java.lang.String">
+			<column name="currency" />
+		</property>
+		
+		<property name="dueDate" type="java.util.Date">
+			<column name="dueDate" />
+		</property>	
+		
+		<property name="createdDate" type="java.util.Date">
+			<column name="createdDate" />
+		</property>	
+		
+		<property name="createdBy" type="java.lang.String">
+			<column name="createdBy" />
+		</property>	
+		
+	</class>
+</hibernate-mapping>

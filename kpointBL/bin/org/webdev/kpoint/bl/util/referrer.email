@@ -1,0 +1,35 @@
+<br />
+<p>Dear %recipient_name%,</p>
+
+<p>%first_name% %last_name% thinks you could benefit from signing up to Kinek!</p>
+
+<p>%custom_message%</p>
+
+<p>Ordering online or from catalog retailers is meant to be convenient and easy, 
+so why should it be so hard to actually get your purchases delivered. 
+Are you:
+</p>
+
+<p>
+<ul class="bulleted-preview" style="padding-left:20px;">
+<li> Tired of missed delivery notices being left on your door?</li>
+<li> Frustrated because you have a PO Box and retailers won't ship to you?</li>
+<li> Worried about your packages being left on your doorstep to be stolen or 
+damaged by the elements?</li>
+</ul>
+</p>
+
+<p><br/>Kinek has the solution.</p>
+
+<p>Kinek has a network of alternative delivery locations called KinekPoints. 
+KinekPoints receive packages for you at convenient locations near your home, 
+office, or everyday commute.</p>
+
+<p>You also get instant email and text notifications when your package arrives.
+Kinek is the easy-to-use service that helps ensure a safe and convenient 
+delivery of your package. For a small fee, you can pick up your package when 
+it's convenient for your schedule.</p>
+
+<p>So join %first_name% on Kinek and never miss a delivery again.</p>
+
+<p>Check Kinek out at <a href="%kinek_url%">www.kinek.com</a></p

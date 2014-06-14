@@ -1,0 +1,39 @@
+/*** IE 6 and 7 stylesheet ****/
+.search #submit {
+	font-size: 0;
+	line-height: 0;
+}
+
+* html .search #submit {
+	background: url(../../../images/landing/btn-search-ie.png);
+}
+
+#logo, #headerJoin, #main, #video, .step, .step img, .step p, .start, .start h2, .search {
+	display: inline;
+}
+
+* html #bigImg {
+	float: left; 
+	display: inline;
+}
+
+* html #cta {
+	width: 710px;
+	margin: 20px -5px 0px 0px;
+	float: right;
+	display: inline;
+	background: url(../../../images/landing/highlight-box-ie.png) no-repeat;
+}
+
+* html .start {
+	width: 270px; 
+	margin-right: 8px;
+}
+
+* html .search {
+	background: url(../../../images/landing/search-bkgrnd-ie.png) no-repeat;
+}
+
+* html #video {
+	margin-top: 30px;
+}

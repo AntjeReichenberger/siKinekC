@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.InvoiceIssueHistory" table="invoiceissuehistory">
+		<id name="invoiceIssueHistoryId" type="java.lang.Integer"
+			column="invoiceIssueHistoryId" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		
+		<many-to-one name="invoice" class="org.webdev.kpoint.bl.pojo.Invoice" column="invoiceNumber" lazy="false" />
+
+		<property name="issueDate" type="java.util.Date">
+			<column name="issueDate" />
+		</property>	
+
+		<property name="email" type="java.lang.String">
+			<column name="email" />
+		</property>
+
+	</class>
+</hibernate-mapping>

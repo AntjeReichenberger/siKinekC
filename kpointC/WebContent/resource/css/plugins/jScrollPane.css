@@ -1,0 +1,119 @@
+.jScrollPaneContainer {
+	position: relative; 
+	overflow: hidden;
+	width:100%;	
+	z-index: 1;	
+	margin-top:10px ;
+}
+
+.jScrollPaneTrack {
+	position: absolute;
+	cursor: pointer;
+	/*right: 0;*/
+	top: 0;
+	height: 100%;
+	background: url(../../images/windows_track.gif) repeat-y;
+	left: 0;
+	right: auto;
+}
+.jScrollPaneDrag {
+	position: absolute;
+	background: url(../../images/windows_drag_middle.gif) repeat-y;
+	cursor: pointer;
+	overflow: hidden;
+	dragMinHeight:100px;
+	dragMaxHeight:100px;
+}
+.jScrollPaneDragTop {
+	position: absolute;
+	top: 1px;
+	left: 0;
+	background: url(../../images/windows_drag_top.gif) no-repeat;
+	height: 4px;
+	overflow: hidden;
+}
+.jScrollPaneDragBottom {
+	position: absolute;	
+	bottom: 0px;
+	left: 0;
+	background: url(../../images/windows_drag_bottom.gif) no-repeat;
+	height: 4px;	
+	overflow: hidden;
+}
+a.jScrollArrowUp {
+	display: block;
+	position: absolute; 
+	z-index: 1;
+	top: 0;
+	/*right: 0;*/
+	text-indent: -2000px;
+	overflow: hidden;
+				height: 17px;
+				background: url(../../images/windows_arrow_up.gif) no-repeat 0 0;
+
+	left: 0;
+	right: auto;
+	width: 17px;
+	text-decoration:none !important;
+	border-bottom:0;
+	
+	
+}
+a.jScrollArrowUp:hover {
+	background-position: 0 -20px;
+	border:0;
+}
+
+a.jScrollArrowDown {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	/*right: 0;*/
+	text-indent: -2000px;
+	overflow: hidden;	
+	background: url(../../images/windows_arrow_down.gif) no-repeat 0 0;
+		left: 0;
+	right: auto;
+	width: 17px;
+	height: 17px;
+	text-decoration:none !important;
+	border-bottom:0;
+}
+a.jScrollArrowDown:hover {
+	background-position: 0 -20px;
+border:0;
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+	background-position: 0 -40px;
+	border:0;
+}
+
+			/* IE SPECIFIC HACKED STYLES */
+			* html .osX .jScrollPaneDragBottom {
+				bottom: -1px;
+			}
+			/* /IE SPECIFIC HACKED STYLES */
+
+/**---**/
+.holder {
+	float: left;
+	margin: 10px;
+}
+
+.scroll-pane {
+	overflow: auto;	
+	float: left;
+}
+
+
+
+.super-wide {
+	width: 700px;
+}
+
+.tall {
+	height: 400px;
+}
+
+	

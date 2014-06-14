@@ -1,0 +1,148 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>An important message from Kinek</title>
+   <style type="text/css">
+		body {
+		   background-color: #c1c1c1;
+		}
+		
+		a img {
+		   border: none;
+		}
+		
+		table.bg1 {
+		   background-color: #c1c1c1;
+		}
+		
+		table.bg2 {
+		   background-color: #ffffff;
+		}
+		
+		td.permission {
+		   background-color: #c1c1c1;
+		   padding: 10px 20px 10px 20px;
+		}
+		
+		td.permission p {
+		   font-family: Arial;
+		   font-size: 11px;
+		   font-weight: normal;
+		   color: #fff;
+		   margin: 0;
+		   padding: 0;
+		}
+		
+		td.permission p a {
+		   font-family: Arial;
+		   font-size: 11px;
+		   font-weight: normal;
+		   color: #fff;
+		}
+		
+		td.body {
+		   padding: 20px 20px 20px 20px;
+		   background-image: url('attb_img_content_bg');
+		   background-repeat: repeat-y;
+		   background-position: bottom center;   
+		   background-color: #ffffff;
+		}
+		
+		td.buttons {
+		  padding: 20px 0 0 0; 
+		}
+		
+		td.mainbar h1 {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 0;
+		   padding: 0;
+		}
+		
+		td.mainbar p {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 0;
+		   padding: 0;
+		}
+		
+		td.mainbar p a {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #058fd3;
+		}
+		
+		td.mainbar ul {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 24px;
+		   padding: 0;
+		}
+		
+		td.mainbar ul li a {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		}
+		
+		td.footer {
+			margin: 0;
+		   padding: 0 20px 0 20px;
+		   background-image: url('attb_img_footer_bg');
+		   background-repeat: no-repeat;
+		   background-position: bottom center;
+		   background-color: #333333;
+		   height: 10px;
+		   vertical-align: middle;
+		} 
+		
+		td.header {
+		   margin: 0;
+		   padding: 20px 0px 0px 20px;
+		} 
+   </style>
+</head>
+<body>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="bg1">
+   <tr>
+      <td align="center">
+         
+         <table width="600" border="0" cellspacing="0" cellpadding="0" class="bg2">
+            <tr>
+               <td class="header" align="left">
+                 <img src="attb_img_header_bg" alt="Kinek" width="397" height="93" />
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" class="body">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                        <td valign="top" class="mainbar" align="left">
+                        
+                        	attb_content
+							
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <!-- <tr>
+               <td valign="middle" align="left" class="footer"></td>
+            </tr> -->
+         </table>
+         
+      </td>
+   </tr>
+</table>
+
+</body>
+</html>

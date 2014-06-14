@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.Package" table="KPPackage">
+		<id name="packageId" type="java.lang.Integer"
+			column="packageId" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		
+		<property name="customInfo" type="java.lang.String" />
+		
+		<property name="onSkid" type="java.lang.Boolean" />
+		
+		<property name="pickupFee" type="java.math.BigDecimal" />
+		
+		<property name="skidFee" type="java.math.BigDecimal" />
+		
+		<property name="dutyAndTax" type="java.math.BigDecimal" />
+		
+		<many-to-one name="courier" class="org.webdev.kpoint.bl.pojo.Courier" column="courierId" lazy="false"/>
+		
+		<many-to-one name="packageWeightGroup" class="org.webdev.kpoint.bl.pojo.PackageWeightGroup" column="weightId" lazy="false"/>
+
+		<property name="shippedFrom" type="java.lang.String" />
+		
+		<property name="pickupDate" formula="( SELECT pickup.pickupDate FROM pickup WHERE pickup.id = pickupId )" type="java.util.Calendar"/>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Follow Kinek on Twitter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="resource/css/plugins/twitter.css" type="text/css" />
+<style>
+	body{font-family:arial;background: url(./resource/images/skinnywhitefader.jpg) top left repeat-x; }	
+	#tweetfeed{position:relative;top:-20px;background-color:#ffffff;border:0px solid red;}
+	h4{z-index:999;color:#707070;font-weight:normal;padding:0px;margin:0px;margin-left:8px;font-size:18px;position:relative;font-family:arial;display:block;}
+	#birdie{display:block;position:relative;z-index:999;}
+	.twtr-widget .twtr-tweet-wrap{background-color:#f5f5f5;}
+</style>
+</head>
+
+<body>
+
+<script src="resource/js/TwitterWidget.js"></script>
+<table border=0 width=290 cellpadding=0 cellspacing=0>
+<tr>
+<td rowspan="2" valign="top"><img id="birdie" src="resource/images/twitterbird.jpg" /></td>
+<td><h4>Kinek Twitter Feed</h4></td>
+</tr>
+<tr>
+<td valign="top">
+	<div id="tweetfeed">
+	<script>
+	new TWTR.Widget({
+	  version: 2,
+	  type: 'profile',
+	  rpp: 4,
+	  interval: 15000,
+	  width: 290,
+	  height: 150,
+	  theme: {
+	    shell: {},
+	    tweets: {color: '#707070'}
+	  },
+	  features: {
+	    scrollbar: false,
+	    loop: false,
+	    live: true,
+	    hashtags: false,
+	    timestamp: true,
+	    avatars: false,
+	    behavior: 'all'
+	  }
+	}).render().setUser('Kinek').start();
+	</script>
+	</div>
+</td>
+</tr>
+</table>
+
+
+<style>
+	.twtr-bd{padding:0px;}
+	.twtr-hd{background-color:#fff;background: url(./resource/images/skinnywhitefader.jpg) top left repeat-x; }
+	.twtr-tweets{font-size:13px;}
+	.twtr-timeline{border-radius:0px;,	-webkit-border-radius:0px;,	-moz-border-radius:0px;}
+	a.twtr-atreply{font-weight:bold;}
+	.twtr-doc{}
+</style>
+</body>
+</html>
+
+

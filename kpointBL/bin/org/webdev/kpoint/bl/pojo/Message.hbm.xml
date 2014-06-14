@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.Message" table="message">
+		<id name="Id" type="java.lang.Integer" column="Id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		
+		<many-to-one name="trigger" class="org.webdev.kpoint.bl.pojo.MessageTrigger" column="triggerID" lazy="false"/>
+		<many-to-one name="medium" class="org.webdev.kpoint.bl.pojo.MessageMedia" column="mediaID" lazy="false"/>
+		<property name="recipientEmail" type="java.lang.String" />
+		<property name="recipientCell" type="java.lang.String" />
+		<property name="contents" type="java.lang.String" />
+		<property name="sentDate" type="java.util.Calendar" />
+	</class>
+</hibernate-mapping>

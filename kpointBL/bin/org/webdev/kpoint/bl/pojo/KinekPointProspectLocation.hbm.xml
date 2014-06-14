@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.KinekPointProspectLocation" table="KPProspectLocation">
+		<id name="id" type="java.lang.Integer" column="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+
+		<property name="city" type="java.lang.String" />
+		
+		<many-to-one name="state" class="org.webdev.kpoint.bl.pojo.State" column="stateId" lazy="false"/>
+
+		<property name="zip" type="java.lang.String" />
+		
+		<property name="createdDate" type="java.util.Calendar" />
+		
+		<many-to-one name="recommendedByUser" class="org.webdev.kpoint.bl.pojo.User" column="userId" lazy="false"/>
+		
+		<property name="notifyEmailAddress" column="nonConsumerEmail" type="java.lang.String" />
+		
+	</class>
+</hibernate-mapping>

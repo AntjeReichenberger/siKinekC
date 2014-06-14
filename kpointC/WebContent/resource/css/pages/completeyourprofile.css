@@ -1,0 +1,102 @@
+img#profileprogress {
+	padding-bottom: 50px;
+	margin-right:auto;
+	margin-left:auto;
+	display:block;
+}
+	
+table a {
+	color: #058FD3 !important;
+	border: none !important;
+	text-decoration: underline !important;
+}
+
+table td.label {
+	width: 175px;
+}
+
+table td.submit {
+	padding-left: 21px;
+}
+
+table td input.button {
+	background: url(../../images/button_enabled.jpg) center left no-repeat;
+}
+
+table td input.buttonDisabled {
+	background: url(../../images/button_disabled.jpg) center left no-repeat;
+}
+	
+.title {
+	text-decoration: underline;
+	font-size: 13px;
+}
+
+#message.completeProfileError { 
+	display: none;
+}
+
+#sameAsPrimary {
+	width: 13px;
+}
+
+span.error {
+	display: none;
+	color: #C2462C;
+	font-size: 12px;
+}
+
+img.error {
+	display: none;
+	width: 18px;
+	vertical-align: -5px;
+}
+
+#agreedToTOSErrorImg {
+	margin-left: 21px;
+	margin-top: 7px;
+}
+
+.greencheck {
+	display: none;
+	width: 20px;
+	vertical-align: -5px;
+}
+.address2Check {
+	padding-left: 16px;
+}
+
+#agreedToTOS {
+	margin: 3px 5px 0px 0px;
+	float: left;
+	width: 14px;
+}
+
+.regformterms {
+	float:left;
+	width:380px;
+	margin-bottom:20px;
+}
+
+	.regformterms p {
+		float: left;
+		color: #777777;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+		.regformterms p.line2 {
+			clear: both;
+			width: 100%;
+		}
+	
+	.regformterms a {
+		color: #777777;
+		text-decoration: underline;
+		border: none;
+	}
+	
+		.regformterms a:hover {
+			color: #4093d9;
+			text-decoration: none;
+		}

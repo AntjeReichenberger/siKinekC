@@ -1,0 +1,264 @@
+/*** General Styles ***/
+body,html {
+	margin:0px;
+	padding:0px;
+	color:#fff;
+	font-family:arial,sans-serif;
+	text-align:center;
+	font-size:14px;
+	background-color: #275402;
+	background-image:url('../../../images/landing/border/greenglow.jpg');
+	background-position:top center;
+	background-repeat:no-repeat;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	font-size: 46px;
+}
+
+h2 {
+	font-size: 20px;
+	margin-top: 2px;
+}
+
+	h2 .special {
+		color: #c6ff00;
+	}
+	
+h3 {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+p {
+	margin: 0px;
+	padding: 0px;
+}
+
+br.clear {
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+}
+
+#wrapper {
+	display:block;
+	margin:0px auto;
+	text-align:center;
+	padding-top:15px;
+}
+
+
+/*** Flash Section ***/
+#borderitems {
+	position:relative;
+	left:-10px;
+	margin:0px auto;
+	padding:0px;
+}
+
+	#borderitems #boxalternative {
+		position: relative;
+		top: 20px;
+		left: 25px;
+	}
+
+
+/*** Bubble Section ***/
+#bubble {
+	position:relative;
+	left:0px;
+	margin:20px auto;
+	width:500px;
+	height:200px;
+	font-size:13px;
+}
+
+	#bubble h3 {
+		text-align: left;
+	}
+
+	#bubble #whyfromus {
+		margin-left:50px;
+	}
+		
+	#bubble #whycalais {
+		margin-left:30px;
+	}
+
+	#bubble .bubblelist {
+		float: left;
+		margin-top: 12px;
+	}
+		
+	#bubble ul.depotinstructions {
+		position: relative;
+		top: -10px;
+	}
+	
+	#bubble ul li {
+		text-align:left;
+		margin-left:0px;
+		padding-left:0px;
+		padding-top:1px;
+		margin-left:-24px;
+	}
+	
+	#bubble ul.depotinstructions li {
+		margin-left:5px;
+		font-weight:bold;
+		list-style-type: none;
+		background-image:url('../../../images/landing/border/greendot.jpg');
+		background-position:2 11;
+		background-repeat:no-repeat;
+		padding-left:13px;
+		padding-top:5px;
+		position:relative;
+		top:20px;
+	}
+	
+	#bubble ul.depotinstructions_small li {
+		margin-left:-20px;
+		font-weight:bold;
+		font-size: 12px;
+		list-style-type: none;
+		background-image:url('../../../images/landing/border/greendot.jpg');
+		background-position:2 11;
+		background-repeat:no-repeat;
+		padding-left:13px;
+		padding-top:2px;
+		position:relative;
+		top:20px;
+	}
+	
+	#bubble a {
+		text-align: center;
+		color: #FFF;
+		text-decoration: none;	
+		margin-top: 5px;
+		display: block;
+	}
+	
+		#bubble a.templatelink {
+			margin-top: 13px;	
+		}
+		
+		#bubble a:hover {
+			text-decoration: underline;	
+		}
+
+	#bubble p.shipto {
+		font-size: 17px;
+		margin-top: 18px;
+		font-weight: bold;
+	}
+	
+	*html #bubble p.shipto {
+		margin-top: 35px;
+	}
+
+	#bubble p.notify {
+		font-size:15px;
+		font-weight:bold;
+		margin-top:10px;
+	}
+
+	#bubble p.emailquestion {
+		position:relative;
+		top:20px;
+		font-size:18px;
+		font-weight:bold;
+		text-align:left;
+		margin-left:25px;
+		margin-right:10px;
+	}
+	
+	#bubble p.emailquestion_small {
+		position:relative;
+		top:20px;
+		font-size:18px;
+		font-weight:bold;
+		text-align:left;
+		margin-left:25px;
+		margin-right:10px;
+	}
+
+
+/*** Signup Button ***/
+#signup {
+	clear:both;
+	position:relative;
+	left:-7px;
+	top:-26px;
+	margin:0px auto;
+	width:220px;
+	height:75px;
+	display:block;
+	background-image:url('../../../images/landing/border/btn_signup_shadow.jpg');
+	background-position:bottom right;
+	background-repeat:no-repeat;
+	border:0px solid red;
+}
+	
+
+	#signup a {
+		clear:both;
+		float:right;
+		display:block;
+		height:50px;
+		width:202px;
+		background-image:url('../../../images/landing/border/btn_signup.jpg');
+		background-repeat:no-repeat;
+	}
+	
+	#signup a:hover {
+		background-image:url('../../../images/landing/border/btn_signup_hover.jpg');
+		background-repeat:no-repeat;
+	}
+
+
+/*** Footer Section ***/
+#footer {
+	clear:both;
+	display:block;
+	position:relative;
+	left:0px;
+	font-size:13px;	
+	margin:0px auto;
+	width:300px;
+}
+	
+#footer #logo {
+	position:relative;
+	top:-20px;
+	margin:0px;
+}
+		
+#copyright {
+	float: left;
+}
+
+#footlinks a, 
+#footlinks a:link, 
+#footlinks a:active, 
+#footlinks a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+#footlinks a:hover {
+	text-decoration: underline;
+}

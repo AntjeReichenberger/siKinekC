@@ -1,0 +1,604 @@
+/*** Search Form Styles ***/
+table#borderSearch,
+div#borderInstructions {
+	display: none;
+	margin:0px;
+}
+
+#content{
+	padding-right:0px !important;
+	padding-left:0px !important;
+	padding-bottom: 0px !important;
+	margin-bottom: -4px;
+}
+
+a.button { 
+    display: inline-block;
+	width: 200px;
+    height: 42px;
+    padding: 0 0 3px 0;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 42px;
+    color: #fff;
+    cursor: pointer;
+    background: url(../../images/button_enabled.jpg) center left no-repeat;
+    border: none; 
+    vertical-align: middle;
+}
+
+#saveKPButton.button { 
+    display: inline-block;
+	width: 140px;
+    height: 21px;
+    padding: 0 0 3px 0;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 21px;
+    color: #fff;
+    cursor: pointer;
+    background: url(../../images/button_small_wider_enabled.png) center left no-repeat;
+    border: none; 
+    vertical-align: middle;
+}
+
+
+
+div#basicInstructions p {
+	padding-left: 0px;	
+}
+
+	div#basicInstructions img {
+		margin: 0 10px;
+		top: 10px;	
+		width: 25px;
+		height: 25px;
+	}
+	
+	div#basicInstructions img.first {
+		margin-left: -425px;
+		width:73px;
+		height:70px;
+		margin-top:-60px;
+	}
+
+	div#basicInstructions p{
+		font-size: 13px;
+		margin-top: -10px;
+	}
+	
+	div#basicInstructions .borderLinkColor{
+		color:#00AA00;
+		border-bottom-color:#00AA00;
+	}
+
+#basicSearch {
+	
+}
+
+#findDeliveryLocation{
+	
+}
+
+	#basicSearch #leftForm,
+	#basicSearch #rightForm {
+		display: inline-block;
+		width: 350px;
+		height: 130px;
+		padding: 10px;
+		margin: 10px 0 30px 0;
+		border: 1px solid #A0A0A0;
+		float: left;
+	}
+	
+	#basicSearch #leftForm .searchTitle,
+	#basicSearch #rightForm .searchTitle {
+		font-size: 13px;
+		color: #343434;
+		margin: -30px 0 10px -10px;
+	}
+
+	#basicSearch #orWrapper {
+		display: inline-block;
+		float: left;
+		width: 35px;
+		height: 35px;
+		padding: 58px 44px;
+		margin: 10px 0 30px 0;
+	}
+	
+		#basicSearch #orWrapper span {
+			background: url(../../images/or-circle.png) center left no-repeat;
+			display: block;
+			width: 35px;
+			height: 35px;
+			color: #FFF;
+			font-weight: bold;
+			padding: 16px 0 0 7px;
+			font-size: 14px;
+		}
+
+	#basicSearch td.labelcol {
+		width: 110px;
+	}
+	
+	#basicSearch td.valcol {
+		width: 200px;
+	}
+	
+	table#basicSearch tr.tallrow td {
+		padding-top: 20px;
+	}
+	
+table#borderSearch {
+	width: 810px;
+}
+
+	table#borderSearch td {
+		vertical-align: middle;
+		padding-left: 0;
+	}
+	
+	table#borderSearch p {
+		margin-bottom: 0;
+		padding-left: 0;
+	}
+	
+#canadianSearch {
+}
+
+	#canadianSearch #leftForm,
+	#canadianSearch #rightForm {
+		display: inline-block;
+		width: 350px;
+		height: 130px;
+		padding: 10px;
+		margin: 10px 0 30px 0;
+		border: 1px solid #A0A0A0;
+		float: left;
+	}
+
+	#canadianSearch #orWrapper {
+		display: inline-block;
+		float: left;
+		width: 35px;
+		height: 35px;
+		padding: 58px 44px;
+		margin: 10px 0 30px 0;
+	}
+	
+		#canadianSearch #orWrapper span {
+			background: url(../../images/or-circle.png) center left no-repeat;
+			display: block;
+			width: 35px;
+			height: 35px;
+			color: #FFF;
+			font-weight: bold;
+			padding: 16px 0 0 7px;
+			font-size: 14px;
+		}
+	
+img#saveMoney {	
+	width:410px;
+}
+	
+div.centerWrapper {
+	text-align: center;	
+}
+
+/*** Details Section Styles ***/
+table.detailswrapper td {
+	padding-right: 10px;
+}
+
+a.signuplink {
+	padding-right: 5px;
+}
+
+div#selected {
+	padding: 10px 30px;
+}
+
+	div#selected td.closed {
+		display: none;	
+	}
+	
+	div#selected table.details {
+		margin-top: 0;	
+		margin-bottom: 0px;
+	}
+	
+div.morewrapper {
+	text-align: center;	
+}
+	
+div#moreselected {
+	padding: 0 30px 0;
+	display: block;
+}
+
+#noResultsBody {
+	display: none;	
+}
+
+/*** Wrapper Styles ***/
+#searchWrapper { 
+	margin: 20px;
+	padding: 10px;
+	background: #f6f6f6; 
+	border-top: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3; 
+	clear: both;
+	margin-left:-1px !important;
+}
+
+/*** Tab Styles ***/
+ul#maptabs {
+	padding: 0 20px;
+	position: relative;
+	right: 2px;
+	top: 4px;
+}
+
+	ul#maptabs li {
+		background: url(../../images/navItem_left_bg_grey.jpg) center left no-repeat;
+		float:left;
+		margin:0 2px;
+		padding:12px 0 8px;
+		position:relative;		
+	}
+	
+	ul#maptabs li.active {
+		background: url(../../images/navItem_left_bg_grey_active.jpg) center left no-repeat;
+		z-index: 900;
+	}
+	
+	ul#maptabs li span {
+		background: url(../../images/navItem_right_bg_grey.jpg) center right no-repeat;
+		padding: 10px;
+		border: none;
+		color: #444;
+		cursor: pointer;
+		position: relative !important;
+		bottom: 2px !important;
+	}
+	
+	ul#maptabs li.active span {
+		background: url(../../images/navItem_right_bg_grey_active.jpg) center right no-repeat;
+		color: #058FD3;
+	}
+
+/*** Results Styles ***/
+#searchWrapper #results,
+#searchWrapper #directions { 
+	float: left; 
+	width: 250px;
+	height: 400px;
+	margin: 0 10px 0 0; 
+}
+
+#searchWrapper #directions {
+	display: none;	
+	overflow: auto;
+}
+		
+	#searchWrapper #results h1 { 
+		margin: 7px 0 5px 10px;
+		font-size: 24px;
+		line-height: 24px; 
+	}
+		
+	#searchWrapper #results p { 
+		margin: 0 0 0 10px; 
+		font-size: 14px;
+	}
+	
+	#searchWrapper #results span { 
+		color: #058fd3; 
+	}	
+	
+	#searchWrapper #results div#message { 
+		margin: 10px; 
+	}	
+	
+	/*** Paging Styles ***/
+	#searchWrapper #results #pagination { 
+		margin: 20px;
+		text-align: center; 
+	}
+	
+		#searchWrapper #results #pagination a:link,
+		#searchWrapper #results #pagination a:visited { 
+			display: inline-block; 
+			margin: 0 2px;
+			padding: 3px 5px;
+			text-decoration: none; 
+			color: #058fd3;
+			background: #fff;
+			border: 1px solid #33b5e9; 
+		}
+			
+		#searchWrapper #results #pagination a.active { 
+			color: #666;
+			border-color: #e0e0e0; 
+		}
+			
+		#searchWrapper #results #pagination a.first,
+		#searchWrapper #results #pagination a.last { 
+			text-decoration: underline;
+			border: none; 
+			background: transparent; 
+		}	
+	
+	
+	/*** Result List Styles ***/
+	#searchWrapper #results #listWrapper1 {
+		position: relative;
+		/*overflow: hidden;*/
+		overflow-x:hidden;
+		overflow-y:auto;
+		display: block;
+		width: 100% !important;
+		height: 330px;
+		padding: 0 0 2px 0; 
+	}
+	
+	#searchWrapper #results ul#list {
+		display: block;
+		width: 250px;
+		height: 330px; 
+	}
+	
+	#searchWrapper #results.found #listWrapper1,
+	#searchWrapper #results.found ul#list {
+		height: 410px; 
+	}
+	
+		#searchWrapper #results ul#list li {
+			float: left;
+			width: 250px;
+			font-size: 11px; 
+		}
+		
+			#searchWrapper #results ul#list li a { 
+				border: 1px solid #F6F6F6;
+				border-top-color: #E0E0E0;
+				display: block; 
+				width: 100%; 
+				margin: 0 0 -1px 0;
+				padding: 4px 2px 2px 2px; 
+			}
+				
+			#searchWrapper #results ul#list li.first a { 
+				border-top-color: #F6F6F6; 
+			}
+			
+			#searchWrapper #results ul#list li a:hover,
+			#searchWrapper #results ul#list li.active a,
+			#searchWrapper #results ul#list li.selected a {
+				border: 1px solid #E0E0E0;
+				background: #fff url(../../images/results_active_bg_gradient.png) bottom left repeat-x; 
+			}
+				
+				#searchWrapper #results ul#list li a span.marker {
+					display: inline-block;
+					vertical-align:top;
+					width: 40px;
+					height: 40px;
+					margin: 3px 5px 0 3px;
+					padding: 5px 0 0 0;
+					text-align: center;
+					font-size: 10px;
+					font-weight: bold;
+					color: #fff;
+					background: url(../../icons/mapmarker_wide_grey.png) no-repeat;
+					background-position: 4px 3px;
+					zoom: 1; /*IE Fix */
+					curser: pointer; /* IE8 Fix */
+				}
+				
+				#searchWrapper #results ul#list li a:hover span.marker,
+				#searchWrapper #results ul#list li.hover a span.marker,
+				#searchWrapper #results ul#list li.active a span.marker,
+				#searchWrapper #results ul#list li.selected a span.marker { 
+					background-image: url(../../icons/mapmarker_wide_red.png); 
+				}
+				
+				#searchWrapper #results ul#list li a span.details {
+					vertical-align: top; 
+					display: inline-block;
+					width: 175px;
+					margin: 2px 0 0 0;
+					font-size: 12px;
+					line-height: 15px;
+					color: #777;
+					zoom: 1; /*IE Fix */
+					curser: pointer; /* IE8 Fix */
+				}
+					
+					#searchWrapper #results ul#list li a span.details strong { 
+						font-size: 13px;
+						color: #058fd3;
+						display: inline-block;
+						width: 100%;
+						overflow: hidden;
+						curser: pointer; /* IE8 Fix */
+					}	
+	
+	/*** Prospect Styles ***/
+	#searchWrapper #prospects {
+		padding: 10px;
+		display: none;
+		width: 210px;
+	}
+		
+		#searchWrapper #prospects h4 {
+			margin: 10px 0px 0px 0px; 
+		}
+			
+		#searchWrapper #prospects input {
+			width: 200px;
+			display: block;
+		}
+			
+			#searchWrapper #prospects input.hidden {
+				display: none !important; 
+			}
+			
+			#searchWrapper #prospects input.button {	
+				height:30px;
+				margin-top:10px;
+				width:100px; 
+			}
+		
+		#searchWrapper #prospects select {
+			width: 213px;
+			display: block; 
+		}
+			
+		#searchWrapper #prospects label {
+			margin-top: 5px; 
+		}	
+			
+		#searchWrapper #prospects #message {
+			margin: 10px 0px 0px 0px;
+		}
+		
+	input#notifyMe {
+		float: left;
+		margin-top: 10px;
+		margin-left: 0px;
+		width: auto;
+	}
+	
+	input#createProspect {
+		width: 50px;
+	}
+	
+/*** Map Section Styles ***/
+#searchWrapper #mapContainer { 
+	float: left; 
+	width: 636px !important;
+	padding: 1px;
+	background: #fff;
+	border: 1px solid #e4e4e4; 
+}
+
+	#searchWrapper #mapContainer #map,
+	#searchWrapper #mapContainer #direction_map { 
+		width: 640px;
+		height: 500px; 
+	}
+	
+	#searchWrapper #mapContainer #map {
+		display: block;
+	}
+	
+	#searchWrapper #mapContainer #direction_map {
+		display: none;
+	}
+		
+		#searchWrapper #mapContainer #map a:link,
+		#searchWrapper #mapContainer #map a:visited { 
+			border: none; 
+		}
+		
+/*** Legend Section Styles ***/
+#searchWrapper #legend {
+	float: right; 
+	width: 516px;
+	margin: 10px -3px 0 0; 
+}
+
+	#searchWrapper #legend span { 
+		display: inline-block;
+		height: 28px;
+		margin: 0 20px 0 0;
+		padding: 14px 0 0 35px;
+		text-align: left;
+		background: url(../../icons/mapmarker_wide_grey.png) top left no-repeat; 
+	}
+	
+		#searchWrapper #legend span#default { 
+			background: url(../../icons/mapmarker_wide_grey.png) no-repeat;
+			background-position: left 8px;;
+			padding:14px 0 0 50px; 
+		}
+		#searchWrapper #legend span#home { 
+			margin: 0 -3px 0 0;
+			background: url(../../icons/marker_home.png) top left no-repeat; 
+		}
+		
+
+/*** Directions Map ***/
+a.directionLink {
+	font-size: 12px;
+	text-decoration: underline;	
+}
+a.saveLink {
+	font-size: 12px;
+	text-decoration: underline;	
+}
+
+div.directionName {
+	font-weight: bold;	
+}
+
+div#directions table {
+	margin: 0px;	
+}
+
+	div#directions table tbody {
+		border: none;
+	}
+
+	div#directions td {
+		padding: 1px;
+		vertical-align: middle;
+		border: none;
+	}
+
+div#directions table.adp-directions {
+	margin: 10px 0;	
+}
+
+	div#directions table.adp-directions tr {
+		background-image: none;
+	}
+	
+	div#directions table.adp-directions td {
+		vertical-align: top;
+		background-color: #F6F6F6;
+		padding: 3px;
+	}
+	
+	
+div#startAddressPanel{
+	padding: 0;
+	padding-top:10px;
+	display: none;
+}	
+
+#startAddressTxt{
+	width: 175px;
+	padding:0;
+}
+
+.jQuerySlideFix{
+	position:absolute;
+	top: -9999px;
+	height:auto !important;
+}
+
+.jScrollPaneContainer {
+	height: 302px;
+	width: 250px !important;
+}
+
+.trackingResults {
+	height: 401px !important;
+}
+
+.buttonLink{
+	margin-right: 30px;	
+}

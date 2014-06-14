@@ -1,0 +1,138 @@
+/************* SPECIAL OFFER LANDING PAGE STYLES ***/
+
+h2{
+	color: #058fd3;
+	font-family: "Lucida Sans", Arial, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	margin:10px;
+	padding:0px;}
+
+/*** HOMEWRAPPER STYLES ***/
+	#homeWrapper {
+		position: relative;
+		display: block;
+		z-index: 1;
+		width: 924px;
+		margin: 0 0 0 0;
+		padding: 0;
+		background: url(../../images/home_bg.jpg) 0 311px no-repeat; 
+		margin-bottom:30px;}
+
+	#offercontent {
+		width: 959px;
+		margin-left:10px;
+		background-color:#FFF;
+		}
+
+/*** SpecialOfferBox STYLES ***/
+		#specialofferLogo{
+			position:relative;
+			display: block;
+			width: 230px;
+			height: 71px;
+			margin: 0px;
+			margin-top: 22px;
+			margin-left: 10px;
+			padding: 0px 0px 0px 0px;
+			background: url(../../images/specials/ampcLogo.jpg) no-repeat; 
+			float:left;}
+
+		#specialofferText{position:relative;display:block;float:left;width:500px;margin-left:50px;margin-top:23px;}
+		#specialofferDecoration{position:relative;display:block;float:left;width:145px;height:120px;background: url(../../images/specials/money_box.gif) no-repeat;background-position: top center;margin-left:10px;margin-top:5px;}
+		#specialofferAction{position:relative;display:block;float:left;margin-left:0px;margin-top:75px;}
+			
+		#homeWrapper #specialOfferBox { 
+			display: block;
+			width: 960px;
+			height: 126px;
+			margin: 0px;
+			margin-left: 10px;
+			padding: 0px 0px 0px 0px;
+			background: url(../../images/specials/grey_solid_bg.jpg) repeat-x;}
+						
+			#homeWrapper #specialOfferBox h1 { 
+				font-family: "Arial Narrow", Arial, sans-serif;
+				font-size: 30px;
+				color: #666666; }
+				
+				#homeWrapper #specialOfferBox h1 em { color: #fd7a1f; }
+				
+			#homeWrapper #specialOfferBox p { 
+			font-family: "Arial Narrow", Arial, sans-serif;
+				font-size: 24px; 
+				color: #666666; }
+				
+			#homeWrapper #specialOfferBox a:link,
+			#homeWrapper #specialOfferBox a:visited { 
+				display: block;
+				width: 141px;
+				height: 33px;
+				margin: 0px;
+				background: url(../../images/specials/signup_large_green.jpg) no-repeat;
+				border: none; }
+				
+/*** Special Offer Content STYLES ***/
+	#howitworks {
+		position:relative;
+		display: block;
+		width: 410px;
+		height: 340px;
+		margin: 0px;
+		margin-top: 65px;
+		margin-left: 10px;
+		padding: 0px 0px 0px 0px;
+		background: url(../../images/specials/person_parcel.jpg) no-repeat; 
+		float:left;
+		font-size:12px;
+		background-position: bottom left;}
+	
+		#howitworks h2{margin-left:30px;}
+		#howitworks p{padding:10px 0px 0px 0px;margin:0px;}
+		#howitworks p.first{margin-left:30px;padding-top:0px;}
+		#howitworks p.second{margin-left:140px;}
+	
+	#whyitworks {
+		position:relative;
+		display: block;
+		left:75px;
+		width: 460px;
+		height: 390px;
+		margin: 0px;
+		margin-top: 15px;
+		margin-left: 00px;
+		padding: 0px 0px 0px 0px;
+		background: url(../../images/specials/shipping_machine.jpg) no-repeat; 
+		float:left;
+		font-size:12px;
+		background-position: bottom right;
+		}
+		
+		#whyitworks h2{margin-left:0px;}
+		#whyitworks p{padding:10px 0px 0px 0px;margin:0px;}
+		#whyitworks p.first{}
+		#whyitworks p.second{width:360px;}
+		#whyitworks p.third{width:300px;}
+		#whyitworks p.fourth{width:270px;}
+		#whyitworks p.fifth{width:220px;}
+		
+		#whyitworks a:link,
+		#whyitworks a:visited { 
+			display: block;
+			width: 122px;
+			height: 29px;
+			margin: 20px 0px 0px 0px;
+			background: url(../../images/specials/signup_small_green.jpg) no-repeat;
+			border: none; }
+	
+	#offernotes {
+		position:relative;
+		display: block;
+		margin: 0px;
+		margin-top: 10px;
+		margin-left: 11px;
+		padding: 10px 0px 0px 0px;
+		border-top:1px solid #e3e3e3;}
+		
+		#offernotes p {padding:0px;margin:3px;font-size:9px;}
+		

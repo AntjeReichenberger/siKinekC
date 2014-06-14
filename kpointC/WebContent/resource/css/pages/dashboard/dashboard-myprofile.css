@@ -1,0 +1,53 @@
+input[disabled] {
+	background: #ECE9D8;
+}
+
+select[disabled] {
+	background: #ECE9D8;
+	color: #BBB;
+}
+
+input[readonly] {
+	background: #ECE9D8;
+	color: darkGray;
+}
+
+#content{
+	padding:0 !important;
+}
+
+#adbModule{
+	width:875px !important;	
+}
+
+#adbModule p {
+	padding-left: 8px;
+	padding-right: 15px;	
+}
+
+	#adbModule p img {
+		width: 22px;
+		margin: -5px 0px;
+	}
+
+table td.headerLabel {
+	font-size: 12px;
+	text-decoration: underline;
+	text-align: center;
+}	
+
+table td.labelright {
+	width: 150px;
+}
+
+table img {
+	width: 22px;
+}
+	
+#pageTitle {
+	padding-left: 8px;
+}
+
+#changeSubmit {
+	margin-left: 13px;
+}

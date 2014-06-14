@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.Country" table="Country">
+		<id name="countryId" type="java.lang.Integer"
+			column="countryId" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		
+		<property name="currencyCode" type="java.lang.String">
+			<column name="CurrencyCode" />
+		</property>
+		
+		<property name="countryCode" type="java.lang.String">
+			<column name="countryCode" />
+		</property>
+	</class>
+</hibernate-mapping>

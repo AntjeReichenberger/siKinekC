@@ -1,0 +1,679 @@
+<!DOCTYPE html>  
+<html> 
+<head> 
+	<title>Kinek Mobile</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
+	<link rel="stylesheet" href="jquery/jquery.mobile-1.4.0-rc.1.min.css">  
+	<script src="jquery/jquery-1.10.2.min.js"></script>  
+	<script src="jquery/jquery.mobile-1.4.0-rc.1.min.js"></script> 
+	
+	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0-rc.1/jquery.mobile-1.4.0-rc.1.min.css"> -->
+	<!-- <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> -->
+	<!-- <script src="http://code.jquery.com/mobile/1.4.0-rc.1/jquery.mobile-1.4.0-rc.1.min.js"></script> -->
+
+	<style>
+		#invaliduser .ui-header a {display: none;}
+	</style>
+</head> 
+<body> 
+
+<!-- Login Page -->
+<div data-role="page" id="pg01_login" >
+ 
+	<script type="text/javascript">
+	
+	    $(document).on('pageinit', '#pg01_login', function() {
+	    	
+	        var token = null ;
+	        var kineknumber = 0 ;
+	        var consumerName = "" ;
+	        var acceptsDutyAndTax = false ;
+	        var tokenValid = false ;
+	        
+        	$("#kinekNameAddress").html("") ;
+	        $("#kinekNameAddress").hide() ;
+	        $("#next1").hide() ;
+	        
+			<!-- General Functions -->
+	        function showDelayedMessage (msg,delay) {
+	        	showMessage(msg);
+	        	setTimeout(function() {
+	        		$.mobile.loading('hide');    
+	        	}, delay) ;
+	        }
+	        
+            function showMessage(msg) {
+            	$.mobile.loading('show', {
+	        		text: msg,
+	        		textonly: true,
+	        		textVisible: true,
+	        		theme: 'b',
+	        		html: ""
+	        	});
+            }
+            
+            function hideMessage() {
+            	$.mobile.loading('hide');
+            }
+            
+            
+            <!-- Button Functions -->
+            
+            <!-- LOGIN -->
+            $("#login").click(function() {
+            	
+              	// reset defaults
+              	$("#kineknumber").val("") ;
+            	$("#kinekNameAddress").html("") ;
+    	        $("#kinekNameAddress").hide() ;
+    	        $("#next1").hide() ;
+    	    	
+    	        
+	        	$("#kineknumber").val("") ;
+	        	$("#firstname").val("") ;
+                $("#lastname").val("") ;
+	        	$("#phonenumber").val("") ;
+	        	
+    	        
+         		var ver = "1";
+        		var usr = $.trim($("#username").val());
+        		var pwd = $.trim($("#password").val()) ;
+        		        		
+                $.ajax({
+                  type: "POST",
+                  url: "../api/delivery/authenticate",
+                  contentType: 'application/json; charset=utf-8',
+                  data: '{ version: "1", username: "' + usr + '", password: "' + pwd + '"}' , 
+                  cache: false,
+                  error: onLoginFailure,
+                  dataType: 'json',
+                  success: onLoginSuccess
+                });
+            
+        	});
+
+            function onLoginFailure(txt1,txt2,txt3) {
+            	showDelayedMessage ("Invalid username/password",2000) ;
+            }
+
+            function onLoginSuccess(data) {
+            	tokenValid = true ;
+            	token = data.token
+            	acceptsDutyAndTax = data.acceptsDutyAndTax 
+            	if ( ! acceptsDutyAndTax) {
+            		$("#showDutyAndTaxes").hide() ;					
+            	} else {
+            		$("#showDutyAndTaxes").show() ;
+            	}
+
+            	$.mobile.pageContainer.pagecontainer ("change", "#pg02_search", { transition: "slide", changeHash: false });
+            	
+            }
+            
+            <!-- LOGOUT -->
+            $("#pg02_logoutbutton").click(function() {
+            	
+	 		    $.ajax({
+	                 type: "POST",
+	                 url: "../api/delivery/logout",
+	                 contentType: 'application/json; charset=utf-8',
+	                 data: '{ version: "1", token: "' + token + '"}' , 
+	                 cache: false,
+	                 error: onLogoutFailure,
+	                 dataType: 'json',
+	                 success: onLogoutSuccess
+	             });
+        	});     
+            
+            function onLogoutFailure(txt1,txt2,txt3) {
+            	$.mobile.pageContainer.pagecontainer ("change", "delivery.html", {reloadPage: false, changeHash: false });
+            }
+
+            function onLogoutSuccess(data) {
+            	$.mobile.pageContainer.pagecontainer ("change", "delivery.html", {reloadPage: false, changeHash: false });
+            }
+            	
+
+            <!-- Search Button -->
+		    $("#pg02_searchbutton").click(function() {
+
+		    	var ver = "1";
+	        	var kineknumber = $.trim($("#kineknumber").val());
+	        	var firstname = $.trim($("#firstname").val());
+	        	var lastname = $.trim($("#lastname").val());
+	        	var phonenumber = $.trim($("#phonenumber").val());
+	        	
+	        	<!-- Check for no entry -->
+	        	if ( kineknumber == "" && firstname == "" && lastname == "" && phonenumber == "") {
+        			showDelayedMessage ("number or name required",2000) ;
+       				return ;
+        		}
+        	
+	        	<!-- Check for no entry -->
+	        	if ( kineknumber != "" && (firstname != "" || lastname != "" || phonenumber != ""))  {
+        			showDelayedMessage ("number or name not both",2000) ;
+       				return ;
+        		}
+	        	
+	        	if (kineknumber == "") {
+	        	
+	        		if ( firstname == "") {
+	       				showDelayedMessage ("first name required",2000) ;
+	       				return ;
+	        		}	
+	       			
+	        		if (lastname == "") {
+	       				showDelayedMessage ("last name required",2000) ;
+	       				return ;
+	       			}
+	        		
+	     			<!-- ajax number -->
+		            $.ajax({
+		                  type: "POST",
+		                  url: "../api/delivery/getcustomers",
+		                  contentType: 'application/json; charset=utf-8',
+		                  data: '{ version: "1", token: "' + token + '", firstname: "' + firstname + '", lastname: "' + lastname + '", phonenumber: "' + phonenumber + '"}' , 
+		                  cache: false,
+		                  error: onSearchNameFailure,
+		                  dataType: 'json',
+		                  success: onSearchNameSuccess
+		                });
+		            
+	       			
+	       		} else {
+	       			
+	       		
+	       			<!-- ajax number -->
+		            $.ajax({
+		                  type: "POST",
+		                  url: "../api/delivery/getaddress",
+		                  contentType: 'application/json; charset=utf-8',
+		                  data: '{ version: "1", token: "' + token + '", kineknumber: "' + kineknumber + '"}' , 
+		                  cache: false,
+		                  error: onSearchknumberFailure,
+		                  dataType: 'json',
+		                  success: onSearchknumberSuccess
+		                });
+	       		} 
+	       			
+	                
+        	});
+
+            function onSearchNameFailure(txt1,txt2,txt3) {
+            	showDelayedMessage (txt1.status + " - " + txt1.statusText,1000) ;
+            }
+
+            function onSearchNameSuccess(data) {
+            	var status = data.status ;
+            	var message = data.message ;
+            	var dataPackage = data.data ;
+            	
+            	var nameBlock = "" ;
+
+            	<!-- error from back end -->
+            	if (status == -1) {
+            		showDelayedMessage (message,1000) ;
+            		return ;
+            	} 
+            	
+            	var tmp = "" ;
+            	$.each(dataPackage, function(key,usr) {
+            		tmp = tmp + '<li><a href="#" data-filtertext="' + usr.fullname + '" data-id="' + usr.number + '" >'+ usr.fullname + ' (' + usr.number + ')<p>' + usr.fulladdress1 + '<br/>' + usr.fulladdress2 + '</p></a></li>' ;
+               	});
+            	
+            	$("#04_searchlist").html(tmp) ;
+     
+            	$.mobile.pageContainer.pagecontainer ("change", "#pg04_list", { transition: "slide", changeHash: false });
+            	$('#04_searchlist').listview('refresh',true);
+
+            	
+             	// User was found
+            	//if ( status == 1) {  
+            	//	
+            	//	$.mobile.pageContainer.pagecontainer ("change", "#pg03_verify", { transition: "slide", changeHash: false });
+            	//	
+            	//	//$.mobile.changePage( "#pg03_verify", { transition: "slide", reverse: false, changeHash: false });
+            	//	
+            	 //   <!-- $("#continueknumber").hide() ; -->
+            	  //  <!-- $("#searchknumber").hide() ; -->
+            	 //   
+            	 //   kineknumber = data.number ;						// Save kinek
+            	 //   consumerName = data.fullname ;
+            	 //    
+            	 //   nameBlock = "<Strong>" + data.fullname + "</strong>&nbsp;(" + data.number + ")" ;
+            	//	nameBlock = nameBlock + "<br/>"  + data.addressLine1 ;
+            	//	if (data.addressLine2 != null && data.addresssLine2 != "") {
+            	//		nameBlock = nameBlock + "<br/>"  + data.addressLine2 ;
+            	//	}
+            	//	nameBlock = nameBlock + "<br/>" + data.city + ", " + data.state 
+            	//	nameBlock = nameBlock + "<br />" + data.zip
+
+               	// 	$("#kinekNameAddress").html(nameBlock) ;
+               	// 	$("#continueknumber").show() ;
+               	//   $("#next1").show() ;
+               	 	
+               	// Not found or error 	
+            	//} else if (status == 0 ){
+            	//	 $("#next1").hide() ;
+	           	//     $("#continueknumber").hide() ;
+	        	//     $("#searchknumber").hide() ;
+               	// 		$("#kinekNameAddress").html( data.message ) ;
+            	//} else {
+            	//	$("#kinekNameAddress").html(data.message) ;
+            	//}
+            //	
+        	 //	$("#kinekNameAddress").show()  ;
+//
+  //          	//alert ( message )
+    //        	// $.mobile.changePage("#getKinekNumber", { transition: "slide" });
+            }
+		    
+            
+            function onSearchknumberFailure(txt1,txt2,txt3) {
+            	showDelayedMessage (txt1.status + " - " + txt1.statusText,1000) ;
+            }
+
+            function onSearchknumberSuccess(data) {
+            	// KGG
+            	var status = data.status ;
+            	var message = data.message ;
+//            	var nameBlock = "" ;
+
+            	if ( status == 1) {  
+
+            		var tmp = '<li><a href="#" data-filtertext="' + data.fullname + '" data-id="' + data.number + '" >' + data.fullname + ' (' + data.number + ')<p>' + data.fulladdress1 + '<br/>' + data.fulladdress2 + '</p></a></li>' ;
+          
+            		$("#04_searchlist").html(tmp) ;
+     
+            		$.mobile.pageContainer.pagecontainer ("change", "#pg04_list", { transition: "slide", changeHash: false });
+            		$('#04_searchlist').listview('refresh',true);
+
+
+
+             	// User was found
+//            	if ( status == 1) {  
+//            		
+//            		$.mobile.pageContainer.pagecontainer ("change", "#pg03_verify", { transition: "slide", changeHash: false });
+//           		
+//            		//$.mobile.changePage( "#pg03_verify", { transition: "slide", reverse: false, changeHash: false });
+//            		
+//            	    <!-- $("#continueknumber").hide() ; -->
+//            	    <!-- $("#searchknumber").hide() ; -->
+//            	    
+//            	    kineknumber = data.number ;						// Save kinek
+//            	    consumerName = data.fullname ;
+//            	     
+//            	    nameBlock = "<Strong>" + data.fullname + "</strong>&nbsp;(" + data.number + ")" ;
+//            		nameBlock = nameBlock + "<br/>"  + data.addressLine1 ;
+//            		if (data.addressLine2 != null && data.addresssLine2 != "") {
+//            			nameBlock = nameBlock + "<br/>"  + data.addressLine2 ;
+//            		}
+//            		nameBlock = nameBlock + "<br/>" + data.city + ", " + data.state 
+//            		nameBlock = nameBlock + "<br />" + data.zip
+//
+//               	 	$("#kinekNameAddress").html(nameBlock) ;
+//               	 	$("#continueknumber").show() ;
+//               	    $("#next1").show() ;
+//               	 	
+//               	// Not found or error 	
+            	} else if (status == 0 ){
+            		 $("#next1").hide() ;
+	           	     $("#continueknumber").hide() ;
+	        	     $("#searchknumber").hide() ;
+               	 		$("#kinekNameAddress").html( data.message ) ;
+            	} else {
+            		$("#kinekNameAddress").html(data.message) ;
+            	}
+            	
+        	 	$("#kinekNameAddress").show()  ;
+
+            }
+		    
+            $(document).on('vclick', '#04_searchlist li a', function(){  
+                kineknumber = $(this).attr('data-id') ;
+                consumerName = $(this).attr('data-filtertext') ; 
+               
+   	    	   	// Reset Defaults
+   	    	   	$("#shippedFrom").val("") ;
+   	    	   	$("#customInfo").val("") ;
+   	    	   	$("#dutyAndTaxes").val("0.00") ;
+   	    	   	$('#select-weight').val(1) ;
+   	    	   	$('#select-courier').val(3) ;
+   	    	   
+   	    	 	$("#consumerText").html("<strong>" + consumerName + " (" + kineknumber + ")</strong>") ;
+   	    	 	$.mobile.changePage("#pg05_packages", { transition: "slide", changeHash: false });
+          
+    	       
+               // $.mobile.changePage( "#headline", { transition: "slide", changeHash: false });
+               // alert ("hello") ;
+            });
+            
+            <!-- Accept Package -->
+	        $("#pg05_acceptbutton").click(function() {
+	        	
+        		var courier   = $("#select-courier").val() ;
+        		var weight    = $("#select-weight").val() ;
+        		var dutytaxes = $("#dutyAndTaxes").val();
+        		var shipped   = $.trim($("#shippedFrom").val());
+        		var info      = $.trim($("#customInfo").val());
+        		
+        		console.log("kineknumber: '" + kineknumber + "'") ;
+        		console.log("courier: '" + courier + "'") ;
+        		console.log("dutytaxes: '" + dutytaxes + "'") ;
+        		console.log("shipped: '" + shipped + "'") ;
+        		console.log("info: '" + info + "'") ;
+        		
+                $.ajax({
+                  type: "POST",
+                  url: "../api/delivery/receivepackage",
+                  contentType: 'application/json; charset=utf-8',
+                  data: '{ version: "1", token: "' + token + 
+                	  '", kineknumber: "' + kineknumber + 
+                	  '", courier: "' + courier +
+                	  '", weight: "' + weight +
+                	  '", dutytaxes: "' + dutytaxes +
+                	  '", shipped: "' + shipped +
+                	  '", info: "' + info 
+                	  + '" }' , 
+                  cache: false,
+                  error: onAcceptPackageFailure,
+                  dataType: 'json',
+                  success: onAcceptPackageSuccess
+                });
+                
+        	});
+	        
+	       function onAcceptPackageFailure(error) {
+	    	   var failjson = $.parseJSON(error.responseText);
+	    	   showDelayedMessage (failjson.message,3000) ;
+	    	   
+	           // alert ("Failure: " + request.status + " - " + request.statusText + " - " + status + " - " + error.message) ;
+	       }
+	        
+	       function onAcceptPackageSuccess(data) {
+	    	   showDelayedMessage ("Package Accepted",1000) ;
+	    	   setTimeout(function() {
+	    		   $.mobile.changePage("#pg04_list", { transition: "slide", reverse: true, changeHash: false });  
+	        	}, 1000) ;
+	    	   
+	       }
+	       	       
+	       function message (msg) {
+	    	   alert (msg) ;
+	       }
+	        
+		//    $( '#popupPadded' ).popup( 'open', {
+	    //    	theme: "c",
+	    //    	positionTo: "#popupPadded" });
+	        
+	   	//     var popup = setInterval(function(){
+	    //        $("#appPopup").popup("open");
+	    //       clearInterval(popup);
+	    //   },1);
+	    //   var popup = setInterval(function(){
+	    //       $("#appPopup").popup("close");
+	    //       clearInterval(popup);
+	    //   },1);
+	        
+	   	// 
+	    //    
+	    //   setTimeout(function() {
+	    //  	$('#popupPadded').popup('close') ;
+	    // 	}, 3500);
+	        
+	    // $('#popupPadded').dialog("open").dialog("close");
+	        
+	    //  window.setTimeout(function() {
+	    // 	$('#popupPadded').popup("close");
+	    // 	}, 10000);
+	    
+	       	$("#pg04_backbutton").click(function() {
+            	$.mobile.pageContainer.pagecontainer ("change", "#pg02_search", { transition: "slide", reverse: true , changeHash: false });
+          	});
+	        	
+		    
+	    	$("#pg05_backbutton").click(function() {
+            	$.mobile.pageContainer.pagecontainer ("change", "#pg02_search", { transition: "slide", reverse: true , changeHash: false });
+          	});
+            
+		    
+		    $("#pg03_backbutton").click(function() {
+		    	$.mobile.pageContainer.pagecontainer ("change", "#pg02_search", { transition: "slide", reverse: true , changeHash: false });
+	    	});
+
+
+	       $("#pg03_packagesbutton").click(function() {
+	    	   
+	    	   	// Reset Defaults
+	    	   	$("#shippedFrom").val("") ;
+	    	   	$("#customInfo").val("") ;
+	    	   	$("#dutyAndTaxes").val("0.00") ;
+	    	   	$('#select-weight').val(1) ;
+	    	   	$('#select-courier').val(3) ;
+	    	   
+	    	 	$("#consumerText").html("<strong>" + consumerName + " (" + kineknumber + ")</strong>") ;
+	    	 	$.mobile.changePage("#pg05_packages", { transition: "slide", changeHash: false });
+        	});
+	       
+
+//	       $("#kineknumber").bind("change", function(event, ui) {  
+//	    	   	
+//         		var ver = "1";
+//        		var kineknumber = $.trim($("#kineknumber").val());
+//       			if ( kineknumber == "") {
+//       				$("#kinekNameAddress").html("") ;
+//       				$("#next1").hide() ;
+//       				return ;
+//       			}/
+//				        		
+//                $.ajax({
+//                  type: "POST",
+//                  url: "../api/delivery/getaddress",
+//                 contentType: 'application/json; charset=utf-8',
+//                  data: '{ version: "1", token: "' + token + '", kineknumber: "' + kineknumber + '"}' , 
+//                  cache: false,
+//                  error: onSearchknumberFailure,
+//                  dataType: 'json',
+//                  success: onSearchknumberSuccess
+//                });
+//        	});
+            
+           
+	    });
+	</script>
+
+	<div data-role="header">
+		<h1>Kinek Mobile 0.6</h1>
+	</div>
+
+	<div data-role="content">
+		<input type="hidden" name="v" value="1">	
+		<p>Welcome!</p>		
+		<p>Please enter your username & password</p>
+		<p>	
+			<input data-clear-btn="true" type="text" name="name" id="username" placeholder="Username"  data-mini="true" value="jeremy"  />
+			<input data-clear-btn="true" type="password" name="password" id="password" placeholder="Password" data-mini="true" value="kppass1" />
+			<input id="login" type="button" value="Login" data-inline="true"   /> 
+			<!--  <a href="#invaliduser" data-role="button" data-inline="true" data-rel="dialog">Open dialog</a>  -->
+			<div data-role="popup" data-theme="b" id="popupPadded" data-history="false" class="ui-content"  >
+			<p>Hello there.</p>
+			</div>
+  
+		</p>
+	</div>
+</div>
+
+
+<!-- Get Kinek Number <a href="index.html" data-icon="home">&nbsp;</a> -->
+<div data-role="page" id="pg02_search" >
+	<div data-role="header">
+		<h1>Search</h1>
+	</div>
+
+	<div data-role="content" >	
+	
+		<input type="number" data-type="search" id="kineknumber" name="knumber" placeholder="Kinek Number" data-mini="true" value="" />
+		<hr>
+		<input type="text" data-type="search" id="firstname" name="kfirstname" placeholder="First Name" data-mini="true" value="" />
+		<input type="text" data-type="search" id="lastname" name="kfirstname" placeholder="Last Name" data-mini="true" value="" />
+		<!--  <input type="number" data-type="search" id="phonenumber" name="kphonenumber" placeholder="Phone Number" data-mini="true" value="" />  -->
+				
+		<!--  <input  type="text" id="dummy" name="dummy" data-mini="true" size="1" value="" data-role="none" style="opacity: 0 ;" />   -->
+		
+		<!--  <div id="kinekNameAddress">  -->
+		<!-- 	<p>  -->
+		<!--  	Default user  -->
+		<!-- 	</p>  -->	
+		<!--  </div>  -->
+		
+		<br />
+	
+		
+
+		<!--  <div id="next1" align="right">   -->
+ 		<!--  <a href="#" id="packages" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" >Packages</a>  -->
+ 		<!--  </div>  -->
+ 		
+		<!-- <a href="#searchknumber" id="searchknumber" data-role="button" data-inline="true" data-rel="dialog">Search</a>  --> 
+
+		<div data-role="footer" data-position="fixed" >
+
+   
+		  <!--  <div data-role=footer data-position=fixed class=ui-bar>  -->
+	
+		   <div class="ui-grid-a">
+				<div class="ui-block-a" align="left" ><a href="#" id="pg02_logoutbutton" data-role="button" data-inline="true" data-mini="true" data-icon="home" >Logout</a></div>
+				<div class="ui-block-b" align="right" ><a href="#" id="pg02_searchbutton" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" >Search</a></div>
+		</div>
+	
+
+   <!--  <a href=# data-role=button> Copy </a>  --> 
+   <!-- <a href=# data-role=button> Paste </a>  --> 
+
+  
+	    
+  	</div>
+		
+	</div>
+</div>
+
+
+<div data-role="page" id="pg03_verify" >
+	<div data-role="header">
+		<h1>Consumer</h1>
+	</div>
+	<div data-role="content" >	
+		<div id="kinekNameAddress">  -->
+			<p> 
+			Unknown User  
+			</p>	
+		</div> 
+		
+		<br />
+		<br />
+		
+		<div data-role="footer" data-position="fixed" >
+	 		<div class="ui-grid-a">
+				<div class="ui-block-a" align="left" ><a href="#" id="pg03_backbutton"     data-role="button" data-inline="true" data-mini="true" data-icon="back" >Change</a></div>
+				<div class="ui-block-b" align="right"><a href="#" id="pg03_packagesbutton" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" >Packages</a></div>
+			</div>
+		</div>
+
+	</div>	
+</div>
+
+<div data-role="page" id="pg04_list" >
+	<div data-role="header" id="04_header">
+		<h1>Search</h1>
+	</div>
+	
+	<div data-role="content" >	
+		<div >  
+			<ul data-role="listview" id="04_searchlist">
+			</ul>
+		</div> 
+		
+		<br />
+		<br />
+		
+		<div data-role="footer" data-position="fixed" >
+	 		<div class="ui-grid-a">
+				<div class="ui-block-a" align="left" ><a href="#" id="pg04_backbutton"     data-role="button" data-inline="true" data-mini="true" data-icon="back" >Back</a></div>
+			</div>
+		</div>
+
+	</div>	
+</div>
+
+
+<!-- Receive Package -->
+<div data-role="page" id="pg05_packages">
+	<div data-role="header">
+		<h1>Package</h1>
+	</div>
+
+	<div data-role="content">	
+ 
+		<div id="consumerText"  align="center"></div>	
+		<br />
+		<label for="select-courier" class="select">Courier:</label>
+		<select name="select-courier" id="select-courier" data-mini="true">
+		   <option value="1">DHL</option>
+		   <option value="2">FedEx</option>
+		   <option selected value="3">UPS</option>
+		   <option value="4">USPS</option>
+		   <option value="5">Purolator</option>
+		   <option value="6">Canada Post</option>
+		   <option value="99">Other</option>
+		</select> 
+		
+		<label for="select-weight" class="select">Weight:</label>
+		<select name="select-weight" id="select-weight" data-mini="true">
+		   <option selected value="1">00.00lbs-10.00lbs</option>
+		   <option value="2">11.00lbs-20.00lbs</option>
+		   <option value="3">21.00lbs-30.00lbs</option>
+		   <option value="4">31.00lbs-40.00lbs</option>
+		</select>
+
+		<div id="showDutyAndTaxes">
+			<label for="dutyAndTaxes" >Duty And Taxes:</label>
+			<input type="text" data-type="text" id="dutyAndTaxes" name="dutyAndTaxes" placeholder="Duty And Taxes" data-mini="true" value="0.00" />
+		</div>
+		
+		<label for="shippedFrom" >Shipped From:</label>
+		<input type="text" data-type="text" id="shippedFrom" name="shippedFrom" placeholder="Shipped From" data-mini="true" value="" />
+		
+		<label for="customInfo" >Custom info:</label>
+		<input type="text" data-type="text" id="customInfo" name="customInfo" placeholder="Custom Info" data-mini="true" value="" />
+		
+		<div data-role="footer" data-position="fixed" >
+			<div class="ui-grid-a">
+				<div class="ui-block-a" align="left" ><a href="#" id="pg05_backbutton" data-role="button" data-inline="true" data-mini="true" data-icon="back" >Back</a></div>
+				<div class="ui-block-b" align="right" ><a href="#" id="pg05_acceptbutton" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" >Accept</a></div>
+			</div>
+		</div>
+		
+	</div>
+  </div>
+	    
+</div>
+
+	<!-- Invalid User -->
+	<div data-role="dialog" id="invaliduser"  data-close-btn="none">
+	
+		<div data-role="header" data-close-btn="none">
+			<h1>Login Error</h1>
+		</div>
+	
+		<div data-role="content" data-rel="dialog" style="text-align: center;"  >	
+			<p>The username and/or password is not valid</p>		
+			<a href="#indexPage" data-role="button" data-rel="back" data-inline="true" data-theme="c"  >Ok</a>  
+		</div><!-- /content -->
+	
+	  
+	</div><!-- /page -->
+
+
+</body>
+</html>

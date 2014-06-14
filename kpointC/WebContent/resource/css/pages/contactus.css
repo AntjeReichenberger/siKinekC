@@ -1,0 +1,39 @@
+div.leftcol {
+	width: 65%; 
+	display: inline-block; 
+	float: left;
+}
+
+div.rightcol {
+	display: inline-block; 
+	float: right;	
+}
+
+	div.rightcol img {
+		margin-top: 20px;
+	}
+
+.email
+{
+	color: #058FD3 !important;
+	border-bottom:1px solid #058FD3 !important;
+}
+
+table{
+	margin:0px;
+}
+
+table.phonetable
+{
+	width: auto; margin-left: 15px;
+}
+
+	table.phonetable td
+	{
+		padding: 0px;
+	}
+	
+	table.phonetable td.phoneval
+	{
+		padding-left: 10px;
+	}

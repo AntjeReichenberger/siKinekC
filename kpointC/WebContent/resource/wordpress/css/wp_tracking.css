@@ -1,0 +1,71 @@
+.jScrollPaneContainer {
+	height: 380px !important;
+	width: 260px !important;
+}
+
+.trackingResults {
+	height: 485px !important;
+}
+
+.tracking {
+    color: #777777 !important;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif  !important;
+    font-size: 11px  !important;
+}
+
+table.pkgtrack {
+    border-collapse: collapse;
+    margin-top: 20px;
+	margin-left:auto;
+	margin-right:auto;
+    width: 900px;	
+	border-spacing: 0;
+}
+
+table.pkgtrack thead{
+    background: url("../images/table_th_bg.jpg") repeat-x scroll left bottom #25A6E6;
+    border: 1px solid #25A6E6;
+}
+
+table.pkgtrack tbody {
+    border-color: #E3E3E3;
+    border-style: solid;
+    border-width: 1px 1px 2px;
+    font-size: 11px;
+}
+
+table.pkgtrack thead tr th, table.pkgtrack thead th {
+    border-left: 1px solid #057FBB;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+	padding:0px;
+	margin:0;
+    padding-left: 8px;		
+}
+
+table.pkgtrack tbody td, table tbody th {
+    border: 1px solid #E3E3E3;
+	padding:3px;
+    padding-left: 6px;
+	margin:0px;
+    vertical-align: top;
+}
+
+#searchWrapper{
+  width:960px !important;
+  margin-left: 25px;
+}
+
+#searchWrapper #mapContainer{
+  width:600px !important;
+  margin-left:15px;
+}
+
+table.pkgtrack tbody tr {
+    background: url(../images/table_tbody_odd_bg.jpg) repeat-x scroll left bottom #FFFFFF;
+}
+
+table.pkgtrack tbody tr.even { 
+	background: url(../images/table_tbody_even_bg.jpg) bottom left repeat-x #fff; 
+}

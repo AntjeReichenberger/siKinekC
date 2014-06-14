@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+      Kinek
+    </title>
+    <style type="text/css">
+/*<![CDATA[*/
+    <!-- body { background-color: #262626; margin: 0; padding: 0; } a { color:#2d78d2; text-decoration:none; } a:hover { color:#2d78d2; text-decoration:underline; } img { border: none; } --> 
+    /*]]>*/
+    </style>
+  </head>
+  <body>
+    <!-- START OF PAGE WRAPPER -->
+    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor=
+    "#262626">
+      <tbody>
+        <tr>
+          <td valign="top">
+            <!-- START OF EMAIL WRAPPER -->
+            <table width="650" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FCFCFC">
+              <tbody>
+                <tr>
+                  <td>
+                    <!-- START OF Header Table -->
+                    <table width="650" height="93" border="0" cellspacing="0" cellpadding="0"
+                    bgcolor="#FCFCFC">
+                      <tbody>
+                        <tr>
+                          <td height="93" width="415" align="left" valign="top" bgcolor="#EDEDED">
+                            <img src="https://s3.amazonaws.com/email_images/new+email+logo.png"
+                            width="397" height="93" alt="Kinek Logo" />
+                          </td>
+                          <td width="189" align="right" valign="middle" bgcolor="#EDEDED">
+                            <a href="http://facebook.com/mykinekpoint"><img src=
+                            "https://s3.amazonaws.com/email_images/kinek+transactional+emails/facebook.jpg"
+                            alt="Facebook" width="30" height="22" border="0" /></a> <a href=
+                            "http://twitter.com/kinek"><img src=
+                            "https://s3.amazonaws.com/email_images/kinek+transactional+emails/twitter.jpg"
+                            alt="Twitter" width="30" height="22" border="0" /></a>
+                          </td>
+                          <td width="10" height="93" align="right" valign="top" bgcolor="#EDEDED"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- END OF Header Table -->
+					<!--START OF CONTENT-->
+					attb_content
+					<!--END OF CONTENT-->
+             		<!-- START OF 3 Column Product Display Table -->
+		            <table width="630" border="0" align="center" cellpadding="0" cellspacing="0">
+		              <tr>
+					    <td colspan="5" height="37" valign="bottom"><img src="https://s3.amazonaws.com/email_images/kinek+transactional+emails/hr.jpg" width="630" height="37" alt="hr1" /></td>
+					    </tr>
+					  <tr>
+					    <td height="50" colspan="5" align="left" valign="top" bgcolor="#fcfcfc" style="font-family: Helvetica, Arial, sans-serif; color: #313035; font-size: 22px; letter-spacing: -1px;">Special Offers and New Stuff</td>
+					    </tr>
+					  <tr>
+					    <td width="200" height="168" valign="top"><a href="https://www.kinek.com/1"><img src="https://s3.amazonaws.com/email_images/kinek+transactional+emails/gallery+images/gallery_image_small_left.jpg" width="200" height="150" alt="Special Offer Left" /></a></td>
+					    <td width="15">&nbsp;</td>
+					    <td width="200" valign="top"><a href="https://www.kinek.com/2"><img src="https://s3.amazonaws.com/email_images/kinek+transactional+emails/gallery+images/gallery_image_small_center.jpg" width="200" height="150" alt="Special Offer Center" /></a></td>
+					    <td width="15">&nbsp;</td>
+					    <td width="200" valign="top"><a href="https://www.kinek.com/3"><img src="https://s3.amazonaws.com/email_images/kinek+transactional+emails/gallery+images/gallery_image_small_right.jpg" width="200" height="150" alt="Special Offer Right" /></a></td>
+					  </tr>
+		            </table>
+		            <!-- END OF 3 Column Product Display Table -->
+           			<!-- START OF FOOTER TABLE -->
+                    <table width="650" border="0" cellspacing="0" cellpadding="0" bgcolor="#FCFCFC">
+                      <tbody>
+                        <tr>
+                          <td height="26" colspan="4" align="left" valign="top" bgcolor="#FCFCFC">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="93" colspan="2" align="left" valign="top" bgcolor="#EDEDED">
+                            <a href="#"><img src="https://s3.amazonaws.com/email_images/new+email+logo.png"
+                            width="397" height="93" alt="Kinek Logo" /></a>
+                          </td>
+                          <td height="93" width="281" align="right" valign="middle" bgcolor=
+                          "#EDEDED">
+                            <a href="http://facebook.com/mykinekpoint"><img src=
+                            "https://s3.amazonaws.com/email_images/kinek+transactional+emails/facebook.jpg"
+                            alt="Facebook" width="30" height="22" border="0" /></a> <a href=
+                            "http://twitter.com/kinek"><img src=
+                            "https://s3.amazonaws.com/email_images/kinek+transactional+emails/twitter.jpg"
+                            alt="Twitter" width="30" height="22" border="0" /></a>
+                          </td>
+                          <td width="10" height="93" align="right" valign="top" bgcolor="#EDEDED">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="10" height="58" align="left" valign="top" bgcolor="#EDEDED">
+                          </td>
+                          <td width="349" align="left" bgcolor="#EDEDED" style="font-family: Helvetica, sans-serif; font-size: 11px; color: #757887; line-height: 16px;">
+                            Copyright &copy; 2011 Kinek. All Rights Reserved.<br />
+                            181 Fremont St | San Francisco | CA 94105 | <a href=
+                            "mailto:support@kinek.zendesk.com" style="color:#2d78d2;">support@kinek.zendesk.com</a>
+                          </td>
+                          <td height="58" colspan="2" align="right" valign="top" bgcolor="#EDEDED"></td>
+                        </tr>
+                      </tbody>
+                    </table><!-- END OF FOOTER TABLE -->
+                  </td>
+                </tr>
+              </tbody>
+            </table><!-- END OF EMAIL WRAPPER -->
+          </td>
+        </tr>
+      </tbody>
+    </table><!-- END OF PAGE WRAPPER -->
+  </body>
+</html>

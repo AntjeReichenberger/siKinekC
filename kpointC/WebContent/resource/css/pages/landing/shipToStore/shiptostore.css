@@ -1,0 +1,245 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin: 0;
+	padding: 0; }
+html, body {
+	font-family: "Arial", arial, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	color: #393939;
+	background: url(../../../../images/landing/shipToStore/shiptostore_bg_sky.png) top left repeat-x #064a02; 
+}
+
+#header-wrapper{
+	position:absolute; 
+	width:100%;
+	text-align:center;
+	margin-top:15px; 
+}
+
+
+#wrapper {
+		display: block;
+		width: 1283px;
+		height: 650px;
+		margin: 0 auto;
+		padding: 117px 0 0 12px;	
+		background: url(../../../../images/landing/shipToStore/shiptostore_bg_center.png) top center no-repeat; }
+	
+.ad {
+	float: left;
+	display: block; 
+}
+			
+#header{	
+		margin:0 auto;
+		display:inline-block;	
+		width: 1283px;	
+		
+				
+}
+#header h1{		
+		
+		font-size: 32px;
+		font-weight:bold;
+		
+}
+#header h3{		
+		font-size: 19px;
+		font-weight:normal;		
+}
+
+.VAGRoundedStdLight {
+			font-weight: normal;
+			font-style: normal;
+			line-height:normal;
+			font-family: 'VAGRoundedStdLight', sans-serif;
+			font-size-adjust: 0.54;
+		}
+		.VAGRoundedStdBold {
+			font-weight: normal;
+			font-style: normal;
+			line-height:normal;
+			font-family: 'VAGRoundedStdBold', sans-serif;
+			font-size-adjust: 0.50;
+		}
+
+		.VAGRoundedStdThin {
+			font-weight: normal;
+			font-style: normal;
+			line-height:normal;
+			font-family: 'VAGRoundedStdThin', sans-serif;
+			font-size-adjust: 0.54;
+		}
+			
+
+#maincontentlist{
+		color:white;
+}
+
+#listwrapper{
+	margin-top:30px;
+	width:480px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:16px;
+	text-align:left;
+}
+	
+#listwrapper h3{
+    font-size:16px;
+}
+
+#listwrapper-title{
+	margin-top:10px;
+	margin-bottom:15px;
+}
+
+
+#listwrapper b{
+    font-size:15px;
+}
+
+#listwrapper ol{
+    margin-top:5px;
+	margin-left:35px;	
+	
+}  
+
+#listwrapper ol li{
+	
+    font-size:13px;	
+	line-height:19px;
+}
+
+#maincontenttext{
+	margin-top:13px;
+	color:white;
+	font-size:15px;
+}
+#maincontentsearchbox{
+	color:white;
+	margin-top:20px;
+	font-size:17px;
+}
+
+#maincontentsearchbox h3{
+	font-size:13px;	
+	margin-bottom:15px;
+}
+	
+#kplogo{
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:20px;
+		width:200px;				
+}
+			
+#kplogo A{
+		text-decoration:none;
+		border:none;
+		color:#ffffff;
+}
+			
+#kplogo img{
+		vertical-align:middle;
+		border:none;
+}
+
+#kplogo div{
+		font-size:13px;
+		display:inline;		
+		font-size:20px;	
+		vertical-align:middle;
+}
+			
+#footer{
+		font-size:11px;
+		margin-top:15px;
+		color:white;
+}
+			
+#footer .bullet{
+		margin:2px;				
+}
+			
+#footer a:link, a:visited, a:active{
+		color:white;
+		text-decoration: underline;				
+}
+			
+#footer A:hover {
+		text-decoration: none;
+}			
+		
+#maincontentsearchbox #searchbtn{
+		background: transparent url('../../../../images/landing/shipToStore/shiptostore_searchbtn.jpg') no-repeat top;				
+		display:inline-block;
+		border:0px;
+		width:55px;
+		cursor:pointer;
+		padding:0px;
+		margin:0px;
+		height:30px;
+		vertical-align: top;
+		margin-left:0px;
+}
+
+#btnshadow{
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+	background: transparent url('../../../../images/landing/shipToStore/shiptostore_shadow_btn.jpg') no-repeat top;
+	height:20px;
+	margin-top:10px;
+}
+
+
+
+#maincontentsearchbox #leanrmorebtn{
+		background: transparent url('../../../../images/landing/shipToStore/shiptostore_learnmorebtn.jpg') no-repeat top;				
+		display:inline-block;
+		border:0px;
+		width:95px;
+		cursor:pointer;
+		padding:0px;
+		margin:0px;
+		height:30px;
+		vertical-align: top;
+		margin-left:38px;
+		
+}
+			
+#maincontentsearchbox  #postalCode{
+		background: transparent url('../../../../images/landing/shipToStore/shiptostore_searchbox.jpg') no-repeat;
+		border:none;
+		width:157px;
+		height:24px;
+		padding:2px;		
+		padding-top:5px;
+		margin-left:5px;
+		text-align:center;
+		font-size:17px;
+		width:160px;
+}
+
+
+
+#dropshadow{
+		margin-top:7px;
+}
+			
+#message{
+		width:300px;
+		margin-left:auto;
+		margin-right:auto;
+		z-index:100;
+}			
+
+#flashalternative{
+	margin-left:25px;
+	margin-top:8px;
+}
+
+#ad{
+	margin-top:-3px;
+}

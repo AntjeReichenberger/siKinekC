@@ -1,0 +1,274 @@
+/*** IE7 Fixes & Styles ***/
+
+button { 
+	width: 190px; 
+}
+
+	button span { 
+		margin: 0; 
+	}
+
+#sidebar #checklist div.content ol li { 
+	padding: 0 0 0 5px; 
+}
+
+ul#adpnav {
+	bottom: 0px;
+}
+
+#adb_nav {
+	margin-top: 31px;	
+}
+
+#homeSearchForm {
+	top: -60px;
+}
+	
+#kmessage {
+	top: 12px;
+}
+
+body.home #header a#logo {
+	left: 10px;
+}
+
+body.home #footer {
+	left: 15px;
+	top: -20px;
+}
+
+body.home #header ul#nav {
+	left: -212px;
+}
+
+#header #tellyourfriends {
+	margin-top: 35px;
+}
+
+.dotseparator {
+	background-position: 0px 6px;
+}
+
+#homeSearchContent {
+	padding-top: 40px;
+}
+
+.signedin #homeSearchContent {
+	padding-top: 38px;
+}
+
+label.suggestkpnotifyme {
+	display: inline-block;
+	padding: 6px 6px 3px 3px;
+	color: #666; 
+}
+	
+.rightColDepotDetails {
+   float:right;
+   width:350px;   
+}
+.leftColDepotDetails {
+   float:left;
+   width:350px;   
+}
+
+#homeSearchWrapper {
+	margin-top: -2px;	
+}
+
+	#homeSearchWrapper #homePartners {
+		clear:both;
+		margin-top:10px;
+		margin-left:0px;
+		width:980px;
+		height:66px;
+		padding-top:15px;
+		background:#fefefe url(../../images/home-logos.png) left top no-repeat;
+	}
+	
+.whereshipto {
+	clear: both;
+	font-size: 24px;
+	display: block;
+	margin-bottom:-10px;
+	padding-bottom:0px;
+}
+
+table.form td.buttonwrapper {
+	height: 40px;
+}
+
+	table.form td.buttonwrapper.change {
+		padding-right: 30px;
+		height: 30px;
+	}
+
+table.form input,
+table.form select {
+	margin-left: 8px;
+}
+
+form.small table.form input,
+form.small table.form.small select {
+	margin-left: 0;
+}
+
+#bottomBar {
+	margin-top: -59px;
+}
+
+	.signedIn #bottomBar {
+		margin-top: -54px;
+	}
+
+.depotSearchBorderLabel {
+	width: 50px !important;
+}
+
+#toolbox {
+	height: 50px;
+}
+
+#searchWrapper {
+	margin-top: 0px;
+}
+
+#saveKPBox {
+	margin: 0 !important;
+	float: none !important;
+	text-align: right !important;
+}
+
+div.searchresults ul#maptabs {
+	/*** top: 23px !important; **/
+	right: 20px !important;
+	z-index: 1200 !important;
+}
+
+div.searchresults #startAddressPanel span {
+	position: relative !important;
+	bottom: 12px !important;
+}
+
+div.searchresults #startAddressPanel input {
+	position: relative !important;
+	bottom: 6px !important;
+}
+
+div.searchresults #startAddressPanel #startAddressBtn {
+	height: 23px !important;
+	padding-top: 12px !important;
+	bottom: 0px !important;
+}
+
+#prospects table input,
+#prospects table select {
+	margin-left: 0px !important;
+}
+
+#notifyMeLabel {
+	width: 180px !important;
+}
+
+div#basicInstructions img.first {
+	margin-left: -250px;
+}
+
+input#saveKPLink {
+	margin-left: -49px;
+	margin-top: 1px !important;
+}
+
+#basicSearch #leftForm .searchTitle,
+#basicSearch #rightForm .searchTitle {
+	position: relative;
+	z-index: 9999;
+}
+
+.regform {
+	padding-top: 0px !important;
+}
+
+#registrationform {
+	margin-top: -19px;
+}
+
+#sameAsPrimary {
+	border: none;
+	margin-left: 0px;
+}
+
+form#signup {
+	height: 400px;
+}
+
+	form#signup div#leftForm {
+		height: 380px;
+	}
+
+form#linkaccount table.form td.label {
+	width: 90px;
+}
+
+table.form td #skiplink {
+	width: 110px;
+	margin-left: 0px;
+}
+
+form#completeYourProfile .title {
+	width: 200px;
+}
+
+form#completeYourProfile a#why {
+	width: 100px;
+}
+
+form#completeYourProfile table td#agreedToTOSTD {
+	width: 100%;
+}
+
+form#completeYourProfile table td.val {
+	width: 650px;
+}
+
+form#completeYourProfile #agreedToTOSErrorImg {
+	margin-left: 31px;
+}
+
+table.defaultKinekPoint .kinekNumberValue {
+	padding-bottom: 0px;
+	width: 120px;
+}
+
+table.defaultKinekPoint .kinekNumberLabel {
+	width: 110px;
+}
+
+table.sortable thead tr th.hideSortable {
+	background-color: #25A6E6;
+}
+
+#leftForm .loginTitle,
+#rightForm .loginTitle {
+	position: relative;
+	z-index: 9999;
+}
+
+#leftForm .signupTitle,
+#rightForm .signupTitle {
+	position: relative;
+	z-index: 9999;
+}
+
+form#myProfile #changeSubmit {
+	margin-left: 21px;
+}
+
+form#chooseAKP #canadianSearch {
+	padding-top: 90px;
+}
+
+#receiveEmailTrackingStatusChkBox, #receiveTextMsgTrackingStatusChkBox{ 
+	width:14px; 
+	margin-left:8px;	
+}

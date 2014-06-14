@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.Tracking" table="tracking">	
+		<id name="id" type="java.lang.Integer" column="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+
+		<property name="trackingNumber" type="java.lang.String">
+			<column name="trackingNumber" />
+		</property>
+
+		<property name="currentLocation" type="java.lang.String">
+			<column name="currentLocation" />
+		</property>
+		
+		<property name="currentStatus" type="java.lang.String">
+			<column name="currentStatus" />
+		</property>
+		
+		<property name="estimatedArrival" type="java.util.Calendar">
+			<column name="estimatedArrival" />
+		</property>	
+		
+		<property name="weight" type="java.lang.Float">
+			<column name="weight" />
+		</property>	
+		
+		<property name="weightType" type="java.lang.String">
+			<column name="weightType" />
+		</property>	
+		
+		<many-to-one name="courier" class="org.webdev.kpoint.bl.pojo.Courier" column="courierId" lazy="false"></many-to-one>
+		
+		<property name="isDelivered" type="java.lang.Boolean">
+			<column name="isDelivered" />
+		</property>	
+		
+		<property name="createdDate" type="java.util.Calendar">
+			<column name="createdDate" />
+		</property>	
+		
+		<property name="lastModifiedDate" type="java.util.Calendar">
+			<column name="lastModifiedDate" />
+		</property>	
+	</class>
+</hibernate-mapping>

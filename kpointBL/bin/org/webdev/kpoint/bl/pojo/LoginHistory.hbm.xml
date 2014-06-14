@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.LoginHistory" table="loginhistory">
+		<id name="id" type="java.lang.Integer"	column="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		
+		<property name="userId" type="java.lang.Integer" column="userid"/>
+		
+		<property name="application" type="java.lang.String" />
+		
+		<property name="loginDate" type="java.util.Calendar" column="logindate"/>
+	</class>
+</hibernate-mapping>

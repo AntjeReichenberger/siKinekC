@@ -1,0 +1,31 @@
+
+#container #maincontent #maincontentsearchbox{
+	margin-top:-7px;			
+}
+
+#container #maincontent #bubble{
+	margin-top:282px;
+}
+
+#container #maincontent #maincontentsearchbox #searchbtn{
+	margin-left:-10px;
+}
+			
+#container #maincontent #maincontentsearchbox  #postalCode{
+	padding:5px;
+	padding-top:5px;
+	height:27px;
+	margin-left:10px;
+	width:151px;
+}
+
+#container #maincontent #kplogo{
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:10px;
+		width:200px;				
+}
+			
+#container #maincontent #dropshadow{
+	margin-top:-20px;
+}

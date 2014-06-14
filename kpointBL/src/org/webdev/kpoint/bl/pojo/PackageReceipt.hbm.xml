@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.PackageReceipt" table="PackageReceipt">
+		<id name="id" type="java.lang.Integer"
+			column="id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		<property name="userId" type="java.lang.Integer" column="createdByUserId"/>
+		
+		<property name="app" type="java.lang.String" column="createdByApplication"/>
+		
+		<property name="transactionId" type="java.lang.String" />
+
+		<property name="receivedDate" type="java.util.Date" />
+		
+		<property name="redirectLocation" type="java.lang.String" />
+		
+		<many-to-one name="kinekPoint" class="org.webdev.kpoint.bl.pojo.KinekPoint" column="kinekPointId" lazy="false"/>
+		
+		<many-to-one name="redirectReason" class="org.webdev.kpoint.bl.pojo.RedirectReason" column="redirectReasonId" lazy="false" not-found="ignore" />
+		
+		<property name="lastEmailDate" type="java.util.Date" />
+		
+		<property name="requiresProofOfPurchase" type="boolean" />
+				
+		<set name="packages" cascade="all" lazy="false">
+           <key column="receiptId"/>
+           <one-to-many class="org.webdev.kpoint.bl.pojo.Package"/>
+	    </set>
+		
+		<set name="packageRecipients" table="packageRecipient" cascade="all" lazy="false">
+           <key column="receiptId"/>
+           <many-to-many column="userId" class="org.webdev.kpoint.bl.pojo.User"/>
+	    </set>
+	</class>
+</hibernate-mapping>

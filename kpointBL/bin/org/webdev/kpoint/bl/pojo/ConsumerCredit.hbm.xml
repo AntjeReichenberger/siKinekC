@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.ConsumerCredit" table="consumercredit">
+		<id name="id" type="java.lang.Integer">
+			<generator class="native" />
+		</id>
+
+		<many-to-one 
+			name="user" 
+			class="org.webdev.kpoint.bl.pojo.User" 
+			column="UserId" 
+			lazy="false" />
+			
+		<many-to-one 
+			name="promotion" 
+			class="org.webdev.kpoint.bl.pojo.Promotion" 
+			column="PromotionId" 
+			lazy="false"/>
+			
+		<many-to-one 
+			name="creditStatus" 
+			class="org.webdev.kpoint.bl.pojo.CreditStatus" 
+			column="StatusId" 
+			lazy="false" />
+		
+		<many-to-one 
+			name="issueReason" 
+			class="org.webdev.kpoint.bl.pojo.CreditIssueReason" 
+			column="IssueReasonId" 
+			lazy="false" />
+		
+		<property name="issueDate" type="java.util.Date" />
+		
+		<many-to-one 
+			name="pickup" 
+			class="org.webdev.kpoint.bl.pojo.Pickup" 
+			column="RedemptionPickupId" 
+			lazy="false" />
+		
+	</class>
+</hibernate-mapping>

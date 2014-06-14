@@ -1,0 +1,69 @@
+.faqBorderMapUSACity{
+	margin-left:15px;
+	list-style-type:circle;	
+}
+
+.faqBorderMapDepotList{
+	margin-left:15px;
+	list-style-type:disc;	
+}
+
+.faqBorderMapDepotList a:link, .faqBorderMapDepotList a:visited{	
+	text-decoration:none;
+}
+
+.faqBorderMapDepotList a:hover{
+	text-decoration: none;
+}
+
+div.morequestions {
+	text-align:center;
+}
+
+	div.morequestions img {
+		width: 300px;
+		heigh: 163px;
+	}
+	
+ul.faqlist a {
+	border: none;
+}
+
+p.faqitem strong {
+	color: #058fd3;
+}
+
+	p.faqitem strong.nohighlight {
+		color: #444;
+	}
+
+table.sampleaddress {
+	float: left;
+}
+
+div.locationlistwrapper {
+	margin-left: 15px;
+}
+
+	div.locationlistwrapper a {
+		border-bottom: 0px !important;
+	}
+
+div#map {
+	width: 750px;
+	height: 370px;
+}
+
+div#map a {
+	border-bottom: none;
+}
+
+.ero-shadow {
+	top: 30px;
+}
+
+.ero-body {
+	text-align: left;
+	height: 150px;
+	top: 30px;
+}

@@ -1,0 +1,28 @@
+div#content {
+	padding: 25px;	
+}
+
+.headshot {
+	float: left;
+	padding: 0px 5px 0px 0px;
+}
+
+div.leftCol h2 {
+	font-size: 20px
+}
+	
+div.rightCol img {
+	width: 300px;
+	height: 180px; 
+}
+
+div.leftcol {
+	width: 65%; 
+	display: inline-block; 
+	float: left;
+}
+
+div.rightcol {
+	display: inline-block; 
+	float: right;	
+}

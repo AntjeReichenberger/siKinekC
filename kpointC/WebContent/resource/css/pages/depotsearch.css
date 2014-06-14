@@ -1,0 +1,26 @@
+#returnLink {
+	float: right;
+	margin-right: 30px;
+	position: relative;
+	top: 20px;
+}
+
+.ero-shadow {
+	top: 20px;
+}
+
+.ero-body {
+	text-align: left;
+	height: 106px;
+	top: 20px;
+}
+
+#hoursInfoField p {
+	margin: 0px;
+	padding: 0px;	
+}
+
+#extraInfoField p {
+	margin: 0px;
+	padding: 0px;
+}

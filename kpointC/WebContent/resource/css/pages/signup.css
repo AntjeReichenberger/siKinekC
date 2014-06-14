@@ -1,0 +1,89 @@
+#signup {
+	height: 385px;
+}
+
+#leftForm,
+#rightForm {
+	display: inline-block;
+	width: 440px;
+	height: 360px;
+	padding: 10px;
+	margin: 10px 0 30px 0;
+	border: 1px solid #A0A0A0;
+	float: left;
+}
+
+#rightForm {
+	border: none;
+	width: 300px;
+}
+
+#leftForm .signupTitle,
+#rightForm .signupTitle {
+	font-size: 14px;
+	color: #343434;
+	margin: -30px 0 10px -10px;
+}
+
+#rightForm .signupTitle {
+	margin: 0px 0 10px 60px;
+}
+
+#leftForm .labelcol,
+#rightForm .labelcol {
+	width: 130px;
+}
+
+#leftForm .valcol,
+#rightForm .valcol {
+	width: 200px;
+}
+
+#leftForm .buttonwrapper,
+#rightForm .buttonwrapper {
+	height: 45px;
+	padding-right: 8px;
+}
+
+#leftForm .center,
+#rightForm .center {
+	text-align: center;
+}
+
+#leftForm .captcha {
+	padding-left: 0px;
+}
+
+#rightForm iframe {
+	margin-left: -20px;
+	margin-top: -20px;	
+}
+
+#rightForm .footerRow {
+	padding-left: 13px;
+	font-size: 13px;
+}
+
+#orWrapper {
+	display: inline-block;
+	float: left;
+	width: 35px;
+	height: 35px;
+	padding: 163px 0px 163px 15px;
+	margin: 10px 0 30px 0;
+}
+
+	#orWrapper span {
+		background: url(../../images/or-circle.png) center left no-repeat;
+		display: block;
+		width: 35px;
+		height: 35px;
+		color: #FFF;
+		font-weight: bold;
+		padding: 16px 0 0 7px;
+		font-size: 14px;
+	}
+	
+div#recaptcha_area {
+	margin-right: 0px !important;
+}

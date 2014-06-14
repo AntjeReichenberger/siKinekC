@@ -1,0 +1,14 @@
+
+
+#container #maincontent #bubble{	
+	margin-top:282px;
+}
+
+#container #maincontent #maincontentsearchbox{
+	margin-top:7px;
+}	
+#container #maincontent #maincontentsearchbox  #postalCode{
+	padding:5px;
+	padding-top:5px;	
+	width:151px;
+}

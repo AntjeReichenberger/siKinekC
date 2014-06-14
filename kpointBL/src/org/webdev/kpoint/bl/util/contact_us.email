@@ -1,0 +1,13 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body>
+		<p>
+			<b>From:</b> $first_name $last_name<br />
+			<b>Email:</b> $email_address
+		</p>
+		<p>
+			<b>Message:</b><br />
+			$message_body
+		</p>
+</body>
+</html>

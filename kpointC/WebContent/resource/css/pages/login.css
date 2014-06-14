@@ -1,0 +1,65 @@
+#login {
+	height: 250px;
+}
+
+#leftForm,
+#rightForm {
+	display: inline-block;
+	width: 350px;
+	height: 200px;
+	padding: 10px;
+	margin: 10px 0 30px 0;
+	border: 1px solid #A0A0A0;
+	float: left;
+}
+
+#rightForm {
+	border: none;	
+}
+
+#leftForm .loginTitle,
+#rightForm .loginTitle {
+	font-size: 14px;
+	color: #343434;
+	margin: -30px 0 10px -10px;
+}
+
+#rightForm .loginTitle {
+	margin: -30px 0 10px 60px;
+}
+
+#leftForm .buttonwrapper,
+#rightForm .buttonwrapper {
+	height: 45px;
+	padding-right: 13px;
+}
+
+#leftForm .signup {
+	text-align: right;
+	padding-right: 13px;
+}
+
+#rightForm iframe {
+	margin-left: -20px;
+	margin-top: -20px;	
+}
+
+#orWrapper {
+	display: inline-block;
+	float: left;
+	width: 35px;
+	height: 35px;
+	padding: 95px 44px;
+	margin: 10px 0 30px 0;
+}
+
+	#orWrapper span {
+		background: url(../../images/or-circle.png) center left no-repeat;
+		display: block;
+		width: 35px;
+		height: 35px;
+		color: #FFF;
+		font-weight: bold;
+		padding: 16px 0 0 7px;
+		font-size: 14px;
+	}

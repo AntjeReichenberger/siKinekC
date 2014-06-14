@@ -1,0 +1,4 @@
+/************* IE8 FIXES & STYLES ***/
+form ol.half,
+form ul.half { 
+	width: 44%; }

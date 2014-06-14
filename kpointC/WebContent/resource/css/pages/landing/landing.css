@@ -1,0 +1,289 @@
+/*** Reset Styles ***/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, 
+font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, 
+tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+:focus {
+	outline: 0;
+}
+
+body {
+	line-height: 1;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+/* Hide from IE Mac \*/
+.clearfix {
+	display: block;
+}
+/* End hide from IE Mac */
+
+* html .clearfix {
+	height: 1px; /* For IE6 */
+} 
+
+
+/*** General Styles ***/
+body {
+	background: #c1c1c1;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+a, 
+a:link, 
+a:visited {
+	color: #107bb3;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	line-height: 15px;
+}
+
+h2, h1 {
+	font-size: 14px;
+	color: #242461;
+}
+
+h3 {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 22px;
+	margin: 5px 0px;
+}
+
+#container {
+	width: 1000px;
+	margin: 0px auto;
+	background: #fff url(../../../images/landing/bot-corners.png) left bottom no-repeat;
+}
+
+
+/*** Header ***/
+#header {
+	width: 1000px;
+	height: 74px;
+}
+
+img.logo {
+	margin: 12px 18px;
+	width: 194px;
+	height: 50px;
+}
+
+#logo {
+	width: 194px;
+	height: 50px;
+	margin: 12px 18px;
+	display: block;
+	background: url(../../../images/landing/logo.gif) no-repeat;
+	text-indent: -1000em;
+	float: left;
+}
+
+#headerJoin {
+	width: 540px;
+	float: right;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+
+	#headerJoin h2 {
+		line-height: 39px;
+		height: 39px;
+		font-weight: normal;
+	}
+	
+	#headerJoin a {margin-left: 10px;}
+	#headerJoin img {vertical-align: middle;}
+
+
+/*** Content ***/
+#pcontent {
+	width: 964px;
+	margin: 0px auto;
+	background: url(../../../images/landing/box-bkgrnd.gif) repeat-x;
+}
+
+#main {
+	width: 724px;
+	float: right;
+}
+
+.cBlock {
+	margin: 5px 10px;
+}
+
+#video {
+	float: right;
+	width: 120px;
+	margin: 10px 50px 0px 30px;
+}
+#video p {
+	text-align: center;
+}
+
+.introh1 {
+	margin-top: 25px;
+	font-size: 22px;
+	color: #107bb3;
+	font-weight: bold;
+	font-style: oblique;
+	margin-bottom: 3px;
+}
+
+
+/*** Steps ***/
+h1.howh1 {
+	font-size: 18px !important;
+	margin-bottom: 8px;
+}
+
+.step {
+	width: 225px;
+	margin-right: 5px;
+	float: left;
+}
+
+	.step h2 {
+		background:url(../../../images/landing/white-box.png) no-repeat;
+		height: 25px;
+		display: block;
+		line-height: 25px;
+		padding-left: 5px;
+		margin-bottom: 10px;
+	}
+	
+	.step h2 span {
+		color: #c1c1c1; 
+		margin-left: 5px;
+	}
+	
+	.step .last {
+		margin-right: 0px;
+	}
+	
+	.step img {
+		float: left; 
+		margin-right: 5px;
+	}
+	
+	.step p {
+		width: 156px; 
+		margin-right: 5px; 
+		float: right;
+	}
+
+
+/*** CTA ***/
+#cta {
+	width: 719px;
+	height: 138px;
+	background: url(../../../images/landing/highlight-box.png) no-repeat;
+	margin: 20px 0px 0px -5px;
+	padding: 14px;
+}
+
+.start {
+	float: right;
+	height: 40px;
+	width: 262px;
+	margin: 20px 25px 0 0;
+}
+
+	.start h2 {
+		font-weight: normal; 
+		float: left; 
+		margin-top: 5px;
+	}
+	
+	.start img {
+		margin-left: 10px;
+	}
+
+.search {
+	width: 399px;
+	height: 86px;
+	background: url(../../../images/landing/search-bkgrnd.png) no-repeat;
+	padding: 12px;
+	float: left;
+}
+
+	.search h2 {
+		color: #fff; 
+		font-size: 12px; 
+		margin-bottom: 10px; 
+		display: block;
+	}
+	
+	.search #criteria {
+		width: 309px; 
+		border: none; 
+		padding: 5px;
+		font-size: 14px;
+		color: #c1c1c1;
+	}
+	
+	.search #submit {
+		background: url(../../../images/landing/btn-search.png) no-repeat;
+		width: 66px;
+		height: 30px;
+		text-indent: -1000em;
+		border: none;
+		margin-left: 5px;
+	}
+
+
+/*** Footer ***/
+
+#footer {
+	margin-top: 20px;
+}
+
+	#footer ul {
+		list-style: none;
+		margin-top: 10px;
+	}
+	
+	#footer li {
+		float: left;
+		margin-right: 12px;
+	}

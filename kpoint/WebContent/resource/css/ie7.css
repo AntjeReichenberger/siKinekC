@@ -1,0 +1,20 @@
+/************* IE7 FIXES & STYLES ***/
+ul#nav li a:link,
+ul#nav li a:visited { line-height: 49px; }
+
+#content { padding: 0 20px 0 0; }
+
+form ol.half,
+form ul.half { 
+	width: 44%; }
+
+form ol li.half,
+form ul li.half { width: 44%; }
+
+button { width: 190px; }
+
+	button span { margin: 0; }
+
+#sidebar #checklist div.content ol li { padding: 0 0 0 5px; }
+
+#reportPagination { margin: 0 0 -18px 0; }

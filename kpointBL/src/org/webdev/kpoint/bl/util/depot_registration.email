@@ -1,0 +1,338 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>Welcome to KinekPoint!</title>
+   <style type="text/css">
+		body {
+		   background-color: #c1c1c1;
+		}
+		
+		a img {
+		   border: none;
+		}
+		
+		table.bg1 {
+		   background-color: #c1c1c1;
+		}
+		
+		table.bg2 {
+		   background-color: #ffffff;
+		}
+		
+		td.permission {
+		   background-color: #c1c1c1;
+		   padding: 10px 20px 10px 20px;
+		}
+		
+		td.permission p {
+		   font-family: Arial;
+		   font-size: 11px;
+		   font-weight: normal;
+		   color: #fff;
+		   margin: 0;
+		   padding: 0;
+		}
+		
+		td.permission p a {
+		   font-family: Arial;
+		   font-size: 11px;
+		   font-weight: normal;
+		   color: #fff;
+		}
+		
+		td.body {
+		   padding: 20px 20px 20px 20px;
+		   background-image: url('img_content_bg');
+		   background-repeat: repeat-y;
+		   background-position: bottom center;   
+		   background-color: #ffffff;
+		}
+		
+		td.buttons {
+		  padding: 20px 0 0 0; 
+		}
+		
+		td.mainbar h1 {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 0;
+		   padding: 0;
+		}
+		
+		td.mainbar p {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 0;
+		   padding: 0;
+		}
+		
+		td.mainbar p a {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #058fd3;
+		}
+		
+		td.mainbar ul {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 24px;
+		   padding: 0;
+		}
+		
+		td.mainbar ul li a {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		}
+		
+		td.footer {
+			margin: 0;
+		   padding: 0 20px 0 20px;
+		   background-image: url('img_footer_bg');
+		   background-repeat: no-repeat;
+		   background-position: bottom center;
+		   background-color: #333333;
+		   height: 10px;
+		   vertical-align: middle;
+		} 
+		
+		.infotable 
+		{ 
+			color:#777777;
+			font-family:"Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+			font-size:12px;
+			font-weight:normal;  
+		}
+		
+		.tabletitle
+		{
+			font-size: 14px !important;
+			font-weight: bold !important;
+		}
+		
+		td.header {
+		   margin: 0;
+		   padding: 20px 0px 0px 20px;
+		} 
+   </style>
+</head>
+<body>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="bg1">
+   <tr>
+      <td align="center">
+         
+         <table width="600" border="0" cellspacing="0" cellpadding="0" class="bg2">
+            <tr>
+               <td class="header" align="left">
+                  <img src="img_header_bg" alt="Header" width="228" height="35" />
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" class="body">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                        <td valign="top" class="mainbar" align="left">							
+
+							<h1>Kinek Depot Application</h1>
+	
+							<p>The following is a Depot Application from: attb_first_name attb_last_name</p>
+							
+							attb_error
+							
+							<br/>
+							<p class="tabletitle">KinekPoint Information</p>
+							
+							<table class="infotable">
+								<tbody>									
+									<tr>
+										<td><strong>Business Name:</strong></td>
+										<td>attb_business_name</td>
+									</tr>
+									<tr>
+										<td><strong>Address Line 1:</strong></td>
+										<td>attb_address1</td>
+									</tr>
+									<tr>
+										<td><strong>Address Line 2:</strong></td>
+										<td>attb_address2</td>
+									</tr>
+									<tr>
+										<td><strong>Country:</strong></td>
+										<td>attb_country</td>
+									</tr>
+									<tr>
+										<td><strong>State/Province/Region:</strong></td>
+										<td>attb_state</td>
+									</tr>
+									<tr>
+										<td><strong>City:</strong></td>
+										<td>attb_city</td>
+									</tr>									
+									<tr>
+										<td><strong>Postal Code:</strong></td>
+										<td>attb_postalcode</td>
+									</tr>
+									<tr>
+										<td><strong>Store Phone:</strong></td>
+										<td>attb_phone</td>
+									</tr>
+									<tr>
+										<td><strong>Mobile Phone:</strong></td>
+										<td>attb_mobilephone</td>
+									</tr>
+									<tr>
+										<td><strong>Email:</strong></td>
+										<td>attb_email</td>
+									</tr>
+									<tr>
+										<td><strong>Association:</strong></td>
+										<td>attb_association</td>
+									</tr>
+									<tr>
+										<td><strong>Username:</strong></td>
+										<td>attb_username</td>
+									</tr>
+									<tr>
+										<td><strong>Password:</strong></td>
+										<td>attb_password</td>
+									</tr>
+									<tr>
+										<td><strong>First Name:</strong></td>
+										<td>attb_first_name</td>
+									</tr>
+									<tr>
+										<td><strong>Last Name:</strong></td>
+										<td>attb_last_name</td>
+									</tr>
+									<tr>
+										<td><strong>How did you hear about Kinek?:</strong></td>
+										<td>attb_referenceSource</td>
+									</tr>	
+								</tbody>
+							</table>
+							
+							<br/>
+							<p class="tabletitle">Services and Features</p>
+							
+							<table class="infotable"
+								<tbody>								
+									<tr>
+										<td><strong>Receiving Fee:</strong></td>
+										<td>attb_receiving_fee</td>
+									</tr>
+									<tr>
+										<td><strong>Parcel Size Allowance:</strong></td>
+										<td>attb_parcel_size</td>
+									</tr>
+									<tr>
+										<td><strong>Service Available in:</strong></td>
+										<td>attb_languages</td>
+									</tr>
+									<tr>
+										<td><strong>Methods of Payment:</strong></td>
+										<td>attb_payment_methods</td>
+									</tr>
+									<tr>
+										<td><strong>Accepted Credit Cards:</strong></td>
+										<td>attb_cards</td>
+									</tr>
+									<tr>
+										<td><strong>Accepts Duty and Taxes:</strong></td>
+										<td>attb_duty</td>
+									</tr>
+									<tr>
+										<td><strong>Other Features:</strong></td>
+										<td>attb_features</td>
+									</tr>
+									
+								</tbody>
+							</table>
+							
+							<br/>
+							<p class="tabletitle">Hours of Operation</p>
+							
+							<table class="infotable"
+								<tbody>	
+									<tr>
+										<td><strong>Monday Hours:</strong></td>
+										<td>attb_monday_hours</td>
+									</tr>
+									<tr>
+										<td><strong>Monday Closed:</strong></td>
+										<td>attb_monday_closed</td>
+									</tr>
+									<tr>
+										<td><strong>Tuesday Hours:</strong></td>
+										<td>attb_tuesday_hours</td>
+									</tr>
+									<tr>
+										<td><strong>Tuesday Closed:</strong></td>
+										<td>attb_tuesday_closed</td>
+									</tr>
+									<tr>
+										<td><strong>Wednesday Hours:</strong></td>
+										<td>attb_wednesday_hours</td>
+									</tr>
+									<tr>
+										<td><strong>Wednesday Closed:</strong></td>
+										<td>attb_wednesday_closed</td>
+									</tr>
+									<tr>
+										<td><strong>Thursday Hours:</strong></td>
+										<td>attb_thursday_hours</td>
+									</tr>
+									<tr>
+										<td><strong>Thursday Closed:</strong></td>
+										<td>attb_thursday_closed</td>
+									</tr>
+									<tr>
+										<td><strong>Friday Hours:</strong></td>
+										<td>attb_friday_hours</td>
+									</tr>
+									<tr>
+										<td><strong>Friday Closed:</strong></td>
+										<td>attb_friday_closed</td>
+									</tr>
+									<tr>
+										<td><strong>Saturday Hours:</strong></td>
+										<td>attb_saturday_hours</td>
+									</tr>
+									<tr>
+										<td><strong>Saturday Closed:</strong></td>
+										<td>attb_saturday_closed</td>
+									</tr>
+									<tr>
+										<td><strong>Sunday Hours:</strong></td>
+										<td>attb_sunday_hours</td>
+									</tr>
+									<tr>
+										<td><strong>Sunday Closed:</strong></td>
+										<td>attb_sunday_closed</td>
+									</tr>
+								</tbody>
+							</table>						
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td valign="middle" align="left" class="footer"></td>
+            </tr>
+         </table>
+         
+      </td>
+   </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+<html>
+<head>
+	<style type="text/css">
+		body 
+		{
+			background-color: #c1c1c1;
+		}
+		
+		a img 
+		{
+			border: none;
+		}
+		
+		table.bg1 
+		{
+			background-color: #c1c1c1;
+			margin-bottom: 10px;
+		}
+		
+		table.bg2 
+		{
+			background-color: #ffffff;
+		}
+		
+		td.body 
+		{
+			padding: 20px 20px 20px 20px;
+			font-family:"Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+		}
+
+		#infotable td
+		{
+			padding: 2px 10px 2px 2px;
+			font-size: 12;
+		}
+		
+		#packagestable
+		{
+			width: 100%;
+			margin-bottom: 10px;
+			border-collapse: collapse;
+			border-spacing: 0px;
+			border-color: #E3E3E3;
+		}
+		
+		#packagestable td, #totalstable td
+		{
+			border: solid 1px;
+			border-color: #E3E3E3;
+			padding: 5px;
+			font-size: 12;
+			text-align: right;
+		}
+		
+		#packagestable tbody tr
+		{
+			background:#FFFFFF url(img_table_odd) repeat-x scroll left bottom;
+		}
+		
+		#packagestable tbody tr.even
+		{
+			background:#FFFFFF url(img_table_even) repeat-x scroll left bottom;
+		}
+		
+		#totalstable
+		{
+			border-collapse: collapse;
+			border-spacing: 0px;			
+		}
+		
+		#totalsdiv
+		{
+			float: right;
+		}
+		
+		th
+		{
+			border:1px solid #057FBB;
+			color:#FFFFFF;
+			font-size:12px;
+			font-weight:bold;
+			padding:5px 8px 6px;
+		}
+		
+		thead 
+		{
+			background:#25A6E6 url(img_table_header) repeat-x scroll left bottom;
+			border:1px solid #25A6E6;
+		}
+		
+		.spacer
+		{
+			width: 50px;
+		}
+		
+		.left
+		{
+			text-align: left;
+		}
+		
+		#packagetitle
+		{
+			width: 100%;
+			text-align: center;
+			margin-top: 30px;
+			margin-bottom: 5px;
+			font-weight: bold;
+			font-size: 14px;
+		}
+		
+		#paybutton
+		{
+			color:#FFFFFF;
+			border-color:#7D7D7D #C4C4C4 #DEDEDE;
+			background: transparent url(img_button) no-repeat scroll left center;
+			font-family:"Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+			width: 200px;
+			height: 42px;
+			margin-top:20px;
+			padding-top:15px;
+			text-align:center;
+			text-decoration:none;
+		}
+		
+		#paylink
+		{
+			text-decoration: none;
+		}
+		
+		.blue
+		{
+			color:#058FD3;
+			font-weight:bold;
+		}
+		
+		td.header {
+		   margin: 0;
+		   padding: 20px 0px 0px 20px;
+		} 
+	</style>
+</head>
+<body>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="bg1">
+	   <tr>
+	      <td align="center">
+	         
+	         <table width="800" border="0" cellspacing="0" cellpadding="0" class="bg2">
+	            <tr>
+	               <td align="left" class="header">
+	               		<img src="img_header_bg" alt="Header" width="228" height="35" />
+	               </td>
+	            </tr>
+	            <tr>
+	               <td valign="top" class="body">
+	                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	                     <tr>
+	                        <td valign="top" class="mainbar" align="left">
+								
+								<!-- KP Info  -->
+								<table id="infotable" cellspacing="0" cellpadding="0">
+									<tr>
+										<td class="leftalign">KinekPoint:</td>
+										<td class="leftalign">attb_kp_name</td>
+										<td class="spacer"></td>
+										<td class="leftalign">Invoice #</td>
+										<td class="leftalign">attb_inv_num</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="leftalign">attb_kp_address</td>
+										<td class="spacer"></td>
+										<td class="leftalign">Invoice Period:</td>
+										<td class="leftalign">attb_inv_start - attb_inv_end</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="leftalign">attb_kp_cityprov</td>
+										<td class="spacer"></td>
+										<td class="leftalign">Invoice Date:</td>
+										<td class="leftalign">attb_inv_date</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td class="leftalign">attb_kp_zip</td>
+										<td class="spacer"></td>
+										<td class="leftalign blue">Due Date:</td>
+										<td class="leftalign blue">attb_inv_due</td>
+										<td></td>
+									</tr>
+								</table>
+								
+								<!-- Packages  -->
+								<div id="packagetitle">Monthly Activity</div>
+								<table id="packagestable" cellspacing="0" cellpadding="0">
+									<thead>
+										<tr>
+											<th>Custom Info</th>
+											<th>Courier</th>
+											<th>Delivery Date</th>
+											<th>Pickup Date</th>
+											<th>Receiving Fee</th>
+											<th>Kinek Fee</th>
+										</tr>
+									</thead>
+									<tbody>
+										attb_packages
+									</tbody>
+								</table>		
+							
+								<div id="totalsdiv" cellspacing="0" cellpadding="0">
+								<!-- Totals -->
+								<table id="totalstable">
+									<tr>
+										<td>Total Kinek Parcels Received</td>
+										<td style="width: 139px;" class="spacer"></td>
+										<td style="width: 103px;">attb_packages_count</td>
+									</tr>
+									<tr>
+										<td>Sub-Total Fees</td>
+										<td>attb_totals_subrec</td>
+										<td>attb_totals_subkinek</td>
+									</tr>
+									<tr>
+										<td>Less Discounts</td>
+										<td>attb_totals_lessrec</td>
+										<td>attb_totals_lesskinek</td>
+									</tr>
+									<tr>
+										<td>Total Revenue</td>
+										<td>attb_totals_revrec</td>
+										<td>attb_totals_revkinek</td>
+									</tr>
+									<tr>
+										<td>Total Kinek Fees Owing</td>
+										<td class="spacer"></td>
+										<td>attb_totals_owing</td>
+									</tr>
+								</table>
+								</div>
+								
+	                        </td>
+	                     </tr>
+	                  </table>
+	                  
+	                  <div style="float: right;">
+	                  	<a id="paylink" href="attb_redirectURL"><div id="paybutton" attb_button_style>Pay Now</div></a>
+	                  </div> 
+	                  <div style="float:right; margin-right:15px; margin-top:35px; font-size: 12px;">
+	                  	attb_no_pay
+	                  </div>
+	                  
+	               </td>
+	            </tr>
+	         </table>
+	         
+	      </td>
+	   </tr>
+	</table>
+</body>
+</html>

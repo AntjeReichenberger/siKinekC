@@ -1,0 +1,256 @@
+/*** General Form Styles ***/
+form { 
+	font-size: 11px; 
+}
+
+input,
+select,
+textarea {
+	width: 98%;
+	padding: 5px;
+	margin: 0; 
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	background: url(../../images/input_bg.jpg) bottom left repeat-x #fff;	
+	border-top: 1px solid #7d7d7d;
+	border-right: 1px solid #c4c4c4;
+	border-bottom: 1px solid #dedede;
+	border-left: 1px solid #c4c4c4;
+}
+	
+	input.checkbox { 
+		width: auto;
+		margin: 0 0 0 10px;
+		padding: 0;
+		background-image: none;
+		background: transparent;
+		border: none;
+	}		
+	
+	input.button { 
+		display: inline-block;
+		width: 200px;
+		height: 42px;
+		padding: 0 0 3px 0;
+		font-size: 13px;
+		font-weight: bold;
+		line-height: 42px;
+		color: #fff;
+		cursor: pointer;
+		background: url(../../images/button_enabled.jpg) center left no-repeat;
+		border: none; 
+		vertical-align: middle;
+	}
+		
+	input.buttonDisabled { 
+		display: inline-block;
+		width: 200px;
+		height: 42px;
+		padding: 0 0 3px 0;
+		font-size: 13px;
+		font-weight: bold;
+		line-height: 42px;
+		color: #fff;
+		cursor: pointer;
+		background: url(../../images/button_disabled.jpg) center left no-repeat;
+		border: none;
+		cursor: default; 
+	}
+		
+	input.buttonLink {
+		display: inline-block;
+		width: auto;
+		margin: 0;
+		padding: 0;
+		line-height: 42px;
+		text-align: right;
+		text-decoration: underline;
+		cursor: pointer; 
+		cursor: hand; /* hack to show pointer in both IE & FF */
+		border: none;
+		background: none; 
+		vertical-align: middle;
+	}
+	
+		input.buttonLink:hover {
+			color:#058fd3; 
+		}
+		
+		
+	input.depotSearchbutton { 
+		display: inline-block;
+		width: 200px !important;
+		height: 42px;
+		padding: 0 0 3px 0;
+		font-size: 13px;
+		font-weight: bold;
+		line-height: 42px;
+		color: #fff;
+		cursor: pointer;
+		background: url(../../images/button_enabled.jpg) center left no-repeat;
+		border: none; 
+		margin-top:15px;
+	}	
+ 
+select { 
+ 	width: 99%; 
+ 	padding: 4px 5px; 
+}	
+		
+	select.date { 
+		width: auto; 
+		margin: 0 5px 0 0; 
+	}	
+
+	select option { 
+		padding: 0 10px 0 0; 
+	}
+	
+textarea { 
+	width: 98.5%; 
+}	
+
+button {
+	width: auto;
+	padding: 0 10px;
+	display: inline-block;
+	cursor: pointer;
+	background: url(../../images/button_right_bg.jpg) center right no-repeat;
+	border: none; 
+}
+
+	button span {
+		display: block;
+		height: 31px;
+		margin: 0 -3px 0 0;
+		padding: 0 7px 0 11px;
+		font-size: 14px;
+		line-height: 27px;
+		color: #fff; 
+		background: url(../../images/button_left_bg.jpg) center left no-repeat; 
+	}
+	
+label {
+	display: inline-block;
+	font-size: 12px;
+	color: #343434;
+	padding-bottom: 2px; 
+}
+
+	label.block {
+		display: block; 
+	}
+		
+	label.radio,
+	label.checkbox {
+		display: inline-block;
+		padding: 3px 6px 3px 3px;
+		color: #666; 
+	}
+		
+	label.suggestkpnotifyme {
+		display: inline-block;
+		padding: 3px 6px 3px 3px;
+		color: #666; 
+	}
+	
+span.required {
+	color: #f32020;
+	display: inline;
+	padding: 2px 2px 2px 6px; 
+}
+
+small.validation { 
+	display: block;
+	margin: 8px 0 0 8px; 
+	color: #fff; 
+}
+
+
+/*** Form table styles ***/
+table.form {
+	margin: 0;	
+}
+
+	table.form input {
+		width: 200px;	
+	}
+	
+	table.form select {
+		width: 210px;	
+	}
+	
+	table.form td.buttonwrapper  {
+		padding-right:25px;
+		text-align: right;
+		vertical-align: bottom;
+		height: 70px;
+	}
+	
+	table.form td.focused,
+	table.form td.focused { 
+		background: #fefce9; 
+	}
+	
+		table.form td.focused small.validation,
+		table.form td.focused small.validation { 
+			color: #be8535; 
+		}
+		
+	table.form td.error,
+	table.form td.error { 
+		background: #feeceb; 
+	}
+	
+		table.form td.error small.validation,
+		table.form td.error small.validation { 
+			color: #aa3434; 
+		}
+
+	table.form tr.label td {
+		padding-bottom: 0;
+	}
+	
+	table.form tr.val td {
+		padding-top: 0;
+	}	
+		
+	
+/*** Small Form Styles ***/
+form.small { 
+	width: 400px; 
+	margin: 30px auto; 
+}
+	
+	form.small h1 { 
+		margin: 0 0 0 5px;
+		font-size: 24px; 
+	}
+		
+	form.small p {
+		margin: 0 0 10px 8px;
+	}
+	
+	form.small table.form td a:link, 
+	form.small table.form td a:visited { 
+		text-decoration: none; 
+		color: #058FD3;
+		border-bottom: 1px solid #058FD3; 
+	}
+
+	form.small table.form td.focused { 
+		background: none; 
+	}
+	
+	form.small table.form td.buttonwrapper {
+		text-align: left;
+	}
+	
+	form.small input.button { 
+		margin: 10px 0 0 0; 
+	}
+	
+	form.small table.form tr.val td input {
+		width: 100%;
+	}	

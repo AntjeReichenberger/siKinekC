@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.KinekPointHistory" table="KPDepotHistory">
+		<id name="historyId" type="java.lang.Integer" column="historyId" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		
+		<property name="depotId" type="java.lang.Integer" />
+		
+		<property name="name" type="java.lang.String" />
+		
+		<property name="changedDate" type="java.util.Calendar" />
+		
+		<property name="typeOfChange" type="java.lang.String" />
+		
+		<property name="changesMade" type="java.lang.String" />
+	</class>
+</hibernate-mapping>

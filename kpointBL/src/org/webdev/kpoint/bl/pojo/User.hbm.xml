@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.User" table="kpuser">
+		<id name="userId" type="java.lang.Integer" column="userId" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+
+		<property name="firstName" type="java.lang.String">
+			<column name="firstName" />
+		</property>
+
+		<property name="lastName" type="java.lang.String">
+			<column name="lastName" />
+		</property>
+
+		<property name="address1" type="java.lang.String">
+			<column name="address1" />
+		</property>
+
+		<property name="address2" type="java.lang.String">
+			<column name="address2" />
+		</property>
+
+		<property name="city" type="java.lang.String">
+			<column name="city" />
+		</property>
+
+		<property name="enabled" type="java.lang.Boolean">
+			<column name="enabled" />
+		</property>
+
+		<property name="roleId" type="java.lang.Integer">
+			<column name="roleId" />
+		</property>
+
+		<property name="createdDate" type="java.util.Calendar">
+			<column name="createdDate" />
+		</property>
+		
+		<property name="enabledDate" type="java.util.Calendar">
+			<column name="enabledDate" />
+		</property>
+
+		<many-to-one name="state" class="org.webdev.kpoint.bl.pojo.State"
+			column="stateId" lazy="false" />
+
+		<many-to-one name="depot" class="org.webdev.kpoint.bl.pojo.KinekPoint"
+			column="depotId" lazy="false" />
+
+		<property name="zip" type="java.lang.String">
+			<column name="zip" />
+		</property>
+
+		<property name="phone" type="java.lang.String">
+			<column name="phone" />
+		</property>
+		<property name="cellPhone" type="java.lang.String">
+			<column name="cellPhone"></column></property>
+
+		<property name="email" type="java.lang.String">
+			<column name="email" />
+		</property>
+
+		<property name="password" type="java.lang.String">
+			<column name="password" />
+		</property>
+
+		<property name="username" type="java.lang.String">
+			<column name="username" />
+		</property>
+
+		<property name="kinekNumber" type="java.lang.String">
+			<column name="kinekNumber" />
+		</property>
+
+		<property name="agreedToTOS" type="java.lang.Boolean">
+			<column name="agreedToTOS" />
+		</property>
+		
+		<property name="sessionId" type="java.lang.String" />
+		
+		<property name="authenticationToken" type="java.lang.String" />
+
+		<property name="regReminderEmailDate" type="java.util.Calendar">
+			<column name="regReminderEmailDate"></column>
+		</property>
+
+		<property name="registrationPromoCode" type="java.lang.String">
+			<column name="registrationPromoCode"></column>
+		</property>		
+
+		<many-to-one name="referralSource" class="org.webdev.kpoint.bl.pojo.ReferralSource"
+			column="referralSourceId" lazy="false" />
+			
+		<set name="kinekPoints" table="user_kinekpoint" lazy="false" order-by="Id">
+			<key column="userId"></key>
+			<many-to-many column="depotId" class="org.webdev.kpoint.bl.pojo.KinekPoint"></many-to-many>
+		</set>	
+		
+		<set name="notifications" table="user_notification" lazy="false">
+			<key column="userId"></key>
+			<many-to-many column="notificationId" class="org.webdev.kpoint.bl.pojo.Notification"></many-to-many>
+		</set>
+		
+		<property name="createdByPartnerId" type="java.lang.Integer">
+			<column name="createdByPartnerId"></column>
+		</property>	
+	</class>
+</hibernate-mapping>

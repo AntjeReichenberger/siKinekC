@@ -1,0 +1,19 @@
+INDEX VERSION 1.126
+/Volumes/LaCie/workspaces/Kinek/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1021448875.index
+/kpoint/src
+/Volumes/LaCie/workspaces/Kinek/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1237817460.index
+/kpointC/src
+/Volumes/LaCie/workspaces/Kinek/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/173768282.index
+/kpoint/src
+/Volumes/LaCie/workspaces/Kinek/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1308066639.index
+/kpointC/src
+/Volumes/LaCie/workspaces/Kinek/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2108734749.index
+/kpointC/src
+/Volumes/LaCie/workspaces/Kinek/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/663028703.index
+/kpointC/src
+/Volumes/LaCie/workspaces/Kinek/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2327217001.index
+/kpointC/src
+/Volumes/LaCie/workspaces/Kinek/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2744344848.index
+/kpointC/src
+/Volumes/LaCie/workspaces/Kinek/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1637378075.index
+/kpoint/src

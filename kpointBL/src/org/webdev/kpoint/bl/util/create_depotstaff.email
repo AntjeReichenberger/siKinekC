@@ -1,0 +1,171 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>KinekPoint Staff Registration</title>
+   <style type="text/css">
+		body {
+		   background-color: #c1c1c1;
+		}
+		
+		a img {
+		   border: none;
+		}
+		
+		table.bg1 {
+		   background-color: #c1c1c1;
+		}
+		
+		table.bg2 {
+		   background-color: #ffffff;
+		}
+		
+		td.permission {
+		   background-color: #c1c1c1;
+		   padding: 10px 20px 10px 20px;
+		}
+		
+		td.permission p {
+		   font-family: Arial;
+		   font-size: 11px;
+		   font-weight: normal;
+		   color: #fff;
+		   margin: 0;
+		   padding: 0;
+		}
+		
+		td.permission p a {
+		   font-family: Arial;
+		   font-size: 11px;
+		   font-weight: normal;
+		   color: #fff;
+		}
+		
+		td.body {
+		   padding: 20px 20px 20px 20px;
+		   background-image: url('img_content_bg');
+		   background-repeat: repeat-y;
+		   background-position: bottom center;   
+		   background-color: #ffffff;
+		}
+		
+		td.buttons {
+		  padding: 20px 0 0 0; 
+		}
+		
+		td.mainbar h1 {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 0;
+		   padding: 0;
+		}
+		
+		td.mainbar p {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 0;
+		   padding: 0;
+		}
+		
+		td.mainbar p.heading {
+		  font-size: 14px;
+			font-weight: bold;
+		   margin: 15px 0 0 0;
+		}
+		
+		td.mainbar p a {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #058fd3;
+		}
+		
+		td.mainbar ul {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 24px;
+		   padding: 0;
+		}
+		
+		td.mainbar ul li a {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		}
+		
+		td.footer {
+			margin: 0;
+		   padding: 0 20px 0 20px;
+		   background-image: url('img_footer_bg');
+		   background-repeat: no-repeat;
+		   background-position: bottom center;
+		   background-color: #333333;
+		   height: 10px;
+		   vertical-align: middle;
+		} 
+		
+		td.header {
+		   margin: 0;
+		   padding: 20px 0px 0px 20px;
+		} 
+   </style>
+	</head>
+<body>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="bg1">
+   <tr>
+      <td align="center">
+         
+         <table width="600" border="0" cellspacing="0" cellpadding="0" class="bg2">
+            <tr>
+               <td class="header" align="left">                  
+                  <img src="img_header_bg" alt="Header" width="228" height="35" />
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" class="body">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                        <td valign="top" class="mainbar" align="left">
+							<p class="heading">Welcome to the KinekPoint network!</p>
+							<br />
+							<p>Your administrator recently signed-up your location to become a <b>KinekPoint</b>. What this means is that your business can receive packages from consumers in your area. This is a very valuable service for consumers because it means they no longer have to worry about missing a home delivery attempt, not being able to ship to a PO Box, doorstep theft, or having a sensitive package left on their front step in the rain, snow or hot sun.</p>
+							
+							<p class="heading">Offering this service to your customers is simple as:</p>
+							<p>1) <b>Receive Package:</b> Receive/sign for their package when it arrives.</p>
+							<p>2) <b>Log Package In:</b> Enter the unique 7-digit <b>KINEK #</b> found on each package into our website.  Doing this takes no time at all and instantly sends the customer a text message and an email notification letting them know their package has arrived.</p>
+							<p>3) <b>Log Package Out:</b> When the customer comes to pick up their package, you simply look up their package on our website by asking for their <b>KINEK #</b> or name and then verify this with government issued ID. You then give them their package and log it out.</p>
+							<p>4) <b>Done!</b></p>
+							
+							<p class="heading">Sign In and Get Started</p>
+							<p>You can sign into the KinekPoint Portal by clicking on the following link: <a href="depot_portal_link">depot_portal_url</a></p>
+							<p>Username: <strong>user_username</strong><br />
+							Password: <strong>user_password</strong></p>
+							
+							<p>If you have any questions, be sure to check out the Help section after you log into your profile. If you still have questions, please do not hesitate to email us at <a href="mailto:KinekPartnerSupport@kinek.com">KinekPartnerSupport@kinek.com</a></p>
+							
+							<p class="heading">Thanks!</p>
+							
+							<p class="heading">The Kinek Team</p>
+				        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td valign="middle" align="left" class="footer"></td>
+            </tr>
+         </table>
+         
+      </td>
+   </tr>
+</table>
+
+</body>
+</html>

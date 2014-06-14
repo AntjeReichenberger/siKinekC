@@ -1,0 +1,26 @@
+#welcome { 
+	margin: 30px 0 0 0; 
+}
+	
+	#welcome h3 { 
+		margin: 40px 0 6px 10px; 
+	}
+	
+	#welcome p {
+		margin: 0 0 20px 10px;
+		font-size: 11px; 
+		line-height: 14px; 
+	}
+
+	#welcome #howitworks { 
+		float: left; 
+		width: 410px;
+		margin: 0 24px 0 0;
+		padding: 0 24px 0 0;
+		background: url(../../images/welcome_divider.jpg) top right no-repeat; 
+	}
+
+	#welcome #diverightin { 
+		float: left; 
+		width: 410px; 
+	}

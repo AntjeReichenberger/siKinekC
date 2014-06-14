@@ -1,0 +1,76 @@
+h1 {
+	text-decoration: underline;
+}
+
+#adbModule table a {
+	color: #058FD3 !important;
+	border: none !important;
+	text-decoration: underline !important;
+}
+
+#findDeliveryLocation {
+	display: none;	
+}
+
+#basicSearch {
+	display: none;	
+}
+
+	#basicSearch #back {
+		display: none;
+	}
+
+	#basicSearch #orWrapper {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+div.centerWrapper {
+	margin-bottom:15px;
+}
+
+#canadianSearch {
+	display: none;
+}
+
+	#canadianSearch #leftForm {
+		padding-left: 0px;
+		padding-right: 0px;
+		border: none;
+		text-align: right;
+	}
+	
+	#canadianSearch #rightForm {
+		padding-left: 0px;
+		padding-right: 0px;
+		border: none;
+		text-align: left;
+	}
+	
+	#canadianSearch #typeOfKP {
+		font-size: 18px;
+		font-weight: bold;
+		text-decoration: underline;
+		text-align: center;
+	}
+	
+	#canadianSearch #usBorderSearch {
+		margin-top: 14px;
+	}
+	
+	#canadianSearch #localKinekPoint {
+		margin-top: 14px;
+	}
+	
+	#canadianSearch #orWrapper {
+		padding-top: 18px;
+	}
+	
+#borderSearch {
+
+}
+
+	#borderSearch #borderSubmit {
+		padding-right: 42px;
+		text-align: right;
+	}

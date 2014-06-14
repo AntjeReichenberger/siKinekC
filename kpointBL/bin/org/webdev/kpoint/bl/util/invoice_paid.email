@@ -1,0 +1,200 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>KinekPoint delivery notice</title>
+   <style type="text/css">
+		body {
+		   background-color: #c1c1c1;
+		}
+		
+		a img {
+		   border: none;
+		}
+		
+		table.bg1 {
+		   background-color: #c1c1c1;
+		}
+		
+		table.bg2 {
+		   background-color: #ffffff;
+		}
+		
+		td.permission {
+		   background-color: #c1c1c1;
+		   padding: 10px 20px 10px 20px;
+		}
+		
+		td.permission p {
+		   font-family: Arial;
+		   font-size: 11px;
+		   font-weight: normal;
+		   color: #fff;
+		   margin: 0;
+		   padding: 0;
+		}
+		
+		td.permission p a {
+		   font-family: Arial;
+		   font-size: 11px;
+		   font-weight: normal;
+		   color: #fff;
+		}
+		
+		td.body {
+		   padding: 20px 20px 20px 20px;
+		   background-image: url('img_content_bg');
+		   background-repeat: repeat-y;
+		   background-position: bottom center;   
+		   background-color: #ffffff;
+		}
+		
+		td.buttons {
+		  padding: 20px 0 0 0; 
+		}
+		
+		td.mainbar h1 {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 0;
+		   padding: 0;
+		}
+		
+		td.mainbar p {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 0;
+		   padding: 0;
+		}
+		
+		td.mainbar p a {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #058fd3;
+		}
+		
+		td.mainbar ul {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 24px;
+		   padding: 0;
+		}
+		
+		td.mainbar ul li a {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		}
+		
+		td.footer {
+			margin: 0;
+		   padding: 0 20px 0 20px;
+		   background-image: url('img_footer_bg');
+		   background-repeat: no-repeat;
+		   background-position: bottom center;
+		   background-color: #333333;
+		   height: 10px;
+		   vertical-align: middle;
+		} 
+		
+		#infotable td {
+			font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		}
+		
+		td.header {
+		   margin: 0;
+		   padding: 20px 0px 0px 20px;
+		} 
+   </style>
+</head>
+<body>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="bg1">
+   <tr>
+      <td align="center">
+         
+         <table width="600" border="0" cellspacing="0" cellpadding="0" class="bg2">
+            <tr>
+               <td class="header" align="left">
+                  <img src="img_header_bg" alt="Header" width="228" height="35" />
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" class="body">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                        <td valign="top" class="mainbar" align="left">
+							
+						<h1>KinekPoint Invoice Paid</h1>
+						
+						<p>Thank you, your payment has been received.</p>
+						
+						<table id="infotable">
+							<tr>
+								<td>
+									KinekPoint:
+								</td>
+								<td>
+									attb_kp_name
+								</td>	
+							</tr>
+							<tr>
+								<td>
+									Invoice Period:
+								</td>
+								<td>
+									attb_inv_start - attb_inv_end
+								</td>	
+							</tr>
+							<tr>
+								<td>
+									Amount Paid:
+								</td>
+								<td>
+									attb_inv_amount
+								</td>	
+							</tr>
+							<tr>
+								<td>
+									Payment Date:
+								</td>
+								<td>
+									attb_date
+								</td>	
+							</tr>
+							<tr>
+								<td>
+									Transaction ID:
+								</td>
+								<td>
+									attb_txn
+								</td>	
+							</tr>
+						</table>
+							
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td valign="middle" align="left" class="footer"></td>
+            </tr>
+         </table>
+         
+      </td>
+   </tr>
+</table>
+
+</body>
+</html>

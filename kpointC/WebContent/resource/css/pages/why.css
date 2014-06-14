@@ -1,0 +1,77 @@
+#why p {
+	color: #666666;
+	padding-top: 3px;
+}
+
+span.whysubheading {
+	display: block;
+	color: #666666;
+	padding-top: 4px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.faqBorderMapUSACity{
+	margin-left:15px;
+	list-style-type:circle;	
+}
+
+.faqBorderMapDepotList{
+	margin-left:15px;
+	list-style-type:disc;	
+}
+
+.faqBorderMapDepotList a:link, .faqBorderMapDepotList a:visited{	
+	text-decoration:none;
+}
+
+.faqBorderMapDepotList a:hover{
+	text-decoration:none;
+}
+
+.whyshot
+ {
+ 	float: left;
+ 	padding:6px 10px 0px 0px;	
+}
+
+#whyPageKbox {
+	float: right; 
+	display: block; 
+	margin-right: 17px;
+
+}
+
+	#whyPageKbox a {
+		width: 232px;
+		height: 188px;
+		display: block;
+		text-decoration: none;
+		border: none;
+		background: url(../../images/whyPageWikVideoSnap2.jpg) 0px 0px no-repeat;
+	}
+	
+	#whyPageKbox a:hover {
+		background: url(../../images/whyPageWikVideoSnap2_hover.jpg) 0px 0px no-repeat;
+	}
+	
+ul.why a {
+	border: none;	
+}
+
+ul.businesslist {
+	margin-left: 140px;
+	margin-top: -10px;	
+}
+
+	ul.businesslist li {
+		margin-bottom: 10px;	
+	}
+
+div.locationlistwrapper {
+	margin-left: 15px;
+}
+
+	div.locationlistwrapper a {
+		border-bottom: 0px !important;
+	}

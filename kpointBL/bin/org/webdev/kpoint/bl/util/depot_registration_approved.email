@@ -1,0 +1,196 @@
+	<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>Welcome to KinekPoint!</title>
+   <style type="text/css">
+		body {
+		   background-color: #c1c1c1;
+		}
+		
+		a img {
+		   border: none;
+		}
+		
+		table.bg1 {
+		   background-color: #c1c1c1;
+		}
+		
+		table.bg2 {
+		   background-color: #ffffff;
+		}
+		
+		td.permission {
+		   background-color: #c1c1c1;
+		   padding: 10px 20px 10px 20px;
+		}
+		
+		td.permission p {
+		   font-family: Arial;
+		   font-size: 11px;
+		   font-weight: normal;
+		   color: #fff;
+		   margin: 0;
+		   padding: 0;
+		}
+		
+		td.permission p a {
+		   font-family: Arial;
+		   font-size: 11px;
+		   font-weight: normal;
+		   color: #fff;
+		}
+		
+		td.body {
+		   padding: 20px 20px 20px 20px;
+		   background-image: url('img_content_bg');
+		   background-repeat: repeat-y;
+		   background-position: bottom center;   
+		   background-color: #ffffff;
+		}
+		
+		td.buttons {
+		  padding: 20px 0 0 0; 
+		}
+		
+		td.mainbar h1 {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 0;
+		   padding: 0;
+		}
+		
+		td.mainbar p {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 0;
+		   padding: 0;
+		}
+		
+		td.mainbar p a {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #058fd3 !important;
+		}
+		
+		td.mainbar ol {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 24px;
+		   padding: 0;
+		}
+		
+		td.mainbar ol li a {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		}
+		
+		td.footer {
+			margin: 0;
+		   padding: 0 20px 0 20px;
+		   background-image: url('img_footer_bg');
+		   background-repeat: no-repeat;
+		   background-position: bottom center;
+		   background-color: #333333;
+		   height: 10px;
+		   vertical-align: middle;
+		} 
+		
+		td.header {
+		   margin: 0;
+		   padding: 20px 0px 0px 20px;
+		} 
+   </style>
+</head>
+<body>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="bg1">
+   <tr>
+      <td align="center">
+         
+         <table width="600" border="0" cellspacing="0" cellpadding="0" class="bg2">
+            <tr>
+               <td class="header" align="left">                  
+                  <img src="img_header_bg" alt="Header" width="228" height="35" />
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" class="body">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                        <td valign="top" class="mainbar" align="left">							
+
+							<p>Welcome business_name to the KinekPoint network!</p>
+
+							<p>
+								We're excited to have you join the growing network of alternative delivery locations. 
+								You are only 3 steps away from bringing in additional customers and generating more revenue for your business.  
+							</p>
+							
+							<ol>
+								<li><p><b style="text-decoration:underline;">Signing in and Getting Started</b></P>							
+									<p>
+										To sign in, click the following link or copy and paste it into your browser: <br> 
+										<a href="admin_portal_url">admin_portal_url</a>
+									<p>
+									<p>	 
+										(for easy access, Kinek recommends adding this website
+										to your browser's favorites or adding a shortcut to the site on your	desktop).
+									</p>							
+									<p>
+										<b>Log in credentials:</b>
+									</p>							
+									<p>
+									   Username: user_username</br>
+									   Password: user_password
+									</p>
+								</li>
+								<li>
+									<p><b style="text-decoration:underline;">Training Tutorials</b></p>
+									<p>
+										We highly recommend viewing the training tutorials page which is conveniently located under 
+										the Administration tab when you log in. These videos will explain the few steps it takes to 
+										accept and pick-up a Kinek package. 
+									</p>
+								</li>
+								<li>
+									<p><b style="text-decoration:underline;">Marketing the Service</b></p>
+									<p>
+										Getting the word out about the service is crucial to get traffic into your location. 
+										We have a marketing materials section full of downloadable and printable materials. Simply log in 
+										and navigate to the Administration tab and select marketing materials. 
+									</p>
+								</li>
+							</ol>		
+							<p>
+								That's it! If you ever have any questions, concerns, ideas, problems, or feedback please let us know. 
+								To stay up to date with what is happening with Kinek you can simply visit our News section after 
+								logging in.	
+							</p>
+							<p>Contact us at: <a href="mailto:kineksupport@kinek.com">kineksupport@kinek.com</a><p>							
+							<p>Sincerely,</p>
+							<p>The Kinek Team</p>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td valign="middle" align="left" class="footer"></td>
+            </tr>
+         </table>
+         
+      </td>
+   </tr>
+</table>
+
+</body>
+</html>

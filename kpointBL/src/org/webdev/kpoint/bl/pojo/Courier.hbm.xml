@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.Courier" table="Courier">
+		<id name="courierId" type="java.lang.Integer"
+			column="courierId" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+
+		<property name="courierCode" type="java.lang.String">
+			<column name="courierCode" />
+		</property>
+		
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		
+		<property name="isTrackable" type="java.lang.Boolean">
+			<column name="isTrackable" />
+		</property>
+	</class>
+</hibernate-mapping>

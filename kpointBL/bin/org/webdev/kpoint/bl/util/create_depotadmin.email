@@ -1,0 +1,191 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>KinekPoint Depot Management Registration</title>
+   <style type="text/css">
+		body {
+		   background-color: #c1c1c1;
+		}
+		
+		a img {
+		   border: none;
+		}
+		
+		table.bg1 {
+		   background-color: #c1c1c1;
+		}
+		
+		table.bg2 {
+		   background-color: #ffffff;
+		}
+		
+		td.permission {
+		   background-color: #c1c1c1;
+		   padding: 10px 20px 10px 20px;
+		}
+		
+		td.permission p {
+		   font-family: Arial;
+		   font-size: 11px;
+		   font-weight: normal;
+		   color: #fff;
+		   margin: 0;
+		   padding: 0;
+		}
+		
+		td.permission p a {
+		   font-family: Arial;
+		   font-size: 11px;
+		   font-weight: normal;
+		   color: #fff;
+		}
+		
+		td.body {
+		   padding: 20px 20px 20px 20px;
+		   background-image: url('img_content_bg');
+		   background-repeat: repeat-y;
+		   background-position: bottom center;   
+		   background-color: #ffffff;
+		}
+		
+		td.buttons {
+		  padding: 20px 0 0 0; 
+		}
+		
+		td.mainbar h1 {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 0;
+		   padding: 0;
+		}
+		
+		td.mainbar p {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 0;
+		   padding: 0;
+		}
+		
+		td.mainbar p a {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #058fd3;
+		}
+		
+		p.heading {
+		  font-size: 14px;
+			font-weight: bold;
+		   margin: 15px 0 0 0;
+		}		
+		
+		td.mainbar ul {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		   margin: 0 0 14px 24px;
+		   padding: 0;
+		}
+		
+		td.mainbar ul li a {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #777;
+		}
+		
+		td.footer {
+			margin: 0;
+		   padding: 0 20px 0 20px;
+		   background-image: url('img_footer_bg');
+		   background-repeat: no-repeat;
+		   background-position: bottom center;
+		   background-color: #333333;
+		   height: 10px;
+		   vertical-align: middle;
+		} 
+		
+		td.header {
+		   margin: 0;
+		   padding: 20px 0px 0px 20px;
+		} 
+   </style>
+	</head>
+<body>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="bg1">
+   <tr>
+      <td align="center">
+         
+         <table width="600" border="0" cellspacing="0" cellpadding="0" class="bg2">
+            <tr>
+               <td class="header" align="left">
+                   <img src="https://s3.amazonaws.com/email_images/new+email+logo.png" width="397" height="93" alt="Kinek Logo" />
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" class="body">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                        <td valign="top" class="mainbar" align="left">
+							<p>Welcome to the KinekPoint Partner program!</p>
+							
+							<p>By joining the KinekPoint network, you will be offering your customers a valuable service which eliminates doorstep theft, reduces missed deliveries, and benefits the environment.</p>
+							
+							<p>The information in this email will help you launch the service at your location and will provide you with everything you need to quickly get started. Please save this email for future reference as you may wish to refer back to it at a later time.</p>
+							
+							<p>We&#39;re excited to have you join the network and will work with you to make the service a success at your location.</p>
+							
+							<p>Sincerely,</p>
+							
+							<p>Team Kinek</p>							
+							
+							<p><b>Signing in and Getting Started</b></p>
+							
+							<p>To sign into the KinekPoint Portal, click the following link:  admin_portal_url  (for easy access, Kinek recommends adding this website to your browser&#39;s favorites or adding a shortcut to the site on your desktop).</p>
+							
+							<p>On the resulting page, please sign in with the following information:</p>
+							
+							<p>Username: <strong>user_username</strong><br />
+							Password: <strong>user_password</strong></p>
+							
+							<p>After acknowledging and accepting the Terms of the service, select <b>ADMINISTRATION -> Depot Profile -> Edit Depot Profile</b>. This is an important step as it will provide the information that will be displayed to Kinek members when they review and select your location online.</p>
+							
+							<p>Please be thorough when filling out your profile. Please use the <b>Additional Information</b> section to note any special information.</p>
+							
+							<p>You can create limited access accounts for employees who will be handling deliveries and customer pick-ups but who do not necessarily need access to invoicing information or the ability to edit your KinekPoint profile. To create a new employee account, select <b>ADMINISTRATION->Manage Users->Create New User</b>. Make sure you set the role for the account to Depot Staff.</p>
+							
+							<p>The Training Tutorials page (located under <b>ADMINISTRATION</b>) has valuable information about the day-to-day use of the service. We recommend that all employees involved with the service be given an opportunity to view the tutorials on this page (this can be done in less than ten minutes).</p>
+							
+							<p><b>Getting the Word Out</b></p>
+							
+							<p>We&#39;re getting the word out about Kinek. Your business will benefit from our marketing and business development activities which encourage area residents and commuters to join Kinek.</p>
+							
+							<p>Kinek may also be interested in co-marketing with you in your local area. Contact <a href="mailto:KinekPartnerSupport@Kinek.com" title="KinekPartnerSupport@Kinek.com">KinekPartnerSupport@Kinek.com</a> to discuss opportunities with our business development specialists.</p>
+							
+							<p>Thank you for joining the KinekPoint Partner Program! We look forward to a great working relationship and a successful addition to your business offering.</p>
+														
+							<p><font size="2"  color="#777777"><b>Thanks!</b></font></p>
+							
+							<p><font size="2"  color="#777777"><b>The Kinek Team</b></font></p>							
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td valign="middle" align="left" class="footer"></td>
+            </tr>
+         </table>
+         
+      </td>
+   </tr>
+</table>
+
+</body>
+</html>

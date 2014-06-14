@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.Payment" table="payment">
+	
+		<id name="transactionId" type="java.lang.String"
+			column="transactionId" unsaved-value="-1">
+		</id>
+		
+		<many-to-one name="invoice" class="org.webdev.kpoint.bl.pojo.Invoice" column="invoiceNumber" lazy="false"/>
+		
+		<property name="amount" type="java.math.BigDecimal">
+			<column name="amount" />
+		</property>		
+
+		<property name="currencyCode" type="java.lang.String">
+			<column name="currencyCode" />
+		</property>
+		
+		<property name="payerEmail" type="java.lang.String">
+			<column name="payerEmail" />
+		</property>
+		
+		<property name="paymentDate" type="java.util.Date">
+			<column name="paymentDate" />
+		</property>
+		
+		<many-to-one name="status" class="org.webdev.kpoint.bl.pojo.PaymentStatus" column="StatusId" lazy="false"/>
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,225 @@
+/************* FORMS STYLESHEET ***/
+form { font-size: 11px; }
+
+#content form { }
+
+	.separator {
+		vertical-align: middle;
+		margin: auto 5px; }
+		
+	div.scroll {
+		height: 300px;
+		overflow: auto; } 
+		
+	fieldset { border: none; }	
+	
+	
+	/*** LIST STYLES ***/
+	form ol, 
+	form ul { }
+	
+	form ol.half,
+	form ul.half { 
+		float: left; 
+		width: 46%; 
+		padding: 2%; 
+		vertical-align: top; }
+	
+		form ol li, 
+		form ul li {	
+			float: left;
+			width: 96%; 
+			padding: 1% 2%;
+			vertical-align: top; }
+			
+		form ol li.rightalign, 
+		form ul li.rightalign {
+			float: right; 
+			text-align: right;
+			line-height: 42px; }			
+			
+		form ol li.focused,
+		form ul li.focused { background: #fefce9; }	
+		
+		form ol li.error,
+		form ul li.error { background: #feeceb; }
+		
+		form ol li.half,
+		form ul li.half { width: 46%; }
+		
+		form ol li.third,
+		form ul li.third { width: 31%; }
+		
+		form ol li.fourth,
+		form ul li.fourth { width: 21%; }
+	
+	/*** GENERIC STYLES ***/	
+	.formContent { 
+		display: block;
+		margin: 0 18px; }
+	
+	
+	/*** INCORRECTMATCH BUTTON STYLES ***/
+	a#incorrectMatch { 
+		display: inline-block;
+		float: right;
+		width: 242px;
+		height: 57px;
+		margin: -8px 0 0 0;
+		background: url(../images/btn_incorrectmatch.jpg) top left no-repeat;
+		border: none; }
+		
+		a#incorrectMatch span { display: none; }
+	
+	a#incorrectMatch:hover { 
+		background-position: bottom left; }	
+
+	input#incorrectMatch { 
+		display: inline-block;
+		float: right;
+		width: 242px;
+		height: 57px;
+		margin: -8px 0 0 0;
+		background: url(../images/btn_incorrectmatch.jpg) top left no-repeat;
+		border: none;
+		padding: 0 0 0 242px !important; /* Fix for IE  to hide text */
+		color: transparent; /* Fix for FF to hide text */ }
+		
+	input#incorrectMatch:hover { 
+		background-position: bottom left;
+		cursor: pointer; cursor:hand; }
+		
+	/*** FORM ELEMENT STYLES ***/
+	label {
+		display: inline-block;
+		font-size: 12px;
+		color: #343434;
+		padding-bottom: 2px; }
+		
+	label.radio,
+	label.checkbox {
+		display: inline-block;
+		padding: 3px 6px 3px 3px;
+		color: #666; }
+		
+	span.required {
+		color: #f32020;
+		display: inline-block;
+		padding: 2px 2px 2px 4px; }
+	
+	small.validation {
+		font-size: 11px; 
+		display: block;
+		margin: 8px 0 0 8px; 
+		color: #fff; }
+
+	form ol li.focused small.validation,
+	form ul li.focused small.validation { color: #be8535; }
+	
+	form ol li.error small.validation,
+	form ul li.error small.validation { color: #aa3434; }
+	
+	input,
+	select,
+	textarea {
+		width: 98%;
+		padding: 5px;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		color: #666;
+		background: url(../images/input_bg.jpg) bottom left repeat-x #fff;
+		border-top: 1px solid #7d7d7d;
+		border-right: 1px solid #c4c4c4;
+		border-bottom: 1px solid #dedede;
+		border-left: 1px solid #c4c4c4; }
+	
+	
+	ol.half li.half input,
+	ul.half li.half input { width: 92%; }
+
+
+	/*** INPUT STYLES ***/
+	input.checkbox, input.radio { 
+		width: auto;
+		margin: 0 0 0 10px;
+		padding: 0;
+		background-image: none;
+		background: transparent;
+		border: none; }
+	
+	input.first { margin: 0; }
+		
+	
+	/*** SELECT STYLES ***/
+	select { width: 99%; padding: 4px 5px; }	
+		
+	select.date,
+	select.numeral { 
+		width: auto; 
+		margin: 5px 5px 5px 0; }	
+		
+		select option { padding: 0 10px 0 0; }
+	
+	/*** TEXTAREA STYLES ***/
+	textarea { width: 98.5%; }	
+	
+	
+	/*** BUTTON STYLES ***/
+	button { 
+		width: auto;
+		padding: 0 10px; }
+	
+	input.button { 
+		display: inline-block;
+		width: 200px;
+		height: 42px;
+		margin: 0 0 0 10px;
+		padding: 0 0 3px 0;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 42px;
+		color: #fff;
+		cursor: pointer;
+		background: url(../images/button_enabled.jpg) center left no-repeat;
+		border: none; 
+		vertical-align: middle;}
+	
+	input.buttonLink {
+		display: inline-block;
+		width: auto;
+		margin: 0;
+		padding: 0;
+		line-height: 42px;
+		text-align: right;
+		text-decoration: underline;
+		cursor: pointer; 
+		cursor: hand; /* hack to show pointer in both IE & FF */
+		border: none;
+		background: none; 
+		vertical-align: middle;}
+	
+	input.buttonLink:hover {
+		color:#058fd3; }
+		
+	input.buttonDisabled { 
+		display: inline-block;
+		width: 200px;
+		height: 42px;
+		padding: 0 0 3px 0;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 42px;
+		color: #fff;
+		cursor: default;
+		background: url(../images/button_disabled.jpg) center left no-repeat;
+		border: none; }
+		
+.alwaysShowCoupon{
+	margin-left:25px;
+	width:50%;
+}
+
+		
+.chkBoxSpace{
+	padding:3px;
+}

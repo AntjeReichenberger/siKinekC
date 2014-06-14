@@ -1,0 +1,35 @@
+ <!-- START OF full width Table -->
+<table width="630" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+	<tr>
+	  <td height="50" colspan="2" align="left" valign="middle" bgcolor=
+	  "#FCFCFC" style="font-family: Helvetica, Arial, sans-serif; color: #313035; font-size: 22px; letter-spacing: -1px;">
+		Welcome attb_firstName!
+	  </td>
+	</tr>
+	<tr>
+	  <td width="630" align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px; color: #757887; line-height: 18px;">
+		Your Kinek account is now active and you have chosen your first KinekPoint to receive your online, catalogue, or phone orders at. 
+		You can even use your KinekPoint to receive packages from friends and family!<br /><br />
+		
+		<b>Here is your new KinekPoint Shipping Address:</b><br /><br />
+								   	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user_name<br />
+									  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kp_address1, #kp_number<br />
+									  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kp_name<br />
+									  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kp_city, kp_state_Or_province<br />
+								      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kp_zip_Or_postalcode
+		<br /><br />
+		Always be sure to include your Kinek# in the shipping address as this is how we identify your package when it arrives. 
+		You can also change your KinekPoint any time you like.<br /><br />
+		
+		attb_coupon
+		
+		If you have any questions, check out our <a href="faq_link">FAQs</a> or give us a shout at <a href="mailto:support@kinek.zendesk.com" style="color:#2d78d2;">support@kinek.zendesk.com</a>!<br />	
+	  </td>
+	</tr>
+	<tr>
+	  <td style="font-family: Helvetica, sans-serif; font-size: 13px; color: #373737; line-height: 16px;"></td>
+	</tr>
+  </tbody>
+</table>
+<!-- END OF full width Table -->

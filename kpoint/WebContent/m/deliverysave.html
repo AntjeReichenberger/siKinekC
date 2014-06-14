@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Kinek Mobile</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+</head> 
+<body> 
+
+
+
+
+
+
+
+
+
+<div data-role="page">
+
+	<div class="ui-body ui-body-b" data-role="header">
+		<h1>Kinek Mobile</h1>
+	</div><!-- /header -->
+
+	<form action="#">
+	<div id="logindiv">
+		<div class="ui-body ui-body-b" data-role="content" >	
+			<p><center>Please login to kinek mobile to begin</center></p>
+			<br />
+			<input type="hidden" name="v" value="1"> 
+			<label for="username">Username:</label>
+			<input type="text" name="name" id="username" data-mini="true" value="jeremy" />
+		
+			<label for="password">Password:</label>
+			<input type="text" name="password" id="password" data-mini="true" value="kppass1" />
+	
+		</div>
+		
+		<!-- /content -->
+		<input id="login" type="button" value="Login" />
+		<input id="version" type="button" value="Version" />
+		<div id="resultLog"></div>
+    	<div data-role="footer">
+    		<h1>AJAX Demo</h1>
+   		</div>
+   	</div>
+   	<div>
+   		Hello World
+	   	<input id="show" type="button" value="Show" />
+	   	<input id="hide" type="button" value="Hide" />
+   	</div>
+  	</form> 
+        		
+</div><!-- /page -->
+
+
+    <script>
+        $(function() {
+   
+            $("#show").click(function() {
+            	$("#logindiv").show("slidedown") ;
+            });
+
+			$("#hide").click(function() {
+				$("#logindiv").hide("slideup") ;
+	        });
+            
+
+            $("#version").click(function() {
+                var username = $.trim($("#username").val());
+                var password = $.trim($("#password").val());
+  
+                    $.ajax({
+                      type: "POST",
+                      url: "../api/delivery/version",
+                      cache: false,
+                      dataType: "json",
+                      success: onSuccess
+                    });
+       
+            });
+            
+            $("#login").click(function() {
+            	
+            		var ver = "1";
+            		var usr = $.trim($("#username").val());
+            		var pwd = $.trim($("#password").val());
+            	
+                    $.ajax({
+                      type: "POST",
+                      url: "../api/delivery/authenticate",
+                      contentType: 'application/json; charset=utf-8',
+                      data: '{ version: "1", username: "' + usr + '", password: "' + pwd + '"}' , 
+                      cache: false,
+                      dataType: 'json',
+                      success: onLoginSuccess
+                    });
+            });
+ 
+            $("#resultLog").ajaxError(function(event, request, settings, exception) {
+              $("#resultLog").html("Error Calling: " + settings.url + "<br />HTTP Code: " + request.status);
+            });
+ 
+            function onLoginSuccess(data)
+            {
+                $("#resultLog").html("Result: " + data.token);
+            }
+ 
+            function onSuccess(data)
+            {
+                $("#resultLog").html("Result: " + data.version);
+            }
+ 
+        });
+    </script>
+    
+</body>
+</html>

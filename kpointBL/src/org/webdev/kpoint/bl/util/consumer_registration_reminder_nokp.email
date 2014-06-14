@@ -1,0 +1,102 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>Welcome to Kinek!</title>
+   <style type="text/css">
+		body {
+		   background-color: #c1c1c1;
+		}
+		
+		table.bg1 {
+		   background-color: #c1c1c1;
+		}
+		
+		table.bg2 {
+		   background-color: #ffffff;
+		}
+		
+		a img {
+		   border: none;
+		}
+		a {
+		   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+			font-size: 12px;
+			font-weight: normal;
+			color: #058fd3;
+		}		
+				
+		td.body {
+		   padding: 20px 20px 20px 20px !important;
+		   background-image: url('img_content_bg');
+		   background-repeat: repeat-y !important;
+		   background-position: bottom center !important;   
+		   background-color: #ffffff !important;
+		}
+		
+		td.header {
+		   margin: 0;
+		   padding: 20px 0px 0px 20px;
+		} 
+   </style>
+</head>
+<body>
+
+<font face="Lucida Sans Unicode, 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif !important">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="bg1">
+   <tr>
+      <td align="center">
+         
+         <table width="600" border="0" cellspacing="2" cellpadding="2" class="bg2">
+            <tr>
+               <td class="header" align="left">
+                  <img src="img_header_bg" alt="Welcome to Kinek" width="228" height="35" />
+               </td>
+            </tr>
+            <tr>
+               <td valign="top" class="body">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                        <td valign="top" class="mainbar" align="left">
+						 
+						 	<p><font size="2" color="#777777">Dear user_name,</font></p>
+							<font size="2" color="#777777">
+							    <div>
+									<b>You&#39;re 90% of the way there</b>, you just need to <a href="portal_link"><font size="2">choose which KinekPoint</font></a> you&#39;d like to								
+									 use.
+								</div>	
+							</font>
+							
+							<p><font size="2" color="#777777"><b>Your Kinek log-in information is:</b><br/>																	
+									Email: user_username
+								</font>
+							</p>
+												
+						    <p>
+								<font size="2" color="#777777"><b>attb_coupon_title</b></font><br/>
+								<font size="2" color="#777777">attb_coupon_image</font>
+							</p>												
+														
+							<font size="2" color="#777777">
+								<div>
+									If you have any questions or have experienced any problems, just reply to this email
+									and one of our super-friendly support reps will get back to you within a few short hours (or less).
+								</div>
+							<p><font size="2" color="#777777"><b>- The Kinek Team<b></p>
+							
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td valign="middle" align="left" class="footer"></td>
+            </tr>
+         </table>
+         
+      </td>
+   </tr>
+</table>
+</font>
+</body>
+</html>

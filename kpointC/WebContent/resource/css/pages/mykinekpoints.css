@@ -1,0 +1,132 @@
+.ui-icon{
+ border: 1px solid #F6F6F6;
+}
+
+
+.removeKP {
+	cursor: pointer;	
+}
+
+#myKinekPoints_wrapper{
+    width: 900px;
+}
+
+#hoursPricing {
+	margin-top:10px;
+}
+
+ul{
+    margin: 0 auto;
+    padding: 0;
+}
+
+#myKinekPoints_wrapper li{
+    border-style:solid;
+	border-width:2px;
+	margin-right:2px;
+	margin-bottom:2px;
+	padding-top:2px;
+	padding-left:4px;
+}
+
+#myKinekPointsList li{
+   text-align: left;
+   float: left;
+   list-style: none;
+   height: 135px;
+   width: 270px;
+    }
+
+.ui-dialog span{
+	height: 18px !important;	
+}
+
+#dialog{
+	height:auto !important;
+	padding-top:10px;	
+}
+
+#ui-dialog-title-dialog{
+	float:center !important;	
+}
+
+.ui-dialog-buttonset {
+	width: 100%;
+	text-align: center;	
+}
+
+.ui-corner-all{
+	-moz-border-radius:0;
+}
+
+.ui-corner-top{
+	-moz-border-radius:0;
+}
+
+.ui-corner-bottom{
+	-moz-border-radius:0;
+}
+
+.ui-widget-content{
+	border: none;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default {
+    background: none repeat scroll 0 0 #F8F8F8 !important; 
+    border:1px solid #DDD;	  
+    color:#777;
+    font-size:12px;
+    font-weight:normal;
+}
+
+/*)
+.marker {
+			width: 31px;
+			height: 26px;
+			margin-top: -15px;
+			color: #fff;
+			text-align: center;
+			font-size: 10px;
+			font-weight: bold;
+			padding: 3px 0 0 0;
+			background:  url(../../icons/mapmarker_wide_grey.png) top left no-repeat;
+		}
+	*/
+
+.add {
+		width: 270px;
+		height: 135px;
+		background:  url(../../images/add_sign.png) top center no-repeat;
+		cursor: pointer;
+		border:0px;
+		color: #058FD3;
+		font-size: 15px !important;
+		font-weight: bold;
+		padding-top:70px;
+	}
+	
+.favoriteKP {
+		width: 16px;
+		height: 16px;
+		background:  url(../../icons/16-star_fill.png) top left no-repeat;
+	}
+	
+.regularKP {
+		width: 16px;
+		height: 16px;
+		background:  url(../../icons/16_unfavourite.png) top left no-repeat;
+	}		
+		
+#directions { 
+	float: left; 
+	width: 240px;
+	height: 400px;
+	margin: 0 10px 0 0; 	
+	overflow: auto;
+}		
+
+#direction_map { 
+		width: 586px; 
+		height: 400px; 
+		margin-left:250px;
+	}

@@ -1,0 +1,337 @@
+/*** General Styles ***/
+body {
+	padding:0px;
+	margin:0px;
+	color:#fff;
+	font-family:arial,sans-serif;
+	text-align:center;
+	font-size:12px;
+	background-color:#010100;
+}
+
+div#bgImage{
+	/*margin:-45px;*/	
+	margin:0px;
+	padding:0px;
+	width:auto;
+	height:auto;
+	background-position:center top;		
+	background-image:url('../../../images/landing/thompson/bg.jpg');
+	background-repeat:no-repeat;
+	background-attachment:scroll;	
+	display:block;
+	
+}
+
+p, h1, h2, h3 {
+	margin: 0px;	
+	padding: 0px;
+}
+
+br.clear {
+	clear: both;
+}
+
+a {
+	text-decoration: underline;
+	color: #fff;
+}
+
+	a:hover {
+		text-decoration: underline;
+		color: #e1d29c;
+	}
+
+h1 {
+	font-size: 34px;
+	font-weight: bold;
+	font-family: times new roman;
+}
+
+	h1 strong {
+		font-size: 40px;
+	}
+
+h2 {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.big {
+	font-size: 45px;
+}
+
+#wrapper {
+	z-index: 1001;
+	margin:0px auto;
+	width:1240px;
+	padding:0px;
+    
+}
+
+.hidden {
+	display: none;	
+}
+
+
+/*** Top Section ***/
+#introzone {
+	z-index: 1002;
+	text-align:left;
+	width:620px;
+	margin-left:497px;
+	/*margin-top:45px;*/
+	padding-top:40px;
+	~padding-top:50px;
+}
+
+*html #introzone {
+	margin-left: 350px;
+}
+
+.bodytext {
+	margin-top: 30px;
+	float: left;
+}
+
+.btleft {
+	width: 275px;
+}
+
+.btright {
+	width: 280px;
+	margin-left: 30px;
+}
+
+#lead {
+	z-index: 1002;
+	margin-top:43px;
+	width:580px;
+	font-size:21px;
+	font-family:times new roman;
+	color:#e9e2a7;
+}
+
+#signup {
+	clear:both;
+	text-align:left;
+	padding-left:170px;
+	padding-top:40px;
+}
+
+	#signup a, 
+	#signup a:link, 
+	#signup a:link:active, 
+	#signup a:visited {
+		clear:both;
+		display:block;
+		height:55px;
+		width:166px;
+		background-image:url('../../../images/landing/thompson/btn_signup.jpg');
+		background-repeat:no-repeat;
+		background-position:center top;
+	}
+	
+	#signup a:hover {
+		background-image:url('../../../images/landing/thompson/btn_signup_hover.jpg');
+	}
+
+
+/*** Middle Section ***/
+#contentzone {
+	z-index: 1002;
+	clear:both;
+	display:block;
+	margin-top:55px;
+	text-align:left;
+}
+
+.czbox {
+	float: left;
+	display: block;
+}
+
+#how {
+	width: 300px;
+	margin-left: 205px;
+	z-index: 1002;
+}
+
+.howbullet {
+	display:block;
+	height:14px;
+	width:280px;
+	background-repeat:no-repeat;
+	background-position:left top;
+	height:35px;
+}
+
+.howbullet p {
+	margin-left: 25px;
+}
+
+#hb1 {
+	background-image: url('../../../images/landing/thompson/howbullet1.jpg');
+	margin-top: 15px;
+}
+
+#hb2 {
+	background-image: url('../../../images/landing/thompson/howbullet2.jpg');
+	background-position: left center;
+	margin-top: 0px;
+}
+#hb3 {
+	background-image: url('../../../images/landing/thompson/howbullet3.jpg');
+	background-position: left center;
+	margin-top: 18px;
+}
+
+#faq {
+	width: 270px;
+	margin-left: 95px;
+	z-index: 1002;
+}
+
+.faqentry {
+	clear:both;
+	float:left;
+	width:240px;
+	margin:9px 0px 0px 0px;
+}
+
+#learn {
+	width: 200px;
+	margin-left: 75px;
+	z-index: 1002;
+}
+
+.learnlink {
+	clear:both;
+	float:left;
+	margin:9px 0px 0px 0px;
+}
+
+
+/*** Bottom Section ***/
+#footer {
+	clear:both;
+	display:block;
+	padding-top:50px;
+	margin:0px auto;
+	width:850px;
+}
+
+*html #footer {
+	padding-top: 0px;
+}
+
+#logo {
+	clear: both;
+	display: block;
+	margin-left: 330px;
+	margin-bottom: 40px;
+	z-index: 1002;
+}
+
+*html #logo {
+	margin-left: 30px;
+}
+
+	#logo a {
+		clear:both;
+		display:block;
+		height:35px;
+		width:228px;
+		margin-top:40px;
+		background-image:url('../../../images/landing/thompson/logo.jpg');
+		background-repeat:no-repeat;
+		background-position:center top;
+	}
+
+
+/*** Blanket ***/
+#blanket {
+	background-color:#111;
+	opacity: 0.80;
+	filter:alpha(opacity=80);
+	position:absolute;
+	z-index: 9001;
+	top:0px;
+	left:0px;
+	width:100%;
+}
+
+
+/*** Pop-up ***/
+#popUpDiv {
+	z-index: 9002;
+	position:absolute;
+	top:170px;
+	left:430px;
+	width:685px;
+	height:487px;	
+	background-image:url('../../../images/landing/thompson/modal_long_height.jpg');
+	background-repeat:no-repeat;
+	background-position:center top;	
+	text-align:left;
+	display:none;
+}
+
+
+#modalclose{
+	left:-0.14em;
+	position:relative;
+	top:2px;
+}
+
+#modalclose a, 
+#modalclose a:link, 
+#modalclose a:link:active, 
+#modalclose a:visited {
+	position:relative;
+	left:654px;
+	display:block;
+	height:36px;
+	width:32px;
+	background-image:url('../../../images/landing/thompson/btn_modalcloser.jpg');
+	background-repeat:no-repeat;
+	background-position:center top;	
+}
+
+#modalclose a:hover {
+	background-image:url('../../../images/landing/thompson/btn_modalcloser_hover.jpg');
+	top:0px;
+}
+
+#modalfaqs {
+	margin-top: 5px;
+}
+
+.modalfaqentry {
+	float: left;
+	display: block;
+	width: 585px;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+#faqtitle {
+	font-size: 21px;
+	font-family: times new roman;
+	color: #e9e2a7;
+}
+
+p.faq {
+	margin-bottom: 6px;
+}
+
+#modalfaqfooter {
+	clear: both;
+	padding-top: 20px;
+	margin-left: 150px;
+}

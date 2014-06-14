@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.News" table="News">
+		<id name="id" type="java.lang.Integer" column="Id" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+		
+		<property name="publishDate" type="java.util.Date">
+			<column name="PublishDate" />
+		</property>	
+		
+		<property name="title" type="java.lang.String">
+			<column name="Title" />
+		</property>
+		
+		<property name="content" type="java.lang.String">
+			<column name="Content" />
+		</property>
+		
+		<property name="externalUrl" type="java.lang.String">
+			<column name="ExternalUrl" />
+		</property>
+		
+		<property name="isActive" type="java.lang.Boolean">
+			<column name="IsActive" />
+		</property>
+		
+		<many-to-one name="type" class="org.webdev.kpoint.bl.pojo.NewsType"
+			column="NewsTypeId" lazy="false" />
+			
+		<many-to-one name="createdBy" class="org.webdev.kpoint.bl.pojo.User"
+			column="CreatedBy" lazy="false" />
+		
+		<property name="createdDate" type="java.util.Date">
+			<column name="CreatedDate" />
+		</property>	
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,59 @@
+table.contentwrapper {
+	width: 750px;	
+}
+
+	table.contentwrapper td.text {
+		width: 400px;	
+		padding-right: 90px;
+	}
+	
+	table.contentwrapper td.formwrapper {
+		width: 350px;	
+	}
+	
+		table.contentwrapper td.formwrapper table.form {
+			width: 330px; 
+			border: 1px solid #25A6E6;
+			padding: 0px;
+			margin: 0px;
+		}
+		
+			table.contentwrapper td.formwrapper table.form td.headertext {
+				font-weight: bold;
+				font-size: 1.2em;
+				color: #FFFFFF;
+				background: url(./images/table_th_bg.jpg) bottom left repeat-x #25a6e6;
+			}
+		
+			table.contentwrapper td.formwrapper table.form tr.mobile td {
+				padding-top: 15px;
+			}
+			
+			table.contentwrapper td.formwrapper table.form tr.mobile td.label {
+				width: 80px;
+				vertical-align: middle;
+			}
+			
+				table.contentwrapper td.formwrapper table.form tr.mobile td input {
+					width: 120px;
+				}
+				
+		table.contentwrapper td.formwrapper table.buttonwrapper {
+			width: 330px; 
+			padding: 0px;
+			margin: 0px;
+		}
+		
+			table.contentwrapper td.formwrapper table.buttonwrapper td {
+				padding-right: 0px;
+				text-align: right;
+			}
+			
+#message.error {
+	margin-left: 0px;
+	width: 262px;
+}
+	
+#pageTitle {
+	padding-left: 23px;
+}

@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.webdev.kpoint.bl.pojo.KinekPoint" table="KPDepot">
+		<id name="depotId" type="java.lang.Integer" column="depotId" unsaved-value="-1">
+			<generator class="native" />
+		</id>
+
+		<property name="name" type="java.lang.String" />
+		
+		<property name="address1" type="java.lang.String" />
+		
+		<property name="address2" type="java.lang.String" />
+		
+		<property name="city" type="java.lang.String" />
+		
+		<many-to-one name="state" class="org.webdev.kpoint.bl.pojo.State" column="stateId" lazy="false"/>
+		
+		<property name="zip" type="java.lang.String" />
+		
+		<many-to-one name="status" class="org.webdev.kpoint.bl.pojo.KinekPointStatus" column="statusId" lazy="false"/>
+		
+		<property name="acceptsDutyAndTax" type="java.lang.Boolean" />
+		
+		<property name="phone" type="java.lang.String" />
+				
+		<property name="email" type="java.lang.String" />
+		
+		<property name="extraInfo" type="java.lang.String" />
+		
+		<many-to-one name="association" class="org.webdev.kpoint.bl.pojo.Association" column="associationId" lazy="false"/>
+		
+		<many-to-one name="referralSource" class="org.webdev.kpoint.bl.pojo.ReferralSource" column="referralSourceId" lazy="false"/>
+		
+		<set name="languages" table="DepotLanguageAssignment" cascade="all" lazy="false">
+           <key column="depotId"/>
+           <many-to-many column="languageId" class="org.webdev.kpoint.bl.pojo.Language"/>
+	    </set>
+	    
+	    <set name="cards" table="DepotCCAssignment" cascade="all" lazy="false">
+           <key column="depotId"/>
+           <many-to-many column="ccId" class="org.webdev.kpoint.bl.pojo.CreditCard"/>
+	    </set>
+	    
+	    <set name="payMethod" table="DepotPaymentTypeAssignment" cascade="all" lazy="false">
+           <key column="depotId"/>
+           <many-to-many column="paymentTypeId" class="org.webdev.kpoint.bl.pojo.PayMethod"/>
+	    </set>
+	    
+		<set name="features" table="DepotFeatureAssignment" cascade="all" lazy="false">
+           <key column="depotId"/>
+           <many-to-many column="featureId" class="org.webdev.kpoint.bl.pojo.Feature"/>
+	    </set>
+	    
+	    <set name="kpPackageRates" table="kppackagerate" order-by="packageRateId" cascade="all" lazy="false">
+           <key column="kinekPointId"/>
+           <one-to-many class="org.webdev.kpoint.bl.pojo.KPPackageRate"/>
+	    </set>
+	    
+	    <set name="kpExtendedStorageRates" table="kpextendedstoragerate" order-by="extendedStorageRateId" cascade="all" lazy="false">
+           <key column="kinekPointId"/>
+           <one-to-many class="org.webdev.kpoint.bl.pojo.KPExtendedStorageRate"/>
+	    </set>
+	    
+	    <set name="kpSkidRate" table="kpskidrate" cascade="all" lazy="false">
+           <key column="kinekPointId"/>
+           <one-to-many class="org.webdev.kpoint.bl.pojo.KPSkidRate"/>
+	    </set>
+	    
+	    <property name="geolat" type="java.lang.Double" />
+		
+		<property name="geolong" type="java.lang.Double" />
+
+		<property name="createdDate" type="java.util.Calendar" />
+		
+		<property name="enabledDate" type="java.util.Calendar" />
+
+		<component name="operatingHours" class="org.webdev.kpoint.bl.pojo.OperatingHours" unique="true">
+			<property name="mondayStart" type="java.sql.Time" />
+		
+			<property name="mondayEnd" type="java.sql.Time" />
+			
+			<property name="closedMonday" type="java.lang.Boolean" />
+	
+			<property name="tuesdayStart" type="java.sql.Time" />
+			
+			<property name="tuesdayEnd" type="java.sql.Time" />
+			
+			<property name="closedTuesday" type="java.lang.Boolean" />
+			
+			<property name="wednesdayStart" type="java.sql.Time" />
+			
+			<property name="wednesdayEnd" type="java.sql.Time" />
+			
+			<property name="closedWednesday" type="java.lang.Boolean" />
+			
+			<property name="thursdayStart" type="java.sql.Time" />
+			
+			<property name="thursdayEnd" type="java.sql.Time" />
+			
+			<property name="closedThursday" type="java.lang.Boolean" />
+			
+			<property name="fridayStart" type="java.sql.Time" />
+			
+			<property name="fridayEnd" type="java.sql.Time" />
+			
+			<property name="closedFriday" type="java.lang.Boolean" />
+			
+			<property name="saturdayStart" type="java.sql.Time" />
+			
+			<property name="saturdayEnd" type="java.sql.Time" />
+			
+			<property name="closedSaturday" type="java.lang.Boolean" />
+			
+			<property name="sundayStart" type="java.sql.Time" />
+			
+			<property name="sundayEnd" type="java.sql.Time" />
+			
+			<property name="closedSunday" type="java.lang.Boolean" />
+			
+			<property name="hoursInfo" type="java.lang.String"></property>
+			
+		</component>
+		
+		<set name="borderStates" table="kpstateassignment" cascade="all" lazy="false">
+           <key column="depotId"/>
+           <many-to-many column="stateId" class="org.webdev.kpoint.bl.pojo.State"/>
+	    </set>
+
+		<many-to-one name="region" class="org.webdev.kpoint.bl.pojo.Region" column="regionId" lazy="false"></many-to-one>
+	    <many-to-one name="organization" class="org.webdev.kpoint.bl.pojo.Organization" column="organizationId" lazy="false"></many-to-one>
+	    
+	</class>
+</hibernate-mapping>
