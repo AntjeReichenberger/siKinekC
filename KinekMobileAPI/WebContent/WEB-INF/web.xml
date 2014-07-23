@@ -20,6 +20,10 @@
   <servlet>
     <servlet-name>ConfigurationLoader</servlet-name>
     <servlet-class>org.webdev.kpoint.api.mobile.util.ConfigurationLoader</servlet-class>
+       <init-param>
+      <param-name>realPath</param-name>
+      <param-value>/opt/apache-tomcat-8.0.9/webapps</param-value>
+    </init-param>
     <init-param>
       <param-name>path</param-name>
       <param-value>../</param-value>
