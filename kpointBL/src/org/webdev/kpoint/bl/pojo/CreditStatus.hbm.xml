@@ -4,7 +4,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="org.webdev.kpoint.bl.pojo.CreditStatus" table="CreditStatus">
+	<class name="org.webdev.kpoint.bl.pojo.CreditStatus" table="creditstatus">
 		<id name="Id" type="java.lang.Integer"
 			column="Id" unsaved-value="-1">
 			<generator class="native" />

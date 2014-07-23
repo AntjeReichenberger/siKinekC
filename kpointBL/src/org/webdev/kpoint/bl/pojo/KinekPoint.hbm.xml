@@ -4,7 +4,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="org.webdev.kpoint.bl.pojo.KinekPoint" table="KPDepot">
+	<class name="org.webdev.kpoint.bl.pojo.KinekPoint" table="kpdepot">
 		<id name="depotId" type="java.lang.Integer" column="depotId" unsaved-value="-1">
 			<generator class="native" />
 		</id>
@@ -35,22 +35,22 @@
 		
 		<many-to-one name="referralSource" class="org.webdev.kpoint.bl.pojo.ReferralSource" column="referralSourceId" lazy="false"/>
 		
-		<set name="languages" table="DepotLanguageAssignment" cascade="all" lazy="false">
+		<set name="languages" table="depotlanguageassignment" cascade="all" lazy="false">
            <key column="depotId"/>
            <many-to-many column="languageId" class="org.webdev.kpoint.bl.pojo.Language"/>
 	    </set>
 	    
-	    <set name="cards" table="DepotCCAssignment" cascade="all" lazy="false">
+	    <set name="cards" table="depotccassignment" cascade="all" lazy="false">
            <key column="depotId"/>
            <many-to-many column="ccId" class="org.webdev.kpoint.bl.pojo.CreditCard"/>
 	    </set>
 	    
-	    <set name="payMethod" table="DepotPaymentTypeAssignment" cascade="all" lazy="false">
+	    <set name="payMethod" table="depotpaymenttypeassignment" cascade="all" lazy="false">
            <key column="depotId"/>
            <many-to-many column="paymentTypeId" class="org.webdev.kpoint.bl.pojo.PayMethod"/>
 	    </set>
 	    
-		<set name="features" table="DepotFeatureAssignment" cascade="all" lazy="false">
+		<set name="features" table="depotfeatureassignment" cascade="all" lazy="false">
            <key column="depotId"/>
            <many-to-many column="featureId" class="org.webdev.kpoint.bl.pojo.Feature"/>
 	    </set>

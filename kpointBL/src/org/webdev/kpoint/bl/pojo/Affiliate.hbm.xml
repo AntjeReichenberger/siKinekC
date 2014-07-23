@@ -4,7 +4,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="org.webdev.kpoint.bl.pojo.Affiliate" table="Affiliate">
+	<class name="org.webdev.kpoint.bl.pojo.Affiliate" table="affiliate">
 	
 		<id name="id" type="java.lang.Integer"
 			column="id" unsaved-value="-1">
