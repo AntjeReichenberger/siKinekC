@@ -50,6 +50,10 @@
             <param-value>../</param-value>
         </init-param>
         <init-param>
+      		<param-name>realPath</param-name>
+      		<param-value>/opt/apache-tomcat-8.0.9/webapps</param-value>
+    	</init-param>
+        <init-param>
             <param-name>logback_filename</param-name>
             <param-value>logback.kpointc.xml</param-value>
         </init-param>
