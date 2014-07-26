@@ -69,8 +69,10 @@ public class ConfigurationLoader extends HttpServlet {
 	}
 
 	public void init() throws ServletException {
-		String path = this.getInitParameter("path");
-		String realPath = this.getServletContext().getRealPath(path);
+		//String path = this.getInitParameter("path");
+		//String realPath = this.getServletContext().getRealPath(path);
+		
+		String realPath = this.getInitParameter("realPath");
 		
 		//Configure LogBack
 		LoggerContext lc = (LoggerContext) LoggerFactory.getILoggerFactory();
