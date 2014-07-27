@@ -4,7 +4,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="org.webdev.kpoint.bl.pojo.State" table="State">
+	<class name="org.webdev.kpoint.bl.pojo.State" table="state">
 		<id name="stateId" type="java.lang.Integer"
 			column="stateId" unsaved-value="-1">
 			<generator class="native" />
