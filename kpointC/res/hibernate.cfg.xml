@@ -1,0 +1,83 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- Use c3p0 as connection pool manager -->
+		<property name="connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+         
+		<!-- configuration pool via c3p0--> 
+		<property name="hibernate.c3p0.acquire_increment">1</property> 
+		<property name="hibernate.c3p0.idle_test_period">100</property> <!-- seconds --> 
+		<property name="hibernate.c3p0.max_size">50</property> 
+		<property name="hibernate.c3p0.max_statements">0</property> 
+		<property name="hibernate.c3p0.min_size">5</property> 
+		<property name="hibernate.c3p0.timeout">100</property> <!-- seconds --> 
+
+      	<property name="show_sql">true</property>
+      	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+      	<property name="hibernate.current_session_context_class">thread</property>
+
+		<!-- O.R. Mapping -->
+		<mapping resource="org/webdev/kpoint/bl/pojo/Association.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/LandingPage.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/ConsumerCredit.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/Country.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/Courier.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/CreditCalculationType.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/CreditCard.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/CreditIssueReason.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/CreditStatus.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/KinekPointCredit.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/KinekPointStatus.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/KinekPointProspectLocation.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/Feature.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/KinekPoint.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/KinekPointHistory.hbm.xml" /> 
+		<mapping resource="org/webdev/kpoint/bl/pojo/Package.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/Pickup.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/Role.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/User.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/Language.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/PayMethod.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/Promotion.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/Prospect.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/RedirectReason.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/State.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/Invoice.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/InvoiceIssueHistory.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/Message.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/MessageMedia.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/MessageTrigger.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/News.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/NewsType.hbm.xml" />
+ 		<mapping resource="org/webdev/kpoint/bl/pojo/Payment.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/PaymentStatus.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/PackageReceipt.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/ReferralSource.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/DefaultKinekPointHistory.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/Affiliate.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/Region.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/Organization.hbm.xml" />		 
+		<mapping resource="org/webdev/kpoint/bl/pojo/Coupon.hbm.xml" /> 
+		<mapping resource="org/webdev/kpoint/bl/pojo/CouponNotification.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/Tracking.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/KPExtendedStorageRate.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/KPPackageRate.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/KPSkidRate.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/PackageWeightGroup.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/StorageWeightGroup.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/StorageDuration.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/UnifiedExtendedStorageRate.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/UnifiedPackageRate.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/UnifiedSkidRate.hbm.xml" />		 
+		<mapping resource="org/webdev/kpoint/bl/pojo/Notification.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/UserTracking.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/DeviceToken.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/CountryAreaCode.hbm.xml" />
+		<mapping resource="org/webdev/kpoint/bl/pojo/LoginHistory.hbm.xml" />
+				 
+ 	</session-factory>
+</hibernate-configuration>
