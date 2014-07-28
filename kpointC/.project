@@ -3,6 +3,7 @@
 	<name>kpointC</name>
 	<comment></comment>
 	<projects>
+		<project>kpointBL</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
