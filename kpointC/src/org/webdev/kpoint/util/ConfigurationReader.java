@@ -16,14 +16,14 @@ import javax.servlet.http.HttpServlet;
 import org.webdev.kpoint.bl.logging.ApplicationException;
 import org.webdev.kpoint.bl.logging.KinekLogger;
 import org.webdev.kpoint.bl.util.ApplicationProperty;
-
 import org.slf4j.LoggerFactory;
+
 import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.joran.JoranConfigurator;
 import ch.qos.logback.core.joran.spi.JoranException;
 import ch.qos.logback.core.util.StatusPrinter;
-
 import static com.googlecode.janrain4j.conf.Config.Builder.*;
+
 import com.googlecode.janrain4j.conf.Config;
 import com.googlecode.janrain4j.conf.ConfigHolder;
 
@@ -73,8 +73,10 @@ public class ConfigurationReader extends HttpServlet {
 	}
 
 	public void init() throws ServletException {
-		String path = this.getInitParameter("path");
-		String realPath = this.getServletContext().getRealPath(path);
+		// String path = this.getInitParameter("path");
+		// String realPath = this.getServletContext().getRealPath(path);
+		String realPath = this.getInitParameter("realPath");
+		
 		System.out.println("REALPATH:" + realPath);
 		
 		//Configure LogBack
