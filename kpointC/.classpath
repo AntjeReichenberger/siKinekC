@@ -48,6 +48,10 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/xercesImpl.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/yui-compressor-ant-task-0.5.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/yuicompressor-2.4.2.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/kpointBL"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/kpointBL">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
