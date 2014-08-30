@@ -75,9 +75,9 @@ public class ConfigurationReader extends HttpServlet {
 	public void init() throws ServletException {
 		// String path = this.getInitParameter("path");
 		// String realPath = this.getServletContext().getRealPath(path);
-		String realPath = this.getInitParameter("realPath");
 		
-		System.out.println("REALPATH:" + realPath);
+		String realPath = this.getClass().getResource("/").getPath() + "../../../";
+		System.out.println ("Configuration Reader kpointC REALPATH: " + realPath) ;
 		
 		//Configure LogBack
 		LoggerContext lc = (LoggerContext) LoggerFactory.getILoggerFactory();
