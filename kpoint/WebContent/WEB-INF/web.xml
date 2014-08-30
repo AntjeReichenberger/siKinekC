@@ -43,10 +43,6 @@
 	<servlet>
 		<servlet-name>ConfigurationReader</servlet-name>
 		<servlet-class>org.webdev.kpoint.util.ConfigurationReader</servlet-class>
-		<init-param>
-			<param-name>path</param-name>
-			<param-value>../</param-value>
-		</init-param>
 		 <init-param>
             <param-name>logback_filename</param-name>
             <param-value>logback.kpoint.xml</param-value>
