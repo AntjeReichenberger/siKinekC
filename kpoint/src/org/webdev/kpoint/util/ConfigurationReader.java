@@ -68,9 +68,12 @@ public class ConfigurationReader extends HttpServlet {
 	}
 
 	public void init() throws ServletException {
-		String path = this.getInitParameter("path");
-		String realPath = this.getServletContext().getRealPath(path);
-		System.out.println("REALPATH:" + realPath);
+//		String path = this.getInitParameter("path");
+//		String realPath = this.getServletContext().getRealPath(path);
+//		System.out.println("REALPATH:" + realPath);
+//		
+		String realPath = this.getClass().getResource("/").getPath() + "../../../";
+		System.out.println ("Configuration Reader kpoint REALPATH: " + realPath) ;
 		
 		LoggerContext lc = (LoggerContext) LoggerFactory.getILoggerFactory();
 	    try {
@@ -81,6 +84,7 @@ public class ConfigurationReader extends HttpServlet {
 	      configurator.doConfigure(realPath + "/" + this.getInitParameter("logback_filename"));
 	    } catch (JoranException je) {
 	      // StatusPrinter will handle this
+	    	System.out.println (je.getMessage()) ;
 	    }
 	    StatusPrinter.printInCaseOfErrorsOrWarnings(lc);
 
