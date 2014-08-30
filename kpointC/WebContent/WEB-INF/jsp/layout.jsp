@@ -157,7 +157,7 @@ jQuery(document).ready(function() {
 </script>
 
 
-${org.webdev.kpoint.action.HomeActionBean.class}
+${org.webdev.kpoint.action.HomeActionBean.getClass()}
 
 <%
 String thisPage = new String (request.getServletPath().toString());
