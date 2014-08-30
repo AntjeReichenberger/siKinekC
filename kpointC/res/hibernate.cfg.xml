@@ -16,7 +16,7 @@
 		<property name="hibernate.c3p0.min_size">5</property> 
 		<property name="hibernate.c3p0.timeout">100</property> <!-- seconds --> 
 
-      	<property name="show_sql">true</property>
+      	<property name="show_sql">false</property>
       	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
       	<property name="hibernate.current_session_context_class">thread</property>
 
