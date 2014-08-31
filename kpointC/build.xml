@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="kpointC">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../eclipse 4"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="Web App Libraries.libraryclasspath">
+        <pathelement location="../../../../../kpointBL"/>
+        <pathelement location="WebContent/WEB-INF/lib/activation.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/antisamy-bin.1.3.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/antlr-2.7.6.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/bcmail-jdk16-144.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/bcprov-jdk16-144.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/c3p0-0.9.1.2.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-codec-1.3.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-collections-3.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-email-1.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-fileupload.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-httpclient-3.0.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-io.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/commons-logging.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/dom4j-1.6.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/gson-1.7.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/hibernate3.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/iText-2.1.5.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/janrain4j-1.1.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/javassist-3.4.GA.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jstl.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jta-1.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/logback-access-0.9.26.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/logback-classic-0.9.26.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/logback-core-0.9.26.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/mail.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/mysql-connector-java-5.0.8-bin.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/nekohtml.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/recaptcha4j-0.0.7.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/slf4j-api-1.6.0.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/spring.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/standard.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/stripes.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/xercesImpl.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/yui-compressor-ant-task-0.5.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/yuicompressor-2.4.2.jar"/>
+    </path>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="Apache Tomcat v7.0 [Apache Tomcat v7.0].libraryclasspath">
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/annotations-api.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/catalina-ant.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/catalina-ha.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/catalina-tribes.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/catalina.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/ecj-P20140317-1600.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/el-api.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/jasper-el.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/jasper.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/jsp-api.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/servlet-api.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/tomcat-api.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/tomcat-coyote.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/tomcat-dbcp.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/tomcat-i18n-es.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/tomcat-i18n-fr.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/tomcat-i18n-ja.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/tomcat-jdbc.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/tomcat-util.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/tomcat7-websocket.jar"/>
+        <pathelement location="../../../apache-tomcat-7.0.54/lib/websocket-api.jar"/>
+    </path>
+    <path id="kpointC.classpath">
+        <pathelement location="build/classes"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="Apache Tomcat v7.0 [Apache Tomcat v7.0].libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="build/classes"/>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="res">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="build/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <src path="res"/>
+            <classpath refid="kpointC.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>
