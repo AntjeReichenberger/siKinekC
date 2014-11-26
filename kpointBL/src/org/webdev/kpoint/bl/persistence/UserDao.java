@@ -848,7 +848,7 @@ public class UserDao extends BaseDao implements GenericDao<User, Integer> {
 	 * Generate a kinekNumber. Ensure it is unique
 	 * @return A unique Kinek number
 	 */
-	private String generateKinekNumber() throws Exception {
+	private synchronized String generateKinekNumber() throws Exception {
 		String kinekNumber;
 		do {
 			String num = String.valueOf(System.currentTimeMillis());
