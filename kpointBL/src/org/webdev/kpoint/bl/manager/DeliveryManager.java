@@ -2,27 +2,21 @@ package org.webdev.kpoint.bl.manager;
 
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashSet;
-import java.util.Hashtable;
 import java.util.List;
 import java.util.Set;
 
 import org.webdev.kpoint.bl.logging.KinekLogger;
-import org.webdev.kpoint.bl.persistence.CourierDao;
 import org.webdev.kpoint.bl.persistence.KPPackageRateDao;
 import org.webdev.kpoint.bl.persistence.KPSkidRateDao;
-import org.webdev.kpoint.bl.persistence.KinekPointDao;
 import org.webdev.kpoint.bl.persistence.PackageReceiptDao;
-import org.webdev.kpoint.bl.persistence.PackageWeightGroupDao;
 import org.webdev.kpoint.bl.persistence.UserDao;
 import org.webdev.kpoint.bl.pojo.KPPackageRate;
 import org.webdev.kpoint.bl.pojo.KPSkidRate;
 import org.webdev.kpoint.bl.pojo.KinekPoint;
 import org.webdev.kpoint.bl.pojo.Package;
 import org.webdev.kpoint.bl.pojo.PackageReceipt;
-import org.webdev.kpoint.bl.pojo.PackageWeightGroup;
 import org.webdev.kpoint.bl.pojo.User;
 
 public class DeliveryManager {
@@ -42,7 +36,7 @@ public class DeliveryManager {
 	 */
 	public static PackageReceipt acceptDeliveryWithoutNotification (User depotUser, KinekPoint receivingKinekPoint, List<String> consumerIds, Set<Package> packages) throws Exception{
 		//Hashtable<String, String> info = new Hashtable<String, String>();
-		Calendar now = Calendar.getInstance();
+		Calendar now = getCalendar() ;
 		PackageReceipt receipt = new PackageReceipt();
 		receipt.setUserId(depotUser.getUserId());
 		receipt.setApp(depotUser.getApp().toString());
@@ -138,7 +132,8 @@ public class DeliveryManager {
 		// TODO   This code is the same as above.  Refactor this.
 		
 		//Hashtable<String, String> info = new Hashtable<String, String>();
-		Calendar now = Calendar.getInstance();
+		//Calendar now = Calendar.getInstance();
+		Calendar now = getCalendar() ;
 		PackageReceipt receipt = new PackageReceipt();
 		receipt.setUserId(depotUser.getUserId());
 		receipt.setApp(depotUser.getApp().toString());
@@ -244,15 +239,22 @@ public class DeliveryManager {
 		return fee;
 	}
 	
+	private synchronized static Calendar getCalendar() {  
+		return  Calendar.getInstance();
+	}
+	
 	private static String generateTransactionId(int kinekPointId, Calendar current){
-		String timePortion = String.valueOf(current.get(Calendar.MONTH) + 1) //this is because Jan is returned as 0
-							+ String.valueOf(current.get(Calendar.DAY_OF_MONTH))
-							+ String.valueOf(current.get(Calendar.HOUR_OF_DAY))
-							+ String.valueOf(current.get(Calendar.MINUTE))
-							+ String.valueOf(current.get(Calendar.SECOND));
+		String timePortion =  String.format("%02d", current.get(Calendar.YEAR) % 100 )  // two digit year
+				            + String.format("%02d", current.get(Calendar.MONTH) + 1) //this is because Jan is returned as 0
+							+ String.format("%02d", current.get(Calendar.DAY_OF_MONTH))
+							+ String.format("%02d", current.get(Calendar.HOUR_OF_DAY))
+							+ String.format("%02d", current.get(Calendar.MINUTE))
+							+ String.format("%02d", current.get(Calendar.SECOND))	
+							+ String.format("%03d", current.get(Calendar.MILLISECOND)) ;  	// three digit 
 		
 		String kinekPointIdPortion = String.format("%05d", kinekPointId);
-		
-		return kinekPointIdPortion+"-"+timePortion;
+		String transId = kinekPointIdPortion+"-"+timePortion;
+		//System.out.println ("TransactionId " + transId ) ;
+		return transId ;
 	}
 }
