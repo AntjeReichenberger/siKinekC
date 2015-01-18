@@ -35,8 +35,8 @@
 									<td class="phoneval">1 (866) 451-5565</td>
 								</tr>
 								<tr>
-									<td>Fax:</td>
-									<td class="phoneval">1 (506) 694-1260</td>
+									<td>&nbsp;</td>
+									<td class="phoneval">&nbsp;</td>
 								</tr>
 							</table>					
 						</td>
