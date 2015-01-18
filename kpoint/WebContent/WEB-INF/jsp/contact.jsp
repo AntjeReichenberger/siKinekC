@@ -28,7 +28,7 @@
   		}
   		
   	</style>
-	<jsp:useBean id="externalSettingsManager" scope="application" class="org.webdev.kpoint.util.ExternalSettingsManagerHelper"/>
+	<jsp:useBean id="externalSettingsManager" scope="page" class="org.webdev.kpoint.util.ExternalSettingsManagerHelper"/>
   
   	<!-- CONTENTWRAPPER -->
 	<div id="contentWrapper" class="clearfix">
