@@ -1,6 +1,7 @@
 <%@ include file="/WEB-INF/jsp/taglibs.jsp" %>
 <s:layout-render name="/WEB-INF/jsp/deliver.jsp">
 	<s:layout-component name="contents">
+	<script type="text/javascript" src="resource/js/jquery.tablesorter.js"></script>
 		<!-- STEPS -->
 		<ul id="steps">
 			<li class="active"><a href="#step1" title="Choose Package Recipient"><span>Step 1:</span>Choose Package Recipients</a></li>
@@ -24,6 +25,18 @@
 			   jQuery(document).ready(function(){
 				 	//Set input mask for phone field
 					jQuery('#phone').mask('(999) 999-9999');
+					
+					jQuery("#usersTable").tablesorter({
+						//debug:true,
+						sortList: [[2,0]] ,
+						headers:{0:{sorter:false},
+							 1:{sorter:false},					         
+							 2:{sorter:'text'},
+							 3:{sorter:false},
+							 4:{sorter:false}
+							}
+					});
+						
 			   });
 			   
 			function setNextBtnState() {
