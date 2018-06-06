@@ -137,18 +137,18 @@ public class WPSignupActionBean extends BaseActionBean {
 			isValidConfirmEmail = false;
 		}
 			
-		String remoteAddr = getContext().getRequest().getRemoteAddr();
-	    ReCaptchaImpl reCaptcha = new ReCaptchaImpl();
-	    reCaptcha.setPrivateKey(ExternalSettingsManager.getCaptchaPrivateKey());
-	        
-	    String challenge = getContext().getRequest().getParameter("recaptcha_challenge_field");
-	    String uresponse = getContext().getRequest().getParameter("recaptcha_response_field");
-	    ReCaptchaResponse reCaptchaResponse = reCaptcha.checkAnswer(remoteAddr, challenge, uresponse);
-	
-	    if (!reCaptchaResponse.isValid()) {
-	      	isValidCaptchaResponse = false;
-	    }
-	        
+//		String remoteAddr = getContext().getRequest().getRemoteAddr();
+//	    ReCaptchaImpl reCaptcha = new ReCaptchaImpl();
+//	    reCaptcha.setPrivateKey(ExternalSettingsManager.getCaptchaPrivateKey());
+//	        
+//	    String challenge = getContext().getRequest().getParameter("recaptcha_challenge_field");
+//	    String uresponse = getContext().getRequest().getParameter("recaptcha_response_field");
+//	    ReCaptchaResponse reCaptchaResponse = reCaptcha.checkAnswer(remoteAddr, challenge, uresponse);
+//	
+//	    if (!reCaptchaResponse.isValid()) {
+//	      	isValidCaptchaResponse = false;
+//	    }
+//	        
 		if(!isNewEmail || !isValidConfirmPwd || !isValidConfirmEmail) {
 			return SendErrorsToWP();
 		}
