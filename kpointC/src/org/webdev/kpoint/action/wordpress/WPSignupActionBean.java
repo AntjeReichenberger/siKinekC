@@ -82,9 +82,9 @@ public class WPSignupActionBean extends BaseActionBean {
 				if(!isValidConfirmPwd){
 					url += "&invalidConfirmPwd=true";
 				}
-				if(!isValidCaptchaResponse){
-					url += "&invalidCaptchaRes=true";
-				}			
+//				if(!isValidCaptchaResponse){
+//					url += "&invalidCaptchaRes=true";
+//				}			
 				if(!isValidPasswordLen){
 					url += "&invalidPwdLength=true";
 				}
@@ -149,7 +149,7 @@ public class WPSignupActionBean extends BaseActionBean {
 	      	isValidCaptchaResponse = false;
 	    }
 	        
-		if(!isNewEmail || !isValidConfirmPwd || !isValidConfirmEmail || !isValidCaptchaResponse) {
+		if(!isNewEmail || !isValidConfirmPwd || !isValidConfirmEmail) {
 			return SendErrorsToWP();
 		}
 		
