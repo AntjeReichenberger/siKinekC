@@ -9,8 +9,6 @@ import net.sourceforge.stripes.action.DefaultHandler;
 import net.sourceforge.stripes.action.RedirectResolution;
 import net.sourceforge.stripes.action.Resolution;
 import net.sourceforge.stripes.action.UrlBinding;
-import net.tanesha.recaptcha.ReCaptchaImpl;
-import net.tanesha.recaptcha.ReCaptchaResponse;
 
 import org.webdev.kpoint.action.BaseActionBean;
 import org.webdev.kpoint.action.CompleteYourProfileActionBean;
@@ -24,6 +22,7 @@ import org.webdev.kpoint.bl.pojo.Role;
 import org.webdev.kpoint.bl.pojo.User;
 import org.webdev.kpoint.converter.EmailConverter;
 import org.webdev.kpoint.managers.UrlManager;
+import org.webdev.kpoint.util.VerifyRecaptcha;
 
 @UrlBinding("/WPSignup.action")
 public class WPSignupActionBean extends BaseActionBean {
@@ -82,9 +81,9 @@ public class WPSignupActionBean extends BaseActionBean {
 				if(!isValidConfirmPwd){
 					url += "&invalidConfirmPwd=true";
 				}
-//				if(!isValidCaptchaResponse){
-//					url += "&invalidCaptchaRes=true";
-//				}			
+				if(!isValidCaptchaResponse){
+					url += "&invalidCaptchaRes=true";
+				}			
 				if(!isValidPasswordLen){
 					url += "&invalidPwdLength=true";
 				}
@@ -137,19 +136,10 @@ public class WPSignupActionBean extends BaseActionBean {
 			isValidConfirmEmail = false;
 		}
 			
-//		String remoteAddr = getContext().getRequest().getRemoteAddr();
-//	    ReCaptchaImpl reCaptcha = new ReCaptchaImpl();
-//	    reCaptcha.setPrivateKey(ExternalSettingsManager.getCaptchaPrivateKey());
-//	        
-//	    String challenge = getContext().getRequest().getParameter("recaptcha_challenge_field");
-//	    String uresponse = getContext().getRequest().getParameter("recaptcha_response_field");
-//	    ReCaptchaResponse reCaptchaResponse = reCaptcha.checkAnswer(remoteAddr, challenge, uresponse);
-//	
-//	    if (!reCaptchaResponse.isValid()) {
-//	      	isValidCaptchaResponse = false;
-//	    }
-//	        
-		if(!isNewEmail || !isValidConfirmPwd || !isValidConfirmEmail) {
+	    String uresponse = getContext().getRequest().getParameter("g-recaptcha-response");
+	    isValidCaptchaResponse = VerifyRecaptcha.verify(uresponse);
+	
+		if(!isNewEmail || !isValidConfirmPwd || !isValidConfirmEmail || isValidCaptchaResponse) {
 			return SendErrorsToWP();
 		}
 		
