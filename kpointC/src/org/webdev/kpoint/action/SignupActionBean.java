@@ -14,8 +14,6 @@ import net.sourceforge.stripes.validation.Validate;
 import net.sourceforge.stripes.validation.ValidateNestedProperties;
 import net.sourceforge.stripes.validation.ValidationErrors;
 import net.sourceforge.stripes.validation.ValidationMethod;
-import net.tanesha.recaptcha.ReCaptchaImpl;
-import net.tanesha.recaptcha.ReCaptchaResponse;
 
 import org.webdev.kpoint.bl.manager.ExternalSettingsManager;
 import org.webdev.kpoint.bl.manager.SessionManager.SessionKey;
@@ -66,20 +64,20 @@ public class SignupActionBean extends BaseActionBean {
 			errors.add("confirmPassword", new SimpleError("Passwords must match"));
 		}
 		
-		if(ExternalSettingsManager.isRecaptchaEnabled())
-		{
-			String remoteAddr = getContext().getRequest().getRemoteAddr();
-	        ReCaptchaImpl reCaptcha = new ReCaptchaImpl();
-	        reCaptcha.setPrivateKey(ExternalSettingsManager.getCaptchaPrivateKey());
+		// if(ExternalSettingsManager.isRecaptchaEnabled())
+		// {
+		// 	String remoteAddr = getContext().getRequest().getRemoteAddr();
+	    //     ReCaptchaImpl reCaptcha = new ReCaptchaImpl();
+	    //     reCaptcha.setPrivateKey(ExternalSettingsManager.getCaptchaPrivateKey());
 	        
-	        String challenge = getContext().getRequest().getParameter("recaptcha_challenge_field");
-	        String uresponse = getContext().getRequest().getParameter("recaptcha_response_field");
-	        ReCaptchaResponse reCaptchaResponse = reCaptcha.checkAnswer(remoteAddr, challenge, uresponse);
+	    //     String challenge = getContext().getRequest().getParameter("recaptcha_challenge_field");
+	    //     String uresponse = getContext().getRequest().getParameter("recaptcha_response_field");
+	    //     ReCaptchaResponse reCaptchaResponse = reCaptcha.checkAnswer(remoteAddr, challenge, uresponse);
 
-	        if (!reCaptchaResponse.isValid()) {
-	        	errors.add("recaptcha", new SimpleError("The Captcha value you provided was not correct"));
-	        }
-		}
+	    //     if (!reCaptchaResponse.isValid()) {
+	    //     	errors.add("recaptcha", new SimpleError("The Captcha value you provided was not correct"));
+	    //     }
+		// }
     }
 
 	public Resolution createUser() throws Exception {

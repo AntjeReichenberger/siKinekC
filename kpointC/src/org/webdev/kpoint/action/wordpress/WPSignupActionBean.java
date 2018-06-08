@@ -12,7 +12,6 @@ import net.sourceforge.stripes.action.UrlBinding;
 
 import org.webdev.kpoint.action.BaseActionBean;
 import org.webdev.kpoint.action.CompleteYourProfileActionBean;
-import org.webdev.kpoint.bl.manager.ExternalSettingsManager;
 import org.webdev.kpoint.bl.manager.SessionManager.SessionKey;
 import org.webdev.kpoint.bl.persistence.KinekPointDao;
 import org.webdev.kpoint.bl.persistence.ProspectDao;
@@ -139,7 +138,7 @@ public class WPSignupActionBean extends BaseActionBean {
 	    String uresponse = getContext().getRequest().getParameter("g-recaptcha-response");
 	    isValidCaptchaResponse = VerifyRecaptcha.verify(uresponse);
 	
-		if(!isNewEmail || !isValidConfirmPwd || !isValidConfirmEmail || isValidCaptchaResponse) {
+		if(!isNewEmail || !isValidConfirmPwd || !isValidConfirmEmail) {
 			return SendErrorsToWP();
 		}
 		
